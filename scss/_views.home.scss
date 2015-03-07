@@ -1,0 +1,134 @@
+.homepage {
+
+  .section {
+    text-align: center;
+
+    .contentContainer {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      .contentContainerCell {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .headerWrapper {
+      margin-top: 2.2em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .section.intro {
+    background: url('../images/views/home/intro_bg.jpg') no-repeat scroll 14% center;
+    background-size: cover;
+    height: 480px;
+    font-family: $headerFont;
+
+    .subTitle {
+      font-size: 71%;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 114%;
+    }
+
+    .actionButtons {
+      margin-top: 1em;
+
+      .button {
+        margin-bottom: 0;
+        width: 100%;
+
+        background: transparent;
+        border: 1px solid $pageColor;
+      }
+    }
+  }
+
+  .section.howItWorks {
+    background: url('../images/views/home/how_it_works_bg.jpg') no-repeat scroll center center;
+  }
+
+  .section.pricing {
+
+    .items, .benefits {
+      font-family: $headerFont;
+    }
+
+    .items {
+      padding-bottom: 2em;
+      font-size: 93%;
+
+      .description * {
+        vertical-align: middle;
+      }
+
+      .price {
+        font-size: 231%;
+        font-weight: bold;
+      }
+    }
+
+    .benefits {
+      font-size: 86%;
+      text-align: left;
+      display: inline-block;
+      text-transform: uppercase;
+      line-height: 2.5;
+      padding: 1em 0;
+      margin-bottom: 0;
+      margin-left: 2em;
+
+      vertical-align: middle;
+
+      list-style-image: url('../images/checkmark.png');
+    }
+  }
+
+  .section.qualityProof {
+    .textBlock {
+      padding-bottom: 2em;
+    }
+  }
+
+  .section.testimonials {
+    font-family: $headerFont;
+    padding-bottom: 4em;
+
+
+    .quotes {
+      li {
+        margin-top: 1.5em;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      .quote {
+        font-size: 114%;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+
+      .author {
+        font-weight: bold;
+        font-size: 107%;
+        text-transform: uppercase;
+
+        margin-top: 0.5em;
+      }
+    }
+  }
+
+  .section.getStarted {
+    padding-bottom: 2em;
+
+    .button {
+      padding: 2em 5em;
+    }
+  }
+}

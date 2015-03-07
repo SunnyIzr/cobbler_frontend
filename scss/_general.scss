@@ -1,0 +1,118 @@
+body {
+  color: $textColor;
+  font-size: 14px;
+  font-family: "ProximaNova";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headerColor;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 129%;
+}
+
+.alteredText {
+  color: $pageColor;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $pageColor;
+  }
+}
+
+.button {
+  font-family: inherit;
+  font-size: 86%;
+  //font-weight: 500;
+  text-transform: uppercase;
+  background-color: $accentColor;
+
+  &:hover {
+    background-color: $accentColor;
+  }
+}
+
+.semanticList {
+  list-style: none;
+  margin: 0;
+}
+
+.headerWrapper {
+  display: inline-block;
+
+  .stroke {
+    margin: 0 11%;
+    height: 4px;
+    background: $accentColor;
+  }
+
+  .header {
+    margin-top: 0.5em;
+  }
+}
+
+.contentPanel {
+  background-color: $panelColor;
+}
+
+#header {
+  position: relative;
+
+  .logo {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+
+    width: 75px;
+    height: 75px;
+  }
+}
+
+#page {
+  background: $pageColor;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+#footer {
+  background: $footerColor;
+  color: $footerTextColor;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0 2em;
+
+  .logos {
+    margin-top: 2.5em;
+
+    li {
+      padding-bottom: 0;
+
+      &:nth-of-type(2n+1) {
+        text-align: right;
+      }
+
+      &:nth-of-type(2n) {
+        text-align: left;
+      }
+
+      &:last-child {
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+

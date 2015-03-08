@@ -29,7 +29,12 @@
                     <div class="subTitle">Luxury Shoe Repair</div>
                     <h1>Delivered Directly To Your Door</h1>
                     <div class="row">
-                      <div class="actionButtons columns small-8 small-centered"><a href="#" class="button optionButton">Watch The Video</a><a href="#" class="button optionButton">Get Started</a></div>
+                      <div class="actionButtons columns small-8 small-centered medium-6">
+                        <div class="row collapse">
+                          <div class="columns medium-6"><a href="#" class="button optionButton">Watch The Video</a></div>
+                          <div class="columns medium-6"><a href="#" class="button optionButton">Get Started</a></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -52,8 +57,8 @@
                     <div class="description">From<span class="price"> $150</span></div>
                   </li>
                 </ul>
-                <div class="contentPanel row">
-                  <div class="benefitsWrapper columns small-12">
+                <div class="contentPanel row benefitsWrapper">
+                  <div class="columns small-12">
                     <ul class="benefits">
                       <li>All Repairs Included</li>
                       <li>Free Shipping</li>
@@ -63,38 +68,83 @@
                 </div>
               </div>
             </div>
-            <div class="row section howItWorks hidden-for-small-up">
-              <div class="columns small-12"></div>
+            <div class="row section howItWorks hidden-for-small">
+              <div class="columns small-12">
+                <div class="headerWrapper">
+                  <div class="stroke"></div>
+                  <h1 class="header"> How It Works</h1>
+                </div>
+                <ul class="semanticList items">
+                  <li>
+                    <div class="bullet">1</div>
+                    <div class="content">
+                      <h6 class="title">Place order and receive concierge box</h6>
+                      <p>
+                        Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+                        
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="bullet">2</div>
+                    <div class="content">
+                      <h6 class="title">Send items for all-inclusive repair</h6>
+                      <p>
+                        Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+                        
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="bullet">1</div>
+                    <div class="content">
+                      <h6 class="title">Products returned good as new</h6>
+                      <p>
+                        Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+                        
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="row section qualityProof">
               <div class="columns small-12">
-                <div class="row">
-                  <div class="columns small-12">
+                <div class="row tilesContainer">
+                  <div class="columns small-12 medium-6">
                     <div class="row"><img src="/images/views/home/quality_proof_tile_1.jpg"/></div>
                   </div>
-                  <div class="columns small-12 textBlock">
-                    <div class="headerWrapper">
-                      <div class="stroke"></div>
-                      <h1 class="header"> Four Generations Of The World's Best Cobblers</h1>
+                  <div class="columns small-12 medium-6 textBlock tile1">
+                    <div class="contentContainer">
+                      <div class="contentContainerCell">
+                        <div class="headerWrapper">
+                          <div class="stroke"></div>
+                          <h1 class="header"> Four Generations Of The World's Best Cobblers</h1>
+                        </div>
+                        <p>In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.</p>
+                      </div>
                     </div>
-                    <p>In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.</p>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="columns small-12">
+                <div class="row tilesContainer">
+                  <div class="columns small-12 medium-6 medium-push-6">
                     <div class="row"><img src="/images/views/home/quality_proof_tile_2.jpg"/></div>
                   </div>
-                  <div class="columns small-12 textBlock">
-                    <div class="headerWrapper">
-                      <div class="stroke"></div>
-                      <h1 class="header"> Before & After</h1>
+                  <div class="columns small-12 medium-6 medium-pull-6 textBlock tile2">
+                    <div class="contentContainer">
+                      <div class="contentContainerCell">
+                        <div class="headerWrapper">
+                          <div class="stroke"></div>
+                          <h1 class="header"> Before & After</h1>
+                        </div>
+                        <p>In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.</p>
+                      </div>
                     </div>
-                    <p>In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row section testimonials contentPanel">
+            <div class="row contentPanel section testimonials">
               <div class="columns small-12">
                 <div class="headerWrapper">
                   <div class="stroke"></div>
@@ -102,33 +152,46 @@
                 </div>
                 <ul class="quotes semanticList">
                   <li>
-                    <div class="quote">I wouldn't repair my  shoes with anyone else</div>
-                    <div class="author">Christina H</div>
+                    <div class="author hidden-for-small"><img src="/images/views/home/testimonials_christina_h.png"/></div>
+                    <div class="content">
+                      <div class="quote">I wouldn't repair my  shoes with anyone else</div>
+                      <div class="author">Christina H</div>
+                    </div>
                   </li>
                   <li>
-                    <div class="quote">Amazing Quality And Fast Turnaround</div>
-                    <div class="author">John S</div>
+                    <div class="author hidden-for-small"><img src="/images/views/home/testimonials_john_s.png"/></div>
+                    <div class="content">
+                      <div class="quote">Amazing Quality And Fast Turnaround</div>
+                      <div class="author">John S</div>
+                    </div>
                   </li>
                   <li>
-                    <div class="quote">Excellent Customer Service</div>
-                    <div class="author">Catha M</div>
+                    <div class="author hidden-for-small"><img src="/images/views/home/testimonials_catha_m.png"/></div>
+                    <div class="content">
+                      <div class="quote">Excellent Customer Service</div>
+                      <div class="author">Catha M</div>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="row section getStarted">
-              <div class="columns small-12">
+              <div class="columns small-12 medium-4">
                 <div class="row"><img src="/images/views/home/get_started.jpg"/></div>
               </div>
-              <div class="columns small-12">
-                <div class="headerWrapper">
-                  <div class="stroke"></div>
-                  <h1 class="header"> Get Started</h1>
+              <div class="columns small-12 medium-8 description">
+                <div class="contentContainer">
+                  <div class="contentContainerCell">
+                    <div class="headerWrapper">
+                      <div class="stroke"></div>
+                      <h1 class="header"> Get Started</h1>
+                    </div>
+                    <p>
+                      In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
+                      
+                    </p><a href="#" class="button">Get Started</a>
+                  </div>
                 </div>
-                <p>
-                  In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
-                  
-                </p><a href="#" class="button">Get Started</a>
               </div>
             </div>
           </div>

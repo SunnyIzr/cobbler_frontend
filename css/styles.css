@@ -9252,7 +9252,6 @@ h1 {
 /* line 74, ../scss/_general.scss */
 #page {
   background: #ffffff;
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -9336,26 +9335,62 @@ h1 {
 /* line 51, ../scss/_views.home.scss */
 .homepage .section.howItWorks {
   background: url("../images/views/home/how_it_works_bg.jpg") no-repeat scroll center center;
+  color: #909090;
 }
-/* line 57, ../scss/_views.home.scss */
+/* line 55, ../scss/_views.home.scss */
+.homepage .section.howItWorks h1 {
+  color: #ffffff;
+}
+/* line 59, ../scss/_views.home.scss */
+.homepage .section.howItWorks .items {
+  display: inline-block;
+  text-align: left;
+}
+/* line 64, ../scss/_views.home.scss */
+.homepage .section.howItWorks .items li > .bullet {
+  width: 91px;
+  height: 91px;
+  float: left;
+  background: url("../images/diamond.png") no-repeat scroll left center;
+  text-align: center;
+  line-height: 91px;
+  color: #ffffff;
+  font-size: 219%;
+  font-weight: bold;
+  font-family: "FuturaPT";
+}
+/* line 78, ../scss/_views.home.scss */
+.homepage .section.howItWorks .items li > .content {
+  padding-top: 34px;
+  margin-left: 134px;
+}
+/* line 83, ../scss/_views.home.scss */
+.homepage .section.howItWorks .items li .title {
+  color: #ffffff;
+}
+/* line 96, ../scss/_views.home.scss */
 .homepage .section.pricing .items, .homepage .section.pricing .benefits {
   font-family: "FuturaPT";
 }
-/* line 61, ../scss/_views.home.scss */
+/* line 100, ../scss/_views.home.scss */
 .homepage .section.pricing .items {
   padding-bottom: 2em;
   font-size: 93%;
 }
-/* line 65, ../scss/_views.home.scss */
+/* line 104, ../scss/_views.home.scss */
+.homepage .section.pricing .items li {
+  vertical-align: bottom;
+}
+/* line 108, ../scss/_views.home.scss */
 .homepage .section.pricing .items .description * {
   vertical-align: middle;
 }
-/* line 69, ../scss/_views.home.scss */
+/* line 112, ../scss/_views.home.scss */
 .homepage .section.pricing .items .price {
   font-size: 231%;
   font-weight: bold;
 }
-/* line 75, ../scss/_views.home.scss */
+/* line 118, ../scss/_views.home.scss */
 .homepage .section.pricing .benefits {
   font-size: 86%;
   text-align: left;
@@ -9366,43 +9401,214 @@ h1 {
   margin-bottom: 0;
   margin-left: 2em;
   vertical-align: middle;
-  list-style-image: url("../images/checkmark.png");
+  list-style: none;
 }
-/* line 92, ../scss/_views.home.scss */
+/* line 132, ../scss/_views.home.scss */
+.homepage .section.pricing .benefits li {
+  padding-left: 20px;
+  background: url("../images/checkmark.png") no-repeat scroll left center;
+}
+/* line 141, ../scss/_views.home.scss */
 .homepage .section.qualityProof .textBlock {
   padding-bottom: 2em;
 }
-/* line 97, ../scss/_views.home.scss */
+/* line 146, ../scss/_views.home.scss */
 .homepage .section.testimonials {
   font-family: "FuturaPT";
   padding-bottom: 4em;
 }
-/* line 103, ../scss/_views.home.scss */
+/* line 152, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li {
   margin-top: 1.5em;
 }
-/* line 106, ../scss/_views.home.scss */
+/* line 155, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li:first-child {
   margin-top: 0;
 }
-/* line 111, ../scss/_views.home.scss */
+/* line 159, ../scss/_views.home.scss */
+.homepage .section.testimonials .quotes li > .author {
+  float: left;
+  width: 105px;
+  height: 105px;
+}
+/* line 169, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .quote {
   font-size: 114%;
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 117, ../scss/_views.home.scss */
+/* line 175, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .author {
   font-weight: bold;
   font-size: 107%;
   text-transform: uppercase;
   margin-top: 0.5em;
 }
-/* line 127, ../scss/_views.home.scss */
-.homepage .section.getStarted {
+/* line 187, ../scss/_views.home.scss */
+.homepage .section.getStarted .description {
   padding-bottom: 2em;
 }
-/* line 130, ../scss/_views.home.scss */
-.homepage .section.getStarted .button {
+/* line 190, ../scss/_views.home.scss */
+.homepage .section.getStarted .description .button {
   padding: 2em 5em;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 202, ../scss/_views.home.scss */
+  .homepage .section.pricing {
+    padding-bottom: 4em;
+  }
+  /* line 205, ../scss/_views.home.scss */
+  .homepage .section.pricing .headerWrapper {
+    margin-top: 4em;
+  }
+  /* line 209, ../scss/_views.home.scss */
+  .homepage .section.pricing .items {
+    margin-top: 3em;
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+  }
+  /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
+  .homepage .section.pricing .items:before, .homepage .section.pricing .items:after {
+    content: " ";
+    display: table;
+  }
+  /* line 173, ../bower/foundation/scss/foundation/components/_global.scss */
+  .homepage .section.pricing .items:after {
+    clear: both;
+  }
+  /* line 51, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.pricing .items > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+  /* line 62, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.pricing .items > li {
+    width: 33.33333%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+  /* line 69, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.pricing .items > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 70, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.pricing .items > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+  /* line 213, ../scss/_views.home.scss */
+  .homepage .section.pricing .items li {
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: bottom;
+    float: none;
+  }
+  /* line 219, ../scss/_views.home.scss */
+  .homepage .section.pricing .items li:first-child {
+    margin-left: 0;
+  }
+  /* line 225, ../scss/_views.home.scss */
+  .homepage .section.pricing .benefitsWrapper {
+    margin-top: 4em;
+  }
+  /* line 231, ../scss/_views.home.scss */
+  .homepage .section.pricing .benefits li {
+    display: inline-block;
+    margin-left: 2em;
+  }
+  /* line 235, ../scss/_views.home.scss */
+  .homepage .section.pricing .benefits li:first-child {
+    margin-left: 0;
+  }
+  /* line 243, ../scss/_views.home.scss */
+  .homepage .section.howItWorks .headerWrapper {
+    margin-top: 4em;
+  }
+  /* line 250, ../scss/_views.home.scss */
+  .homepage .section.testimonials .headerWrapper {
+    margin-top: 5em;
+  }
+  /* line 254, ../scss/_views.home.scss */
+  .homepage .section.testimonials .quotes {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+  }
+  /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
+  .homepage .section.testimonials .quotes:before, .homepage .section.testimonials .quotes:after {
+    content: " ";
+    display: table;
+  }
+  /* line 173, ../bower/foundation/scss/foundation/components/_global.scss */
+  .homepage .section.testimonials .quotes:after {
+    clear: both;
+  }
+  /* line 51, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.testimonials .quotes > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+  /* line 62, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.testimonials .quotes > li {
+    width: 33.33333%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+  /* line 69, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.testimonials .quotes > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 70, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .homepage .section.testimonials .quotes > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+  /* line 257, ../scss/_views.home.scss */
+  .homepage .section.testimonials .quotes li {
+    text-align: left;
+    display: inline-block;
+    float: none;
+    margin-left: -4px;
+    vertical-align: middle;
+  }
+  /* line 264, ../scss/_views.home.scss */
+  .homepage .section.testimonials .quotes li:first-child {
+    margin-left: 0;
+  }
+  /* line 268, ../scss/_views.home.scss */
+  .homepage .section.testimonials .quotes li > .content {
+    margin-left: 120px;
+  }
+  /* line 277, ../scss/_views.home.scss */
+  .homepage .section.qualityProof .tilesContainer {
+    position: relative;
+  }
+  /* line 280, ../scss/_views.home.scss */
+  .homepage .section.qualityProof .tilesContainer .tile1, .homepage .section.qualityProof .tilesContainer .tile2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  /* line 286, ../scss/_views.home.scss */
+  .homepage .section.qualityProof .tilesContainer .tile1 {
+    right: 0;
+  }
+  /* line 290, ../scss/_views.home.scss */
+  .homepage .section.qualityProof .tilesContainer .tile2 {
+    left: 0;
+  }
+  /* line 296, ../scss/_views.home.scss */
+  .homepage .section.getStarted {
+    position: relative;
+  }
+  /* line 299, ../scss/_views.home.scss */
+  .homepage .section.getStarted > .description {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
 }

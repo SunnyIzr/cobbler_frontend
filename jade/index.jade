@@ -7,9 +7,12 @@ include _layout.jade
                     .subTitle Luxury Shoe Repair
                     h1 Delivered Directly To Your Door
                     .row
-                        .actionButtons.columns.small-8.small-centered
-                            a.button.optionButton(href='#') Watch The Video
-                            a.button.optionButton(href='#') Get Started
+                        .actionButtons.columns.small-8.small-centered.medium-6
+                            .row.collapse
+                                .columns.medium-6
+                                    a.button.optionButton(href='#') Watch The Video
+                                .columns.medium-6
+                                    a.button.optionButton(href='#') Get Started
     .row.section.pricing
         .columns.small-12
             .headerWrapper
@@ -35,39 +38,69 @@ include _layout.jade
                         | From
                         span.price  $150
 
-            .contentPanel.row
-                .benefitsWrapper.columns.small-12
+            .contentPanel.row.benefitsWrapper
+                .columns.small-12
                     ul.benefits
                         li All Repairs Included
                         li Free Shipping
                         li Money-Back Guarantee
-    .row.section.howItWorks.hidden-for-small-up
+    .row.section.howItWorks.hidden-for-small
         .columns.small-12
+            .headerWrapper
+                .stroke
+                h1.header  How It Works
+
+            ul.semanticList.items
+                li
+                    .bullet 1
+                    .content
+                        h6.title Place order and receive concierge box
+                        p.
+                            Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+
+                li
+                    .bullet 2
+                    .content
+                        h6.title Send items for all-inclusive repair
+                        p.
+                            Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+
+                li
+                    .bullet 1
+                    .content
+                        h6.title Products returned good as new
+                        p.
+                            Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+
     .row.section.qualityProof
         .columns.small-12
-            .row
-                .columns.small-12
+            .row.tilesContainer
+                .columns.small-12.medium-6
                     .row
                         img(src="/images/views/home/quality_proof_tile_1.jpg")
-                .columns.small-12.textBlock
-                    .headerWrapper
-                        .stroke
-                        h1.header  Four Generations Of The World's Best Cobblers
+                .columns.small-12.medium-6.textBlock.tile1
+                    .contentContainer
+                        .contentContainerCell
+                            .headerWrapper
+                                .stroke
+                                h1.header  Four Generations Of The World's Best Cobblers
 
-                    p.
-                        In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
-            .row
-                .columns.small-12
+                            p.
+                                In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
+            .row.tilesContainer
+                .columns.small-12.medium-6.medium-push-6
                     .row
                         img(src="/images/views/home/quality_proof_tile_2.jpg")
-                .columns.small-12.textBlock
-                    .headerWrapper
-                        .stroke
-                        h1.header  Before & After
+                .columns.small-12.medium-6.medium-pull-6.textBlock.tile2
+                    .contentContainer
+                        .contentContainerCell
+                            .headerWrapper
+                                .stroke
+                                h1.header  Before & After
 
-                    p.
-                        In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
-    .row.section.testimonials.contentPanel
+                            p.
+                                In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
+    .row.contentPanel.section.testimonials
         .columns.small-12
             .headerWrapper
                 .stroke
@@ -75,25 +108,36 @@ include _layout.jade
 
             ul.quotes.semanticList
                 li
-                    .quote I wouldn't repair my  shoes with anyone else
-                    .author Christina H
+                    .author.hidden-for-small
+                        img(src="/images/views/home/testimonials_christina_h.png")
+                    .content
+                        .quote I wouldn't repair my  shoes with anyone else
+                        .author Christina H
                 li
-                    .quote Amazing Quality And Fast Turnaround
-                    .author John S
+                    .author.hidden-for-small
+                        img(src="/images/views/home/testimonials_john_s.png")
+                    .content
+                        .quote Amazing Quality And Fast Turnaround
+                        .author John S
                 li
-                    .quote Excellent Customer Service
-                    .author Catha M
+                    .author.hidden-for-small
+                        img(src="/images/views/home/testimonials_catha_m.png")
+                    .content
+                        .quote Excellent Customer Service
+                        .author Catha M
 
     .row.section.getStarted
-        .columns.small-12
+        .columns.small-12.medium-4
             .row
                 img(src="/images/views/home/get_started.jpg")
-        .columns.small-12
-            .headerWrapper
-                .stroke
-                h1.header  Get Started
-            p.
-                In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
+        .columns.small-12.medium-8.description
+            .contentContainer
+                .contentContainerCell
+                    .headerWrapper
+                        .stroke
+                        h1.header  Get Started
+                    p.
+                        In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
 
-            a.button(href='#') Get Started
+                    a.button(href='#') Get Started
 

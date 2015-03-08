@@ -50,6 +50,45 @@
 
   .section.howItWorks {
     background: url('../images/views/home/how_it_works_bg.jpg') no-repeat scroll center center;
+    color: $secondTextColor;
+
+    h1 {
+      color: $pageColor;
+    }
+
+    .items {
+      display: inline-block;
+      text-align: left;
+
+      li {
+        > .bullet {
+          width: 91px;
+          height: 91px;
+          float: left;
+          background: url('../images/diamond.png') no-repeat scroll left center;
+          text-align: center;
+          line-height: 91px;
+
+          color: $pageColor;
+          font-size: 219%;
+          font-weight: bold;
+          font-family: $headerFont;
+        }
+
+        > .content {
+          padding-top: 34px;
+          margin-left: 134px;
+        }
+
+        .title {
+          color: $pageColor;
+        }
+      }
+
+
+
+
+    }
   }
 
   .section.pricing {
@@ -61,6 +100,10 @@
     .items {
       padding-bottom: 2em;
       font-size: 93%;
+
+      li {
+        vertical-align: bottom;
+      }
 
       .description * {
         vertical-align: middle;
@@ -84,7 +127,13 @@
 
       vertical-align: middle;
 
-      list-style-image: url('../images/checkmark.png');
+      list-style: none;
+
+      li {
+        padding-left: 20px;
+
+        background: url('../images/checkmark.png') no-repeat scroll left center;
+      }
     }
   }
 
@@ -106,6 +155,15 @@
         &:first-child {
           margin-top: 0;
         }
+
+        > .author {
+          float: left;
+          width: 105px;
+          height: 105px;
+        }
+
+        > .content {
+        }
       }
 
       .quote {
@@ -125,10 +183,127 @@
   }
 
   .section.getStarted {
-    padding-bottom: 2em;
 
-    .button {
-      padding: 2em 5em;
+    .description {
+      padding-bottom: 2em;
+
+      .button {
+        padding: 2em 5em;
+      }
+    }
+  }
+
+
+
+
+
+
+  @media #{$medium-up} {
+    .section.pricing {
+      padding-bottom: 4em;
+
+      .headerWrapper {
+        margin-top: 4em;
+      }
+
+      .items {
+        margin-top: 3em;
+        @include block-grid(3);
+
+        li {
+          display: inline-block;
+          margin-left: -4px;
+          vertical-align: bottom;
+          float: none;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .benefitsWrapper {
+        margin-top: 4em;
+      }
+
+      .benefits {
+
+        li {
+          display: inline-block;
+          margin-left: 2em;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .section.howItWorks {
+      .headerWrapper {
+        margin-top: 4em;
+      }
+    }
+
+    .section.testimonials {
+
+      .headerWrapper {
+        margin-top: 5em;
+      }
+
+      .quotes {
+        @include block-grid(3);
+
+        li {
+          text-align: left;
+          display: inline-block;
+          float: none;
+          margin-left: -4px;
+          vertical-align: middle;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          > .content {
+            margin-left: 120px;
+          }
+        }
+      }
+    }
+
+    .section.qualityProof {
+
+      .tilesContainer {
+        position: relative;
+
+        .tile1, .tile2 {
+          position: absolute;
+          top: 0;
+          height: 100%;
+        }
+
+        .tile1 {
+          right: 0;
+        }
+
+        .tile2 {
+          left: 0;
+        }
+      }
+    }
+
+    .section.getStarted {
+      position: relative;
+
+      > .description {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+      }
     }
   }
 }
+
+

@@ -109,7 +109,15 @@ h1 {
   }
 }
 
+@media #{$medium-up} {
+  body {
+    font-size: 16px;
+  }
 
+  h1 {
+    font-size: 138%;
+  }
+}
 
 
 

@@ -105,8 +105,12 @@
         vertical-align: bottom;
       }
 
-      .description * {
-        vertical-align: middle;
+      .description {
+        text-transform: uppercase;
+
+        * {
+          vertical-align: middle;
+        }
       }
 
       .price {
@@ -138,6 +142,10 @@
   }
 
   .section.qualityProof {
+    h1 {
+      font-size: 171%;
+    }
+
     .textBlock {
       padding-bottom: 2em;
     }
@@ -184,6 +192,10 @@
 
   .section.getStarted {
 
+    h1 {
+      font-size: 171%;
+    }
+
     .description {
       padding-bottom: 2em;
 
@@ -199,6 +211,35 @@
 
 
   @media #{$medium-up} {
+
+    .section {
+
+      .contentContainer-medium {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+        > .contentContainerCell-medium {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .section.intro {
+      .subTitle {
+        font-size: 94%;
+      }
+
+      h1 {
+        font-size: 250%;
+      }
+
+      .actionButtons {
+        font-size: 69%;
+      }
+    }
+
     .section.pricing {
       padding-bottom: 4em;
 
@@ -245,6 +286,30 @@
       }
     }
 
+    .section.qualityProof {
+      h1 {
+        font-size: 175%;
+      }
+
+      .tilesContainer {
+        position: relative;
+
+        .tile1, .tile2 {
+          position: absolute;
+          top: 0;
+          height: 100%;
+        }
+
+        .tile1 {
+          right: 0;
+        }
+
+        .tile2 {
+          left: 0;
+        }
+      }
+    }
+
     .section.testimonials {
 
       .headerWrapper {
@@ -269,32 +334,24 @@
             margin-left: 120px;
           }
         }
-      }
-    }
 
-    .section.qualityProof {
-
-      .tilesContainer {
-        position: relative;
-
-        .tile1, .tile2 {
-          position: absolute;
-          top: 0;
-          height: 100%;
+        .quote {
+          font-size: 123%;
         }
 
-        .tile1 {
-          right: 0;
-        }
-
-        .tile2 {
-          left: 0;
+        .author {
+          font-size: 94%;
         }
       }
     }
 
     .section.getStarted {
       position: relative;
+
+      h1 {
+        font-size: 425%;
+        margin-top: 0.2em;
+      }
 
       > .description {
         position: absolute;

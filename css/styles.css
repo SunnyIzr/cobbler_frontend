@@ -9223,7 +9223,7 @@ h1 {
 .headerWrapper .stroke {
   margin: 0 11%;
   height: 4px;
-  background: #0047ad;
+  background: #6481ab;
 }
 /* line 51, ../scss/_general.scss */
 .headerWrapper .header {
@@ -9232,7 +9232,7 @@ h1 {
 
 /* line 56, ../scss/_general.scss */
 .contentPanel {
-  background-color: #eff2f6;
+  background-color: #c8cdd2;
 }
 
 /* line 60, ../scss/_general.scss */
@@ -9424,6 +9424,10 @@ h1 {
   font-weight: bold;
 }
 /* line 123, ../scss/_views.home.scss */
+.homepage .section.pricing .benefitsWrapper {
+  background: #eff2f6;
+}
+/* line 127, ../scss/_views.home.scss */
 .homepage .section.pricing .benefits {
   font-size: 86%;
   text-align: left;
@@ -9436,106 +9440,106 @@ h1 {
   vertical-align: middle;
   list-style: none;
 }
-/* line 137, ../scss/_views.home.scss */
+/* line 141, ../scss/_views.home.scss */
 .homepage .section.pricing .benefits li {
   padding-left: 20px;
   background: url("../images/checkmark.png") no-repeat scroll left center;
 }
-/* line 146, ../scss/_views.home.scss */
+/* line 150, ../scss/_views.home.scss */
 .homepage .section.qualityProof h1 {
   font-size: 171%;
 }
-/* line 150, ../scss/_views.home.scss */
+/* line 154, ../scss/_views.home.scss */
 .homepage .section.qualityProof .tilesContainer img {
   width: 100%;
 }
-/* line 154, ../scss/_views.home.scss */
+/* line 158, ../scss/_views.home.scss */
 .homepage .section.qualityProof .textBlock {
   padding-bottom: 2em;
 }
-/* line 159, ../scss/_views.home.scss */
+/* line 163, ../scss/_views.home.scss */
 .homepage .section.testimonials {
   font-family: "FuturaPT";
   padding-bottom: 4em;
 }
-/* line 164, ../scss/_views.home.scss */
+/* line 168, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li {
   margin-top: 1.5em;
 }
-/* line 167, ../scss/_views.home.scss */
+/* line 171, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li:first-child {
   margin-top: 0;
 }
-/* line 171, ../scss/_views.home.scss */
+/* line 175, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li > .author {
   float: left;
   width: 105px;
   height: 105px;
 }
-/* line 181, ../scss/_views.home.scss */
+/* line 185, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .quote {
   font-size: 114%;
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 187, ../scss/_views.home.scss */
+/* line 191, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .author {
   font-weight: bold;
   font-size: 107%;
   text-transform: uppercase;
   margin-top: 0.5em;
 }
-/* line 199, ../scss/_views.home.scss */
+/* line 203, ../scss/_views.home.scss */
 .homepage .section.getStarted h1 {
   font-size: 171%;
 }
-/* line 203, ../scss/_views.home.scss */
+/* line 207, ../scss/_views.home.scss */
 .homepage .section.getStarted .illustration img {
   width: 100%;
 }
-/* line 207, ../scss/_views.home.scss */
+/* line 211, ../scss/_views.home.scss */
 .homepage .section.getStarted .description {
   padding-bottom: 2em;
 }
-/* line 210, ../scss/_views.home.scss */
+/* line 214, ../scss/_views.home.scss */
 .homepage .section.getStarted .description .button {
   padding: 2em 5em;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 222, ../scss/_views.home.scss */
+  /* line 226, ../scss/_views.home.scss */
   .homepage .section .contentContainer-large {
     display: table;
     width: 100%;
     height: 100%;
   }
-  /* line 227, ../scss/_views.home.scss */
+  /* line 231, ../scss/_views.home.scss */
   .homepage .section .contentContainer-large > .contentContainerCell-large {
     display: table-cell;
     vertical-align: middle;
   }
-  /* line 237, ../scss/_views.home.scss */
+  /* line 241, ../scss/_views.home.scss */
   .homepage .section.intro .subTitle {
     font-size: 94%;
   }
-  /* line 241, ../scss/_views.home.scss */
+  /* line 245, ../scss/_views.home.scss */
   .homepage .section.intro h1 {
     font-size: 250%;
   }
-  /* line 245, ../scss/_views.home.scss */
+  /* line 249, ../scss/_views.home.scss */
   .homepage .section.intro .actionButtons {
     font-size: 69%;
     margin-top: 3em;
     max-width: 460px;
   }
-  /* line 252, ../scss/_views.home.scss */
+  /* line 256, ../scss/_views.home.scss */
   .homepage .section.pricing {
     padding-bottom: 4em;
   }
-  /* line 255, ../scss/_views.home.scss */
+  /* line 259, ../scss/_views.home.scss */
   .homepage .section.pricing .headerWrapper {
     margin-top: 4em;
   }
-  /* line 259, ../scss/_views.home.scss */
+  /* line 263, ../scss/_views.home.scss */
   .homepage .section.pricing .items {
     margin-top: 3em;
     display: block;
@@ -9572,67 +9576,67 @@ h1 {
   .homepage .section.pricing .items > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 263, ../scss/_views.home.scss */
+  /* line 267, ../scss/_views.home.scss */
   .homepage .section.pricing .items li {
     display: inline-block;
     margin-left: -4px;
     vertical-align: bottom;
     float: none;
   }
-  /* line 269, ../scss/_views.home.scss */
+  /* line 273, ../scss/_views.home.scss */
   .homepage .section.pricing .items li:first-child {
     margin-left: 0;
   }
-  /* line 275, ../scss/_views.home.scss */
+  /* line 279, ../scss/_views.home.scss */
   .homepage .section.pricing .benefitsWrapper {
     margin-top: 4em;
   }
-  /* line 281, ../scss/_views.home.scss */
+  /* line 285, ../scss/_views.home.scss */
   .homepage .section.pricing .benefits li {
     display: inline-block;
     margin-left: 2em;
   }
-  /* line 285, ../scss/_views.home.scss */
+  /* line 289, ../scss/_views.home.scss */
   .homepage .section.pricing .benefits li:first-child {
     margin-left: 0;
   }
-  /* line 293, ../scss/_views.home.scss */
+  /* line 297, ../scss/_views.home.scss */
   .homepage .section.howItWorks .headerWrapper {
     margin-top: 4em;
     margin-bottom: 3em;
   }
-  /* line 302, ../scss/_views.home.scss */
+  /* line 306, ../scss/_views.home.scss */
   .homepage .section.qualityProof h1 {
     font-size: 175%;
   }
-  /* line 306, ../scss/_views.home.scss */
+  /* line 310, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer {
     position: relative;
   }
-  /* line 309, ../scss/_views.home.scss */
+  /* line 313, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1, .homepage .section.qualityProof .tilesContainer .tile2 {
     position: absolute;
     top: 0;
     height: 100%;
   }
-  /* line 315, ../scss/_views.home.scss */
+  /* line 319, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1 {
     right: 0;
   }
-  /* line 319, ../scss/_views.home.scss */
+  /* line 323, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile2 {
     left: 0;
   }
-  /* line 325, ../scss/_views.home.scss */
+  /* line 329, ../scss/_views.home.scss */
   .homepage .section.testimonials {
     padding-bottom: 8em;
   }
-  /* line 328, ../scss/_views.home.scss */
+  /* line 332, ../scss/_views.home.scss */
   .homepage .section.testimonials .headerWrapper {
     margin-top: 5em;
     margin-bottom: 4em;
   }
-  /* line 333, ../scss/_views.home.scss */
+  /* line 337, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes {
     display: block;
     padding: 0;
@@ -9668,7 +9672,7 @@ h1 {
   .homepage .section.testimonials .quotes > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 336, ../scss/_views.home.scss */
+  /* line 340, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li {
     text-align: left;
     display: inline-block;
@@ -9677,32 +9681,32 @@ h1 {
     vertical-align: middle;
     margin-top: 0;
   }
-  /* line 344, ../scss/_views.home.scss */
+  /* line 348, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li:first-child {
     margin-left: 0;
   }
-  /* line 348, ../scss/_views.home.scss */
+  /* line 352, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li > .content {
     margin-left: 120px;
   }
-  /* line 353, ../scss/_views.home.scss */
+  /* line 357, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .quote {
     font-size: 123%;
   }
-  /* line 357, ../scss/_views.home.scss */
+  /* line 361, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .author {
     font-size: 94%;
   }
-  /* line 363, ../scss/_views.home.scss */
+  /* line 367, ../scss/_views.home.scss */
   .homepage .section.getStarted {
     position: relative;
   }
-  /* line 366, ../scss/_views.home.scss */
+  /* line 370, ../scss/_views.home.scss */
   .homepage .section.getStarted h1 {
     font-size: 425%;
     margin-top: 0.2em;
   }
-  /* line 371, ../scss/_views.home.scss */
+  /* line 375, ../scss/_views.home.scss */
   .homepage .section.getStarted > .description {
     position: absolute;
     height: 100%;

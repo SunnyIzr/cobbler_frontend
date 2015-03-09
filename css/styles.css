@@ -9254,8 +9254,12 @@ h1 {
   background: #ffffff;
   margin: 0 auto;
 }
+/* line 80, ../scss/_general.scss */
+#page > .row {
+  max-width: 100%;
+}
 
-/* line 82, ../scss/_general.scss */
+/* line 86, ../scss/_general.scss */
 #footer {
   background: #000000;
   color: #989797;
@@ -9263,37 +9267,44 @@ h1 {
   text-align: center;
   padding: 1em 0 2em;
 }
-/* line 89, ../scss/_general.scss */
+/* line 93, ../scss/_general.scss */
 #footer .logos {
   margin-top: 2.5em;
+  width: 100%;
 }
-/* line 92, ../scss/_general.scss */
+/* line 97, ../scss/_general.scss */
 #footer .logos li {
   padding-bottom: 0;
 }
-/* line 95, ../scss/_general.scss */
+/* line 100, ../scss/_general.scss */
 #footer .logos li:nth-of-type(2n+1) {
   text-align: right;
 }
-/* line 99, ../scss/_general.scss */
+/* line 104, ../scss/_general.scss */
 #footer .logos li:nth-of-type(2n) {
   text-align: left;
 }
-/* line 103, ../scss/_general.scss */
+/* line 108, ../scss/_general.scss */
 #footer .logos li:last-child {
   width: 100%;
   text-align: center;
 }
 
-@media only screen and (min-width: 40.063em) {
-  /* line 113, ../scss/_general.scss */
+@media only screen and (min-width: 64.063em) {
+  /* line 118, ../scss/_general.scss */
   body {
     font-size: 16px;
   }
 
-  /* line 117, ../scss/_general.scss */
+  /* line 122, ../scss/_general.scss */
   h1 {
     font-size: 138%;
+  }
+
+  /* line 127, ../scss/_general.scss */
+  #header .logo {
+    width: auto;
+    height: auto;
   }
 }
 /* line 3, ../scss/_views.home.scss */
@@ -9318,7 +9329,7 @@ h1 {
 }
 /* line 23, ../scss/_views.home.scss */
 .homepage .section.intro {
-  background: url("../images/views/home/intro_bg.jpg") no-repeat scroll 14% center;
+  background: url("../images/views/home/intro_bg.jpg") no-repeat scroll 14% top;
   background-size: cover;
   height: 480px;
   font-family: "FuturaPT";
@@ -9345,19 +9356,26 @@ h1 {
 }
 /* line 51, ../scss/_views.home.scss */
 .homepage .section.howItWorks {
-  background: url("../images/views/home/how_it_works_bg.jpg") no-repeat scroll center center;
+  background: url("../images/views/home/how_it_works_bg.jpg") no-repeat scroll 85% center;
+  background-size: cover;
   color: #909090;
+  padding-bottom: 7em;
 }
-/* line 55, ../scss/_views.home.scss */
+/* line 57, ../scss/_views.home.scss */
 .homepage .section.howItWorks h1 {
   color: #ffffff;
 }
-/* line 59, ../scss/_views.home.scss */
+/* line 61, ../scss/_views.home.scss */
 .homepage .section.howItWorks .items {
   display: inline-block;
   text-align: left;
+  max-width: 920px;
 }
-/* line 64, ../scss/_views.home.scss */
+/* line 66, ../scss/_views.home.scss */
+.homepage .section.howItWorks .items li {
+  margin-bottom: 2em;
+}
+/* line 69, ../scss/_views.home.scss */
 .homepage .section.howItWorks .items li > .bullet {
   width: 91px;
   height: 91px;
@@ -9370,42 +9388,42 @@ h1 {
   font-weight: bold;
   font-family: "FuturaPT";
 }
-/* line 78, ../scss/_views.home.scss */
+/* line 83, ../scss/_views.home.scss */
 .homepage .section.howItWorks .items li > .content {
   padding-top: 34px;
   margin-left: 134px;
 }
-/* line 83, ../scss/_views.home.scss */
+/* line 88, ../scss/_views.home.scss */
 .homepage .section.howItWorks .items li .title {
   color: #ffffff;
 }
-/* line 96, ../scss/_views.home.scss */
+/* line 97, ../scss/_views.home.scss */
 .homepage .section.pricing .items, .homepage .section.pricing .benefits {
   font-family: "FuturaPT";
 }
-/* line 100, ../scss/_views.home.scss */
+/* line 101, ../scss/_views.home.scss */
 .homepage .section.pricing .items {
   padding-bottom: 2em;
   font-size: 93%;
 }
-/* line 104, ../scss/_views.home.scss */
+/* line 105, ../scss/_views.home.scss */
 .homepage .section.pricing .items li {
   vertical-align: bottom;
 }
-/* line 108, ../scss/_views.home.scss */
+/* line 109, ../scss/_views.home.scss */
 .homepage .section.pricing .items .description {
   text-transform: uppercase;
 }
-/* line 111, ../scss/_views.home.scss */
+/* line 112, ../scss/_views.home.scss */
 .homepage .section.pricing .items .description * {
   vertical-align: middle;
 }
-/* line 116, ../scss/_views.home.scss */
+/* line 117, ../scss/_views.home.scss */
 .homepage .section.pricing .items .price {
   font-size: 231%;
   font-weight: bold;
 }
-/* line 122, ../scss/_views.home.scss */
+/* line 123, ../scss/_views.home.scss */
 .homepage .section.pricing .benefits {
   font-size: 86%;
   text-align: left;
@@ -9418,96 +9436,110 @@ h1 {
   vertical-align: middle;
   list-style: none;
 }
-/* line 136, ../scss/_views.home.scss */
+/* line 137, ../scss/_views.home.scss */
 .homepage .section.pricing .benefits li {
   padding-left: 20px;
   background: url("../images/checkmark.png") no-repeat scroll left center;
 }
-/* line 145, ../scss/_views.home.scss */
+/* line 146, ../scss/_views.home.scss */
 .homepage .section.qualityProof h1 {
   font-size: 171%;
 }
-/* line 149, ../scss/_views.home.scss */
+/* line 150, ../scss/_views.home.scss */
+.homepage .section.qualityProof .tilesContainer img {
+  width: 100%;
+}
+/* line 154, ../scss/_views.home.scss */
 .homepage .section.qualityProof .textBlock {
   padding-bottom: 2em;
 }
-/* line 154, ../scss/_views.home.scss */
+/* line 159, ../scss/_views.home.scss */
 .homepage .section.testimonials {
   font-family: "FuturaPT";
   padding-bottom: 4em;
 }
-/* line 160, ../scss/_views.home.scss */
+/* line 164, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li {
   margin-top: 1.5em;
 }
-/* line 163, ../scss/_views.home.scss */
+/* line 167, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li:first-child {
   margin-top: 0;
 }
-/* line 167, ../scss/_views.home.scss */
+/* line 171, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li > .author {
   float: left;
   width: 105px;
   height: 105px;
 }
-/* line 177, ../scss/_views.home.scss */
+/* line 181, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .quote {
   font-size: 114%;
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 183, ../scss/_views.home.scss */
+/* line 187, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .author {
   font-weight: bold;
   font-size: 107%;
   text-transform: uppercase;
   margin-top: 0.5em;
 }
-/* line 195, ../scss/_views.home.scss */
+/* line 199, ../scss/_views.home.scss */
 .homepage .section.getStarted h1 {
   font-size: 171%;
 }
-/* line 199, ../scss/_views.home.scss */
+/* line 203, ../scss/_views.home.scss */
+.homepage .section.getStarted .illustration img {
+  width: 100%;
+}
+/* line 207, ../scss/_views.home.scss */
 .homepage .section.getStarted .description {
   padding-bottom: 2em;
 }
-/* line 202, ../scss/_views.home.scss */
+/* line 210, ../scss/_views.home.scss */
 .homepage .section.getStarted .description .button {
   padding: 2em 5em;
 }
-@media only screen and (min-width: 40.063em) {
-  /* line 217, ../scss/_views.home.scss */
-  .homepage .section .contentContainer-medium {
+@media only screen and (min-width: 64.063em) {
+  /* line 222, ../scss/_views.home.scss */
+  .homepage .section .contentContainer-large {
     display: table;
     width: 100%;
     height: 100%;
   }
-  /* line 222, ../scss/_views.home.scss */
-  .homepage .section .contentContainer-medium > .contentContainerCell-medium {
+  /* line 227, ../scss/_views.home.scss */
+  .homepage .section .contentContainer-large > .contentContainerCell-large {
     display: table-cell;
     vertical-align: middle;
   }
-  /* line 230, ../scss/_views.home.scss */
+  /* line 234, ../scss/_views.home.scss */
+  .homepage .section.intro {
+    height: 890px;
+  }
+  /* line 237, ../scss/_views.home.scss */
   .homepage .section.intro .subTitle {
     font-size: 94%;
   }
-  /* line 234, ../scss/_views.home.scss */
+  /* line 241, ../scss/_views.home.scss */
   .homepage .section.intro h1 {
     font-size: 250%;
   }
-  /* line 238, ../scss/_views.home.scss */
+  /* line 245, ../scss/_views.home.scss */
   .homepage .section.intro .actionButtons {
     font-size: 69%;
+    margin-top: 3em;
+    max-width: 460px;
   }
-  /* line 243, ../scss/_views.home.scss */
+  /* line 252, ../scss/_views.home.scss */
   .homepage .section.pricing {
     padding-bottom: 4em;
   }
-  /* line 246, ../scss/_views.home.scss */
+  /* line 255, ../scss/_views.home.scss */
   .homepage .section.pricing .headerWrapper {
     margin-top: 4em;
   }
-  /* line 250, ../scss/_views.home.scss */
+  /* line 259, ../scss/_views.home.scss */
   .homepage .section.pricing .items {
     margin-top: 3em;
     display: block;
@@ -9544,61 +9576,67 @@ h1 {
   .homepage .section.pricing .items > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 254, ../scss/_views.home.scss */
+  /* line 263, ../scss/_views.home.scss */
   .homepage .section.pricing .items li {
     display: inline-block;
     margin-left: -4px;
     vertical-align: bottom;
     float: none;
   }
-  /* line 260, ../scss/_views.home.scss */
+  /* line 269, ../scss/_views.home.scss */
   .homepage .section.pricing .items li:first-child {
     margin-left: 0;
   }
-  /* line 266, ../scss/_views.home.scss */
+  /* line 275, ../scss/_views.home.scss */
   .homepage .section.pricing .benefitsWrapper {
     margin-top: 4em;
   }
-  /* line 272, ../scss/_views.home.scss */
+  /* line 281, ../scss/_views.home.scss */
   .homepage .section.pricing .benefits li {
     display: inline-block;
     margin-left: 2em;
   }
-  /* line 276, ../scss/_views.home.scss */
+  /* line 285, ../scss/_views.home.scss */
   .homepage .section.pricing .benefits li:first-child {
     margin-left: 0;
   }
-  /* line 284, ../scss/_views.home.scss */
+  /* line 293, ../scss/_views.home.scss */
   .homepage .section.howItWorks .headerWrapper {
     margin-top: 4em;
+    margin-bottom: 3em;
   }
-  /* line 290, ../scss/_views.home.scss */
+  /* line 302, ../scss/_views.home.scss */
   .homepage .section.qualityProof h1 {
     font-size: 175%;
   }
-  /* line 294, ../scss/_views.home.scss */
+  /* line 306, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer {
     position: relative;
   }
-  /* line 297, ../scss/_views.home.scss */
+  /* line 309, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1, .homepage .section.qualityProof .tilesContainer .tile2 {
     position: absolute;
     top: 0;
     height: 100%;
   }
-  /* line 303, ../scss/_views.home.scss */
+  /* line 315, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1 {
     right: 0;
   }
-  /* line 307, ../scss/_views.home.scss */
+  /* line 319, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile2 {
     left: 0;
   }
-  /* line 315, ../scss/_views.home.scss */
+  /* line 325, ../scss/_views.home.scss */
+  .homepage .section.testimonials {
+    padding-bottom: 8em;
+  }
+  /* line 328, ../scss/_views.home.scss */
   .homepage .section.testimonials .headerWrapper {
     margin-top: 5em;
+    margin-bottom: 4em;
   }
-  /* line 319, ../scss/_views.home.scss */
+  /* line 333, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes {
     display: block;
     padding: 0;
@@ -9634,40 +9672,41 @@ h1 {
   .homepage .section.testimonials .quotes > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 322, ../scss/_views.home.scss */
+  /* line 336, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li {
     text-align: left;
     display: inline-block;
     float: none;
     margin-left: -4px;
     vertical-align: middle;
+    margin-top: 0;
   }
-  /* line 329, ../scss/_views.home.scss */
+  /* line 344, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li:first-child {
     margin-left: 0;
   }
-  /* line 333, ../scss/_views.home.scss */
+  /* line 348, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li > .content {
     margin-left: 120px;
   }
-  /* line 338, ../scss/_views.home.scss */
+  /* line 353, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .quote {
     font-size: 123%;
   }
-  /* line 342, ../scss/_views.home.scss */
+  /* line 357, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .author {
     font-size: 94%;
   }
-  /* line 348, ../scss/_views.home.scss */
+  /* line 363, ../scss/_views.home.scss */
   .homepage .section.getStarted {
     position: relative;
   }
-  /* line 351, ../scss/_views.home.scss */
+  /* line 366, ../scss/_views.home.scss */
   .homepage .section.getStarted h1 {
     font-size: 425%;
     margin-top: 0.2em;
   }
-  /* line 356, ../scss/_views.home.scss */
+  /* line 371, ../scss/_views.home.scss */
   .homepage .section.getStarted > .description {
     position: absolute;
     height: 100%;

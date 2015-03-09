@@ -7,17 +7,18 @@ include _layout.jade
                     .subTitle Luxury Shoe Repair
                     h1 Delivered Directly To Your Door
                     .row
-                        .actionButtons.columns.small-8.small-centered.medium-6
+                        .actionButtons.columns.small-8.small-centered.large-6
                             .row.collapse
-                                .columns.medium-6
+                                .columns.large-6
                                     a.button.optionButton(href='#') Watch The Video
-                                .columns.medium-6
+                                .columns.large-6
                                     a.button.optionButton(href='#') Get Started
     .row.section.pricing
         .columns.small-12
-            .headerWrapper
-                .stroke
-                h1.header Simple Pricing
+            div
+                .headerWrapper
+                    .stroke
+                    h1.header Simple Pricing
 
             ul.items.semanticList
                 li
@@ -44,11 +45,12 @@ include _layout.jade
                         li All Repairs Included
                         li Free Shipping
                         li Money-Back Guarantee
-    .row.section.howItWorks.hidden-for-small
+    .row.section.howItWorks.hidden-for-medium-down
         .columns.small-12
-            .headerWrapper
-                .stroke
-                h1.header  How It Works
+            div
+                .headerWrapper
+                    .stroke
+                    h1.header  How It Works
 
             ul.semanticList.items
                 li
@@ -75,12 +77,12 @@ include _layout.jade
     .row.section.qualityProof
         .columns.small-12
             .row.tilesContainer
-                .columns.small-12.medium-6
+                .columns.small-12.large-6
                     .row
                         img(src="/images/views/home/quality_proof_tile_1.jpg")
-                .columns.small-12.medium-6.textBlock.tile1
-                    .contentContainer-medium
-                        .contentContainerCell-medium
+                .columns.small-12.large-6.textBlock.tile1
+                    .contentContainer-large
+                        .contentContainerCell-large
                             .headerWrapper
                                 .stroke
                                 h1.header  Four Generations Of The World's Best Cobblers
@@ -88,12 +90,12 @@ include _layout.jade
                             p.
                                 In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
             .row.tilesContainer
-                .columns.small-12.medium-6.medium-push-6
+                .columns.small-12.large-6.large-push-6
                     .row
                         img(src="/images/views/home/quality_proof_tile_2.jpg")
-                .columns.small-12.medium-6.medium-pull-6.textBlock.tile2
-                    .contentContainer-medium
-                        .contentContainerCell-medium
+                .columns.small-12.large-6.large-pull-6.textBlock.tile2
+                    .contentContainer-large
+                        .contentContainerCell-large
                             .headerWrapper
                                 .stroke
                                 h1.header  Before & After
@@ -108,31 +110,31 @@ include _layout.jade
 
             ul.quotes.semanticList
                 li
-                    .author.hidden-for-small
+                    .author.hidden-for-medium-down
                         img(src="/images/views/home/testimonials_christina_h.png")
                     .content
                         .quote I wouldn't repair my  shoes with anyone else
                         .author Christina H
                 li
-                    .author.hidden-for-small
+                    .author.hidden-for-medium-down
                         img(src="/images/views/home/testimonials_john_s.png")
                     .content
                         .quote Amazing Quality And Fast Turnaround
                         .author John S
                 li
-                    .author.hidden-for-small
+                    .author.hidden-for-medium-down
                         img(src="/images/views/home/testimonials_catha_m.png")
                     .content
                         .quote Excellent Customer Service
                         .author Catha M
 
     .row.section.getStarted
-        .columns.small-12.medium-4
+        .columns.small-12.large-4.illustration
             .row
                 img(src="/images/views/home/get_started.jpg")
-        .columns.small-12.medium-8.description
-            .contentContainer-medium
-                .contentContainerCell-medium
+        .columns.small-12.large-8.description
+            .contentContainer-large
+                .contentContainerCell-large
                     .headerWrapper
                         .stroke
                         h1.header  Get Started

@@ -76,6 +76,10 @@ h1 {
 
   //width: 320px;
   margin: 0 auto;
+
+  > .row {
+    max-width: 100%;
+  }
 }
 
 
@@ -88,6 +92,7 @@ h1 {
 
   .logos {
     margin-top: 2.5em;
+    width: 100%;
 
     li {
       padding-bottom: 0;
@@ -109,13 +114,20 @@ h1 {
   }
 }
 
-@media #{$medium-up} {
+@media #{$large-up} {
   body {
     font-size: 16px;
   }
 
   h1 {
     font-size: 138%;
+  }
+
+  #header {
+    .logo {
+      width: auto;
+      height: auto;
+    }
   }
 }
 

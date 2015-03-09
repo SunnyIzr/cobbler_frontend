@@ -21,7 +21,7 @@
   }
 
   .section.intro {
-    background: url('../images/views/home/intro_bg.jpg') no-repeat scroll 14% center;
+    background: url('../images/views/home/intro_bg.jpg') no-repeat scroll 14% top;
     background-size: cover;
     height: 480px;
     font-family: $headerFont;
@@ -49,8 +49,10 @@
   }
 
   .section.howItWorks {
-    background: url('../images/views/home/how_it_works_bg.jpg') no-repeat scroll center center;
+    background: url('../images/views/home/how_it_works_bg.jpg') no-repeat scroll 85% center;
+    background-size: cover;
     color: $secondTextColor;
+    padding-bottom: 7em;
 
     h1 {
       color: $pageColor;
@@ -59,8 +61,11 @@
     .items {
       display: inline-block;
       text-align: left;
+      max-width: 920px;
 
       li {
+        margin-bottom: 2em;
+
         > .bullet {
           width: 91px;
           height: 91px;
@@ -84,10 +89,6 @@
           color: $pageColor;
         }
       }
-
-
-
-
     }
   }
 
@@ -146,6 +147,10 @@
       font-size: 171%;
     }
 
+    .tilesContainer img {
+      width: 100%;
+    }
+
     .textBlock {
       padding-bottom: 2em;
     }
@@ -154,7 +159,6 @@
   .section.testimonials {
     font-family: $headerFont;
     padding-bottom: 4em;
-
 
     .quotes {
       li {
@@ -196,6 +200,10 @@
       font-size: 171%;
     }
 
+    .illustration img {
+      width: 100%;
+    }
+
     .description {
       padding-bottom: 2em;
 
@@ -207,19 +215,16 @@
 
 
 
-
-
-
-  @media #{$medium-up} {
+  @media #{$large-up} {
 
     .section {
 
-      .contentContainer-medium {
+      .contentContainer-large {
         display: table;
         width: 100%;
         height: 100%;
 
-        > .contentContainerCell-medium {
+        > .contentContainerCell-large {
           display: table-cell;
           vertical-align: middle;
         }
@@ -227,6 +232,8 @@
     }
 
     .section.intro {
+      height: 890px;
+
       .subTitle {
         font-size: 94%;
       }
@@ -237,6 +244,8 @@
 
       .actionButtons {
         font-size: 69%;
+        margin-top: 3em;
+        max-width: 460px;
       }
     }
 
@@ -283,7 +292,10 @@
     .section.howItWorks {
       .headerWrapper {
         margin-top: 4em;
+        margin-bottom: 3em;
       }
+
+
     }
 
     .section.qualityProof {
@@ -311,9 +323,11 @@
     }
 
     .section.testimonials {
+      padding-bottom: 8em;
 
       .headerWrapper {
         margin-top: 5em;
+        margin-bottom: 4em;
       }
 
       .quotes {
@@ -325,6 +339,7 @@
           float: none;
           margin-left: -4px;
           vertical-align: middle;
+          margin-top: 0;
 
           &:first-child {
             margin-left: 0;

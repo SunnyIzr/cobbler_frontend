@@ -9513,10 +9513,6 @@ h1 {
     display: table-cell;
     vertical-align: middle;
   }
-  /* line 234, ../scss/_views.home.scss */
-  .homepage .section.intro {
-    height: 890px;
-  }
   /* line 237, ../scss/_views.home.scss */
   .homepage .section.intro .subTitle {
     font-size: 94%;

@@ -9260,51 +9260,133 @@ p {
   color: #989797;
   text-transform: uppercase;
   text-align: center;
-  padding: 1em 0 2em;
+  padding: 2em 0 2em;
+  font-family: "futura-pt";
 }
-/* line 99, ../scss/_general.scss */
-#footer .logos {
-  margin-top: 2.5em;
-  width: 100%;
-}
-/* line 103, ../scss/_general.scss */
-#footer .logos li {
-  padding-bottom: 0;
-}
-/* line 106, ../scss/_general.scss */
-#footer .logos li:nth-of-type(2n+1) {
-  text-align: right;
-}
-/* line 110, ../scss/_general.scss */
-#footer .logos li:nth-of-type(2n) {
+/* line 100, ../scss/_general.scss */
+#footer .logo {
+  font-weight: 700;
   text-align: left;
 }
-/* line 114, ../scss/_general.scss */
-#footer .logos li:last-child {
-  width: 100%;
-  text-align: center;
+/* line 105, ../scss/_general.scss */
+#footer .logosWrapper {
+  font-size: 93%;
+}
+/* line 109, ../scss/_general.scss */
+#footer .bottomMenu {
+  text-align: right;
+}
+/* line 112, ../scss/_general.scss */
+#footer .bottomMenu li {
+  display: inline-block;
+  margin-left: 3em;
+  font-size: 81%;
+}
+/* line 117, ../scss/_general.scss */
+#footer .bottomMenu li:first-child {
+  margin-left: 0;
+}
+/* line 121, ../scss/_general.scss */
+#footer .bottomMenu li a {
+  color: inherit;
 }
 
+@media only screen and (max-width: 64em) {
+  /* line 130, ../scss/_general.scss */
+  #footer .logos {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    margin-top: 2.5em;
+    width: 100%;
+  }
+  /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
+  #footer .logos:before, #footer .logos:after {
+    content: " ";
+    display: table;
+  }
+  /* line 173, ../bower/foundation/scss/foundation/components/_global.scss */
+  #footer .logos:after {
+    clear: both;
+  }
+  /* line 51, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  #footer .logos > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+  /* line 62, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  #footer .logos > li {
+    width: 50%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+  /* line 69, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  #footer .logos > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 70, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  #footer .logos > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+  /* line 135, ../scss/_general.scss */
+  #footer .logos li {
+    padding-bottom: 0;
+  }
+  /* line 138, ../scss/_general.scss */
+  #footer .logos li:nth-of-type(2n+1) {
+    text-align: right;
+  }
+  /* line 142, ../scss/_general.scss */
+  #footer .logos li:nth-of-type(2n) {
+    text-align: left;
+  }
+  /* line 146, ../scss/_general.scss */
+  #footer .logos li:last-child {
+    width: 100%;
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 64.063em) {
-  /* line 124, ../scss/_general.scss */
+  /* line 156, ../scss/_general.scss */
   body {
     font-size: 16px;
   }
 
-  /* line 128, ../scss/_general.scss */
+  /* line 160, ../scss/_general.scss */
   h1 {
     font-size: 138%;
   }
 
-  /* line 132, ../scss/_general.scss */
+  /* line 164, ../scss/_general.scss */
   .button {
     font-size: 75%;
   }
 
-  /* line 137, ../scss/_general.scss */
+  /* line 169, ../scss/_general.scss */
   #header .logo {
     width: auto;
     height: auto;
+  }
+
+  /* line 175, ../scss/_general.scss */
+  #footer {
+    padding: 4em 2em 7em;
+    text-align: left;
+  }
+  /* line 180, ../scss/_general.scss */
+  #footer .logosWrapper {
+    margin-top: 1.5em;
+    font-size: 81%;
+  }
+  /* line 184, ../scss/_general.scss */
+  #footer .logosWrapper .logos {
+    margin-left: -3px;
+  }
+  /* line 187, ../scss/_general.scss */
+  #footer .logosWrapper .logos li {
+    display: inline-block;
   }
 }
 /* line 3, ../scss/_views.home.scss */

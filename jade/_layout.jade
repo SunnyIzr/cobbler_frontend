@@ -30,19 +30,33 @@ mixin document(contentClass)
                         .columns.small-12
                             if block
                                 block
-                    #footer.row
-                        .columns.small-12 As Seen In
-                        ul.small-block-grid-2.logos
-                            li
-                                img(src="/images/views/home/logo_NYC.png")
-                            li
-                                img(src="/images/views/home/logo_esquare.png")
-                            li
-                                img(src="/images/views/home/logo_townAndCountry.png")
-                            li
-                                img(src="/images/views/home/logo_dailyNews.png")
-                            li
-                                img(src="/images/views/home/logo_gq.png")
+                    #footer.row.collapse
+                        .row.hidden-for-medium-down
+                            .columns.small-4.logo
+                                | Cobbler Concierge
+                            .columns.small-8.bottomMenu
+                                ul.semanticList
+                                    li
+                                        a(href='#') About
+                                    li
+                                        a(href='#') Contact
+                                    li
+                                        a(href='#') FAQS
+                                    li
+                                        a(href='#') Privacy & Terms
+                        .row.logosWrapper
+                            .columns.small-12 As Seen In
+                            ul.semanticList.logos
+                                li
+                                    img(src="/images/views/home/logo_NYC.png")
+                                li
+                                    img(src="/images/views/home/logo_esquare.png")
+                                li
+                                    img(src="/images/views/home/logo_townAndCountry.png")
+                                li
+                                    img(src="/images/views/home/logo_dailyNews.png")
+                                li
+                                    img(src="/images/views/home/logo_gq.png")
 
                 // jQuery (necessary for Bootstrap's JavaScript plugins)
                 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')

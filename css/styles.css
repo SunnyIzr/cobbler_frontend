@@ -9157,89 +9157,84 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url("../fonts/proximaNovaRegular/proximanova-reg.eot");
-  src: url("../fonts/proximaNovaRegular/proximanova-reg.eot") format("embedded-opentype"), url("../fonts/proximaNovaRegular/proximanova-reg.woff") format("woff"), url("../fonts/proximaNovaRegular/proximanova-reg.ttf") format("truetype"), url("../fonts/proximaNovaRegular/proximanova-reg.svg#ProximaNovaRegular") format("svg");
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url("../fonts/proximaNovaSemiBold/proximanovaexcn-sbold.eot");
-  src: url("../fonts/proximaNovaSemiBold/proximanovaexcn-sbold.eot") format("embedded-opentype"), url("../fonts/proximaNovaSemiBold/proximanovaexcn-sbold.woff") format("woff"), url("../fonts/proximaNovaSemiBold/proximanovaexcn-sbold.ttf") format("truetype"), url("../fonts/proximaNovaSemiBold/proximanovaexcn-sbold.svg#ProximaNovaRegular") format("svg");
-  font-weight: 500;
-}
 /* line 1, ../scss/_general.scss */
 body {
   color: #000101;
   font-size: 14px;
-  font-family: "ProximaNova";
+  font-family: "proxima-nova";
+  font-weight: 300;
 }
 
-/* line 7, ../scss/_general.scss */
+/* line 8, ../scss/_general.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #242424;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: "futura-pt";
 }
 
-/* line 13, ../scss/_general.scss */
+/* line 15, ../scss/_general.scss */
 h1 {
   font-size: 129%;
 }
 
-/* line 17, ../scss/_general.scss */
+/* line 19, ../scss/_general.scss */
+p {
+  font-weight: inherit;
+}
+
+/* line 23, ../scss/_general.scss */
 .alteredText {
   color: #ffffff;
 }
-/* line 20, ../scss/_general.scss */
+/* line 26, ../scss/_general.scss */
 .alteredText h1, .alteredText h2, .alteredText h3, .alteredText h4, .alteredText h5, .alteredText h6 {
   color: #ffffff;
 }
 
-/* line 25, ../scss/_general.scss */
+/* line 31, ../scss/_general.scss */
 .button {
   font-family: inherit;
   font-size: 86%;
   text-transform: uppercase;
   background-color: #0047ad;
 }
-/* line 32, ../scss/_general.scss */
+/* line 38, ../scss/_general.scss */
 .button:hover {
   background-color: #0047ad;
 }
 
-/* line 37, ../scss/_general.scss */
+/* line 43, ../scss/_general.scss */
 .semanticList {
   list-style: none;
   margin: 0;
 }
 
-/* line 42, ../scss/_general.scss */
+/* line 48, ../scss/_general.scss */
 .headerWrapper {
   display: inline-block;
 }
-/* line 45, ../scss/_general.scss */
+/* line 51, ../scss/_general.scss */
 .headerWrapper .stroke {
   margin: 0 11%;
   height: 4px;
   background: #6481ab;
 }
-/* line 51, ../scss/_general.scss */
+/* line 57, ../scss/_general.scss */
 .headerWrapper .header {
   margin-top: 0.5em;
 }
 
-/* line 56, ../scss/_general.scss */
+/* line 62, ../scss/_general.scss */
 .contentPanel {
   background-color: #c8cdd2;
 }
 
-/* line 60, ../scss/_general.scss */
+/* line 66, ../scss/_general.scss */
 #header {
   position: relative;
 }
-/* line 63, ../scss/_general.scss */
+/* line 69, ../scss/_general.scss */
 #header .logo {
   position: absolute;
   right: 0;
@@ -9249,17 +9244,17 @@ h1 {
   height: 75px;
 }
 
-/* line 74, ../scss/_general.scss */
+/* line 80, ../scss/_general.scss */
 #page {
   background: #ffffff;
   margin: 0 auto;
 }
-/* line 80, ../scss/_general.scss */
+/* line 86, ../scss/_general.scss */
 #page > .row {
   max-width: 100%;
 }
 
-/* line 86, ../scss/_general.scss */
+/* line 92, ../scss/_general.scss */
 #footer {
   background: #000000;
   color: #989797;
@@ -9267,41 +9262,46 @@ h1 {
   text-align: center;
   padding: 1em 0 2em;
 }
-/* line 93, ../scss/_general.scss */
+/* line 99, ../scss/_general.scss */
 #footer .logos {
   margin-top: 2.5em;
   width: 100%;
 }
-/* line 97, ../scss/_general.scss */
+/* line 103, ../scss/_general.scss */
 #footer .logos li {
   padding-bottom: 0;
 }
-/* line 100, ../scss/_general.scss */
+/* line 106, ../scss/_general.scss */
 #footer .logos li:nth-of-type(2n+1) {
   text-align: right;
 }
-/* line 104, ../scss/_general.scss */
+/* line 110, ../scss/_general.scss */
 #footer .logos li:nth-of-type(2n) {
   text-align: left;
 }
-/* line 108, ../scss/_general.scss */
+/* line 114, ../scss/_general.scss */
 #footer .logos li:last-child {
   width: 100%;
   text-align: center;
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 118, ../scss/_general.scss */
+  /* line 124, ../scss/_general.scss */
   body {
     font-size: 16px;
   }
 
-  /* line 122, ../scss/_general.scss */
+  /* line 128, ../scss/_general.scss */
   h1 {
     font-size: 138%;
   }
 
-  /* line 127, ../scss/_general.scss */
+  /* line 132, ../scss/_general.scss */
+  .button {
+    font-size: 75%;
+  }
+
+  /* line 137, ../scss/_general.scss */
   #header .logo {
     width: auto;
     height: auto;
@@ -9332,7 +9332,7 @@ h1 {
   background: url("../images/views/home/intro_bg.jpg") no-repeat scroll 14% top;
   background-size: cover;
   height: 480px;
-  font-family: "FuturaPT";
+  font-family: "futura-pt";
 }
 /* line 29, ../scss/_views.home.scss */
 .homepage .section.intro .subTitle {
@@ -9385,8 +9385,8 @@ h1 {
   line-height: 91px;
   color: #ffffff;
   font-size: 219%;
-  font-weight: bold;
-  font-family: "FuturaPT";
+  font-weight: 700;
+  font-family: "futura-pt";
 }
 /* line 83, ../scss/_views.home.scss */
 .homepage .section.howItWorks .items li > .content {
@@ -9399,7 +9399,7 @@ h1 {
 }
 /* line 97, ../scss/_views.home.scss */
 .homepage .section.pricing .items, .homepage .section.pricing .benefits {
-  font-family: "FuturaPT";
+  font-family: "futura-pt";
 }
 /* line 101, ../scss/_views.home.scss */
 .homepage .section.pricing .items {
@@ -9421,7 +9421,7 @@ h1 {
 /* line 117, ../scss/_views.home.scss */
 .homepage .section.pricing .items .price {
   font-size: 231%;
-  font-weight: bold;
+  font-weight: 700;
 }
 /* line 123, ../scss/_views.home.scss */
 .homepage .section.pricing .benefitsWrapper {
@@ -9459,75 +9459,74 @@ h1 {
 }
 /* line 163, ../scss/_views.home.scss */
 .homepage .section.testimonials {
-  font-family: "FuturaPT";
+  font-family: "futura-pt";
   padding-bottom: 4em;
 }
-/* line 168, ../scss/_views.home.scss */
+/* line 169, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li {
   margin-top: 1.5em;
 }
-/* line 171, ../scss/_views.home.scss */
+/* line 172, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li:first-child {
   margin-top: 0;
 }
-/* line 175, ../scss/_views.home.scss */
+/* line 176, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes li > .author {
   float: left;
   width: 105px;
   height: 105px;
 }
-/* line 185, ../scss/_views.home.scss */
+/* line 186, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .quote {
   font-size: 114%;
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 191, ../scss/_views.home.scss */
+/* line 192, ../scss/_views.home.scss */
 .homepage .section.testimonials .quotes .author {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 107%;
   text-transform: uppercase;
   margin-top: 0.5em;
 }
-/* line 203, ../scss/_views.home.scss */
+/* line 204, ../scss/_views.home.scss */
 .homepage .section.getStarted h1 {
   font-size: 171%;
 }
-/* line 207, ../scss/_views.home.scss */
+/* line 208, ../scss/_views.home.scss */
 .homepage .section.getStarted .illustration img {
   width: 100%;
 }
-/* line 211, ../scss/_views.home.scss */
+/* line 212, ../scss/_views.home.scss */
 .homepage .section.getStarted .description {
   padding-bottom: 2em;
 }
-/* line 214, ../scss/_views.home.scss */
+/* line 215, ../scss/_views.home.scss */
 .homepage .section.getStarted .description .button {
   padding: 2em 5em;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 226, ../scss/_views.home.scss */
+  /* line 227, ../scss/_views.home.scss */
   .homepage .section .contentContainer-large {
     display: table;
     width: 100%;
     height: 100%;
   }
-  /* line 231, ../scss/_views.home.scss */
+  /* line 232, ../scss/_views.home.scss */
   .homepage .section .contentContainer-large > .contentContainerCell-large {
     display: table-cell;
     vertical-align: middle;
   }
-  /* line 241, ../scss/_views.home.scss */
+  /* line 242, ../scss/_views.home.scss */
   .homepage .section.intro .subTitle {
     font-size: 94%;
   }
-  /* line 245, ../scss/_views.home.scss */
+  /* line 246, ../scss/_views.home.scss */
   .homepage .section.intro h1 {
     font-size: 250%;
   }
-  /* line 249, ../scss/_views.home.scss */
+  /* line 250, ../scss/_views.home.scss */
   .homepage .section.intro .actionButtons {
-    font-size: 69%;
     margin-top: 3em;
     max-width: 460px;
   }
@@ -9541,10 +9540,11 @@ h1 {
   }
   /* line 263, ../scss/_views.home.scss */
   .homepage .section.pricing .items {
-    margin-top: 3em;
     display: block;
     padding: 0;
     margin: 0 -0.625rem;
+    max-width: 1400px;
+    margin: 3em auto 0;
   }
   /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
   .homepage .section.pricing .items:before, .homepage .section.pricing .items:after {
@@ -9576,71 +9576,78 @@ h1 {
   .homepage .section.pricing .items > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 267, ../scss/_views.home.scss */
+  /* line 268, ../scss/_views.home.scss */
   .homepage .section.pricing .items li {
     display: inline-block;
     margin-left: -4px;
     vertical-align: bottom;
     float: none;
   }
-  /* line 273, ../scss/_views.home.scss */
+  /* line 274, ../scss/_views.home.scss */
   .homepage .section.pricing .items li:first-child {
     margin-left: 0;
   }
-  /* line 279, ../scss/_views.home.scss */
+  /* line 280, ../scss/_views.home.scss */
   .homepage .section.pricing .benefitsWrapper {
     margin-top: 4em;
   }
-  /* line 285, ../scss/_views.home.scss */
+  /* line 286, ../scss/_views.home.scss */
   .homepage .section.pricing .benefits li {
     display: inline-block;
     margin-left: 2em;
   }
-  /* line 289, ../scss/_views.home.scss */
+  /* line 290, ../scss/_views.home.scss */
   .homepage .section.pricing .benefits li:first-child {
     margin-left: 0;
   }
-  /* line 297, ../scss/_views.home.scss */
+  /* line 298, ../scss/_views.home.scss */
   .homepage .section.howItWorks .headerWrapper {
     margin-top: 4em;
     margin-bottom: 3em;
   }
-  /* line 306, ../scss/_views.home.scss */
+  /* line 307, ../scss/_views.home.scss */
   .homepage .section.qualityProof h1 {
     font-size: 175%;
   }
-  /* line 310, ../scss/_views.home.scss */
+  /* line 311, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer {
     position: relative;
   }
-  /* line 313, ../scss/_views.home.scss */
+  /* line 314, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1, .homepage .section.qualityProof .tilesContainer .tile2 {
     position: absolute;
     top: 0;
     height: 100%;
   }
-  /* line 319, ../scss/_views.home.scss */
+  /* line 320, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1 {
     right: 0;
   }
-  /* line 323, ../scss/_views.home.scss */
+  /* line 324, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile2 {
     left: 0;
   }
-  /* line 329, ../scss/_views.home.scss */
+  /* line 328, ../scss/_views.home.scss */
+  .homepage .section.qualityProof .tilesContainer .contentContainer-large {
+    max-width: 24em;
+    margin: 0 auto;
+  }
+  /* line 335, ../scss/_views.home.scss */
   .homepage .section.testimonials {
     padding-bottom: 8em;
   }
-  /* line 332, ../scss/_views.home.scss */
+  /* line 338, ../scss/_views.home.scss */
   .homepage .section.testimonials .headerWrapper {
     margin-top: 5em;
     margin-bottom: 4em;
   }
-  /* line 337, ../scss/_views.home.scss */
+  /* line 343, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes {
     display: block;
     padding: 0;
     margin: 0 -0.625rem;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
   .homepage .section.testimonials .quotes:before, .homepage .section.testimonials .quotes:after {
@@ -9672,7 +9679,7 @@ h1 {
   .homepage .section.testimonials .quotes > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 340, ../scss/_views.home.scss */
+  /* line 348, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li {
     text-align: left;
     display: inline-block;
@@ -9681,36 +9688,41 @@ h1 {
     vertical-align: middle;
     margin-top: 0;
   }
-  /* line 348, ../scss/_views.home.scss */
+  /* line 356, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li:first-child {
     margin-left: 0;
   }
-  /* line 352, ../scss/_views.home.scss */
+  /* line 360, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li > .content {
     margin-left: 120px;
   }
-  /* line 357, ../scss/_views.home.scss */
+  /* line 365, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .quote {
     font-size: 123%;
   }
-  /* line 361, ../scss/_views.home.scss */
+  /* line 369, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .author {
     font-size: 94%;
   }
-  /* line 367, ../scss/_views.home.scss */
+  /* line 375, ../scss/_views.home.scss */
   .homepage .section.getStarted {
     position: relative;
   }
-  /* line 370, ../scss/_views.home.scss */
+  /* line 378, ../scss/_views.home.scss */
   .homepage .section.getStarted h1 {
     font-size: 425%;
     margin-top: 0.2em;
   }
-  /* line 375, ../scss/_views.home.scss */
+  /* line 383, ../scss/_views.home.scss */
   .homepage .section.getStarted > .description {
     position: absolute;
     height: 100%;
     right: 0;
     top: 0;
+  }
+  /* line 389, ../scss/_views.home.scss */
+  .homepage .section.getStarted > .description .contentContainer-large {
+    max-width: 41em;
+    margin: 0 auto;
   }
 }

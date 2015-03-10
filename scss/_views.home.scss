@@ -76,7 +76,7 @@
 
           color: $pageColor;
           font-size: 219%;
-          font-weight: bold;
+          font-weight: 700;
           font-family: $headerFont;
         }
 
@@ -116,7 +116,7 @@
 
       .price {
         font-size: 231%;
-        font-weight: bold;
+        font-weight: 700;
       }
     }
 
@@ -165,6 +165,7 @@
     padding-bottom: 4em;
 
     .quotes {
+
       li {
         margin-top: 1.5em;
 
@@ -189,7 +190,7 @@
       }
 
       .author {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 107%;
         text-transform: uppercase;
 
@@ -247,7 +248,6 @@
       }
 
       .actionButtons {
-        font-size: 69%;
         margin-top: 3em;
         max-width: 460px;
       }
@@ -261,8 +261,9 @@
       }
 
       .items {
-        margin-top: 3em;
         @include block-grid(3);
+        max-width: 1400px;
+        margin: 3em auto 0;
 
         li {
           display: inline-block;
@@ -323,6 +324,11 @@
         .tile2 {
           left: 0;
         }
+
+        .contentContainer-large {
+          max-width: 24em;
+          margin: 0 auto;
+        }
       }
     }
 
@@ -336,6 +342,8 @@
 
       .quotes {
         @include block-grid(3);
+        max-width: 1400px;
+        margin: 0 auto;
 
         li {
           text-align: left;
@@ -377,6 +385,11 @@
         height: 100%;
         right: 0;
         top: 0;
+
+        .contentContainer-large {
+          max-width: 41em;
+          margin: 0 auto;
+        }
       }
     }
   }

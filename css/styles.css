@@ -9184,57 +9184,71 @@ p {
 }
 
 /* line 23, ../scss/_general.scss */
+table {
+  color: inherit;
+}
+/* line 27, ../scss/_general.scss */
+table tr th, table tr td {
+  color: inherit;
+}
+/* line 31, ../scss/_general.scss */
+table tr th {
+  font-weight: normal;
+  font-family: "futura-pt";
+}
+
+/* line 38, ../scss/_general.scss */
 .alteredText {
   color: #ffffff;
 }
-/* line 26, ../scss/_general.scss */
+/* line 41, ../scss/_general.scss */
 .alteredText h1, .alteredText h2, .alteredText h3, .alteredText h4, .alteredText h5, .alteredText h6 {
   color: #ffffff;
 }
 
-/* line 31, ../scss/_general.scss */
+/* line 46, ../scss/_general.scss */
 .button {
   font-family: inherit;
   font-size: 86%;
   text-transform: uppercase;
   background-color: #0047ad;
 }
-/* line 38, ../scss/_general.scss */
+/* line 53, ../scss/_general.scss */
 .button:hover {
   background-color: #0047ad;
 }
 
-/* line 43, ../scss/_general.scss */
+/* line 58, ../scss/_general.scss */
 .semanticList {
   list-style: none;
   margin: 0;
 }
 
-/* line 48, ../scss/_general.scss */
+/* line 63, ../scss/_general.scss */
 .headerWrapper {
   display: inline-block;
 }
-/* line 51, ../scss/_general.scss */
+/* line 66, ../scss/_general.scss */
 .headerWrapper .stroke {
   margin: 0 11%;
   height: 4px;
   background: #6481ab;
 }
-/* line 57, ../scss/_general.scss */
+/* line 72, ../scss/_general.scss */
 .headerWrapper .header {
   margin-top: 0.5em;
 }
 
-/* line 62, ../scss/_general.scss */
+/* line 77, ../scss/_general.scss */
 .contentPanel {
   background-color: #c8cdd2;
 }
 
-/* line 66, ../scss/_general.scss */
+/* line 81, ../scss/_general.scss */
 #header {
   position: relative;
 }
-/* line 69, ../scss/_general.scss */
+/* line 84, ../scss/_general.scss */
 #header .logo {
   position: absolute;
   right: 0;
@@ -9243,14 +9257,14 @@ p {
   width: 75px;
   height: 75px;
 }
-/* line 79, ../scss/_general.scss */
+/* line 94, ../scss/_general.scss */
 #header .menu {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
-/* line 85, ../scss/_general.scss */
+/* line 100, ../scss/_general.scss */
 #header .menu .menuToggleAction {
   margin-top: 1em;
   margin-left: 1em;
@@ -9260,18 +9274,18 @@ p {
   height: 14px;
 }
 
-/* line 97, ../scss/_general.scss */
+/* line 112, ../scss/_general.scss */
 #page {
   background: #ffffff;
   position: relative;
   margin: 0 auto;
 }
-/* line 104, ../scss/_general.scss */
+/* line 119, ../scss/_general.scss */
 #page > .row {
   max-width: 100%;
 }
 
-/* line 110, ../scss/_general.scss */
+/* line 125, ../scss/_general.scss */
 #footer {
   background: #000000;
   color: #989797;
@@ -9280,40 +9294,40 @@ p {
   padding: 2em 0 4em;
   font-family: "futura-pt";
 }
-/* line 118, ../scss/_general.scss */
+/* line 133, ../scss/_general.scss */
 #footer a {
   color: inherit;
 }
-/* line 121, ../scss/_general.scss */
+/* line 136, ../scss/_general.scss */
 #footer a:hover {
   color: #ffffff;
 }
-/* line 126, ../scss/_general.scss */
+/* line 141, ../scss/_general.scss */
 #footer .logo {
   font-weight: 700;
   text-align: center;
   opacity: 0.6;
 }
-/* line 132, ../scss/_general.scss */
+/* line 147, ../scss/_general.scss */
 #footer .logosWrapper {
   font-size: 93%;
 }
-/* line 136, ../scss/_general.scss */
+/* line 151, ../scss/_general.scss */
 #footer .bottomMenu {
   text-align: right;
 }
-/* line 139, ../scss/_general.scss */
+/* line 154, ../scss/_general.scss */
 #footer .bottomMenu li {
   display: inline-block;
   margin-left: 3em;
   font-size: 81%;
 }
-/* line 144, ../scss/_general.scss */
+/* line 159, ../scss/_general.scss */
 #footer .bottomMenu li:first-child {
   margin-left: 0;
 }
 
-/* line 151, ../scss/_general.scss */
+/* line 166, ../scss/_general.scss */
 #menuOverlay {
   position: absolute;
   left: 0;
@@ -9326,15 +9340,15 @@ p {
   padding: 4em 0 6em;
   display: none;
 }
-/* line 163, ../scss/_general.scss */
+/* line 178, ../scss/_general.scss */
 #menuOverlay.activated {
   display: block;
 }
-/* line 167, ../scss/_general.scss */
+/* line 182, ../scss/_general.scss */
 #menuOverlay a {
   color: inherit;
 }
-/* line 171, ../scss/_general.scss */
+/* line 186, ../scss/_general.scss */
 #menuOverlay .closeButton {
   position: absolute;
   top: 15px;
@@ -9343,42 +9357,42 @@ p {
   height: 27px;
   background: url("../images/icon_close_white.png") no-repeat scroll center center;
 }
-/* line 182, ../scss/_general.scss */
+/* line 197, ../scss/_general.scss */
 #menuOverlay .logo {
   width: 124px;
   margin: 0 auto;
 }
-/* line 187, ../scss/_general.scss */
+/* line 202, ../scss/_general.scss */
 #menuOverlay .menu {
   text-transform: uppercase;
   font-size: 129%;
   margin-top: 2em;
 }
-/* line 192, ../scss/_general.scss */
+/* line 207, ../scss/_general.scss */
 #menuOverlay .menu .item {
   padding: 0.8em 0;
 }
 
-/* line 198, ../scss/_general.scss */
+/* line 213, ../scss/_general.scss */
 .socialShare {
   margin-top: 2em;
 }
-/* line 201, ../scss/_general.scss */
+/* line 216, ../scss/_general.scss */
 .socialShare > a {
   margin-left: 1em;
   opacity: 0.6;
 }
-/* line 205, ../scss/_general.scss */
+/* line 220, ../scss/_general.scss */
 .socialShare > a:first-child {
   margin-left: 0;
 }
-/* line 209, ../scss/_general.scss */
+/* line 224, ../scss/_general.scss */
 .socialShare > a:hover {
   opacity: 1;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 218, ../scss/_general.scss */
+  /* line 233, ../scss/_general.scss */
   #footer .logos {
     display: block;
     padding: 0;
@@ -9416,65 +9430,65 @@ p {
   #footer .logos > li:nth-of-type(2n+1) {
     clear: both;
   }
-  /* line 223, ../scss/_general.scss */
+  /* line 238, ../scss/_general.scss */
   #footer .logos li {
     padding-bottom: 0;
   }
-  /* line 226, ../scss/_general.scss */
+  /* line 241, ../scss/_general.scss */
   #footer .logos li:nth-of-type(2n+1) {
     text-align: right;
   }
-  /* line 230, ../scss/_general.scss */
+  /* line 245, ../scss/_general.scss */
   #footer .logos li:nth-of-type(2n) {
     text-align: left;
   }
-  /* line 234, ../scss/_general.scss */
+  /* line 249, ../scss/_general.scss */
   #footer .logos li:last-child {
     width: 100%;
     text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 244, ../scss/_general.scss */
+  /* line 259, ../scss/_general.scss */
   body {
     font-size: 16px;
   }
 
-  /* line 248, ../scss/_general.scss */
+  /* line 263, ../scss/_general.scss */
   h1 {
     font-size: 138%;
   }
 
-  /* line 252, ../scss/_general.scss */
+  /* line 267, ../scss/_general.scss */
   .button {
     font-size: 75%;
   }
 
-  /* line 257, ../scss/_general.scss */
+  /* line 272, ../scss/_general.scss */
   #header .logo {
     width: auto;
     height: auto;
   }
 
-  /* line 263, ../scss/_general.scss */
+  /* line 278, ../scss/_general.scss */
   #footer {
     padding: 4em 2em 7em;
     text-align: left;
   }
-  /* line 268, ../scss/_general.scss */
+  /* line 283, ../scss/_general.scss */
   #footer .logo {
     text-align: left;
   }
-  /* line 274, ../scss/_general.scss */
+  /* line 289, ../scss/_general.scss */
   #footer .logosWrapper {
     margin-top: 1.5em;
     font-size: 81%;
   }
-  /* line 278, ../scss/_general.scss */
+  /* line 293, ../scss/_general.scss */
   #footer .logosWrapper .logos {
     margin-left: -3px;
   }
-  /* line 281, ../scss/_general.scss */
+  /* line 296, ../scss/_general.scss */
   #footer .logosWrapper .logos li {
     display: inline-block;
   }
@@ -10448,4 +10462,138 @@ p {
   .faqs .section.questionsSection .questions li .expandMark {
     display: none;
   }
+}
+
+/* line 3, ../scss/_views.get_started.scss */
+.getStarted .section {
+  text-align: center;
+}
+/* line 7, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection {
+  background: url("../images/views/get_started/bg.jpg") no-repeat scroll center center;
+  background-size: cover;
+  padding-top: 10em;
+}
+/* line 12, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm {
+  text-transform: uppercase;
+}
+/* line 15, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm table {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-collapse: collapse;
+}
+/* line 21, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm table tr {
+  background: transparent;
+}
+/* line 24, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm table tr th, .getStarted .section.orderFormSection .orderForm table tr td {
+  vertical-align: middle;
+  line-height: 1.2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 32, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm table tr:last-child th, .getStarted .section.orderFormSection .orderForm table tr:last-child td {
+  border-bottom: none;
+}
+/* line 38, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm table td {
+  text-align: right;
+}
+/* line 43, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .value {
+  display: inline-block;
+  width: 2em;
+  text-align: center;
+  font-family: "futura-pt";
+  font-weight: bold;
+  font-size: 286%;
+  vertical-align: middle;
+}
+/* line 52, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .value .currencySymbol {
+  font-size: 48%;
+  vertical-align: super;
+  margin-right: 0.5em;
+}
+/* line 59, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .totalRow .value {
+  text-align: right;
+}
+/* line 63, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .upDownButton {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  width: 33px;
+  height: 33px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+}
+/* line 77, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .upDownButton.increase {
+  background-image: url("../images/arrow_up.png");
+}
+/* line 81, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .upDownButton.decrease {
+  background-image: url("../images/arrow_down.png");
+}
+/* line 86, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .hint {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+/* line 92, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .hint .icon {
+  position: absolute;
+  left: 100%;
+  bottom: 100%;
+  z-index: 1;
+  background: url("../images/icon_info.png") no-repeat scroll center center;
+  height: 18px;
+  width: 18px;
+}
+/* line 102, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .hint .content {
+  color: #000101;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  bottom: 32px;
+  left: -40px;
+  width: 245px;
+}
+/* line 111, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .hint .content > .arrow {
+  background: url("../images/tooltip_arrow.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 42px;
+  width: 14px;
+  height: 13px;
+}
+/* line 121, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .hint .content .container {
+  text-transform: none;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.5em;
+}
+/* line 128, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .hint .content .title {
+  color: inherit;
+}
+/* line 133, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .orderForm .hint:hover .content {
+  display: block;
 }

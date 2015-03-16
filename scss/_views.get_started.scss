@@ -1,0 +1,148 @@
+.getStarted {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.orderFormSection {
+    background: url('../images/views/get_started/bg.jpg') no-repeat scroll center center;
+    background-size: cover;
+    padding-top: 10em;
+
+    .orderForm {
+      text-transform: uppercase;
+
+      table {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-collapse: collapse;
+
+        tr {
+          background: transparent;
+
+          th, td {
+            vertical-align: middle;
+            line-height: 1.2;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          }
+
+          &:last-child {
+            th, td {
+              border-bottom: none;
+            }
+          }
+        }
+
+        td {
+          text-align: right;
+        }
+      }
+
+      .value {
+        display: inline-block;
+        width: 2em;
+        text-align: center;
+        font-family: $headerFont;
+        font-weight: bold;
+        font-size: 286%;
+        vertical-align: middle;
+
+        .currencySymbol {
+          font-size: 48%;
+          vertical-align: super;
+          margin-right: 0.5em;
+        }
+      }
+
+      .totalRow .value {
+        text-align: right;
+      }
+
+      .upDownButton {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0;
+        width: 33px;
+        height: 33px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+
+        border: 1px solid;
+        border-radius: 4px;
+
+        &.increase {
+          background-image: url('../images/arrow_up.png');
+        }
+
+        &.decrease{
+          background-image: url('../images/arrow_down.png');
+        }
+      }
+
+      .hint {
+        display: inline-block;
+        position: relative;
+        margin-left: 0.5em;
+        cursor: pointer;
+
+        .icon {
+          position: absolute;
+          left: 100%;
+          bottom: 100%;
+          z-index: 1;
+          background: url('../images/icon_info.png') no-repeat scroll center center;
+          height: 18px;
+          width: 18px;
+        }
+
+        .content {
+          color: $textColor;
+          display: none;
+          position: absolute;
+          z-index: 2;
+          bottom: 32px;
+          left: -40px;
+          width: 245px;
+
+          > .arrow {
+            background: url('../images/tooltip_arrow.png') no-repeat scroll center center;
+            position: absolute;
+            z-index: 2;
+            top: 100%;
+            left: 42px;
+            width: 14px;
+            height: 13px;
+          }
+
+          .container {
+            text-transform: none;
+            background: $pageColor;
+            border-radius: 15px;
+            padding: 1.5em;
+          }
+
+          .title {
+            color: inherit;
+          }
+        }
+
+        &:hover .content {
+          display: block;
+        }
+      }
+    }
+  }
+
+
+  @media #{$large-up} {
+
+    .section.orderFormSection {
+    }
+  }
+}
+
+

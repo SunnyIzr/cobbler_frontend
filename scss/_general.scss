@@ -20,6 +20,21 @@ p {
   font-weight: inherit;
 }
 
+table {
+  color: inherit;
+
+  tr {
+    th, td {
+      color: inherit;
+    }
+
+    th {
+      font-weight: normal;
+      font-family: $headerFont;
+    }
+  }
+}
+
 .alteredText {
   color: $pageColor;
 

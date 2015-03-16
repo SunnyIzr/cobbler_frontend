@@ -1,0 +1,41 @@
+include _layout.jade
++document('getStarted')
+    .row.section.orderFormSection.hidden-for-large-up.alteredText
+        .columns.small-12
+            h1 How Many Shoes Or Handbags Are You Sending Us?
+
+            form.orderForm
+                table
+                    tr
+                        th Women's
+                        td
+                            button.upDownButton.increase
+                            span.value 0
+                            button.upDownButton.decrease
+                    tr
+                        th Men's
+                            .hint
+                                .icon
+                                .content
+                                    .arrow
+                                    .container
+                                        h6.title Why are men’s shoes more expensive
+                                        div.
+                                            Durabitur non sem et turpiss gra vida porta eget sit amet eros am lobortis.
+                                            Aenean metus leo, bibendum quis sem non, placer at auctor lacus. Mauris varius, erat eu plac erat egestas.
+                        td
+                            button.upDownButton.increase
+                            span.value 0
+                            button.upDownButton.decrease
+                    tr
+                        th Women's
+                        td
+                            button.upDownButton.increase
+                            span.value 0
+                            button.upDownButton.decrease
+                    tr.totalRow
+                        th Total
+                        td
+                            span.value
+                                span.currencySymbol $
+                                | 0

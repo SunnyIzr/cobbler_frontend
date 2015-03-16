@@ -10001,3 +10001,29 @@ p {
     font-size: 300%;
   }
 }
+
+/* line 3, ../scss/_views.privacy_and_terms.scss */
+.privacyAndTerms .section {
+  text-align: center;
+}
+/* line 7, ../scss/_views.privacy_and_terms.scss */
+.privacyAndTerms .section.intro {
+  background: url("../images/views/privacy_and_terms/header.jpg") no-repeat scroll 46% center;
+  background-size: cover;
+  height: 266px;
+}
+/* line 14, ../scss/_views.privacy_and_terms.scss */
+.privacyAndTerms .section.privacyAndTerms {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 24, ../scss/_views.privacy_and_terms.scss */
+  .privacyAndTerms .section.privacyAndTerms {
+    text-align: left;
+    padding-bottom: 12em;
+    padding-top: 6em;
+  }
+}

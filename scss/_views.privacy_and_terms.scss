@@ -1,0 +1,32 @@
+.privacyAndTerms {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/privacy_and_terms/header.jpg') no-repeat scroll 46% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.privacyAndTerms {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+
+  @media #{$large-up} {
+
+    .section.privacyAndTerms {
+      text-align: left;
+      padding-bottom: 12em;
+      padding-top: 6em;
+    }
+  }
+}
+
+

@@ -9691,55 +9691,54 @@ p {
   /* line 153, ../scss/_views.home.scss */
   .homepage .section.intro h1 {
     font-size: 250%;
-    font-size: 156%;
   }
-  /* line 158, ../scss/_views.home.scss */
+  /* line 157, ../scss/_views.home.scss */
   .homepage .section.intro .actionButtons {
     margin-top: 3em;
     max-width: 460px;
   }
-  /* line 165, ../scss/_views.home.scss */
+  /* line 164, ../scss/_views.home.scss */
   .homepage .section.howItWorks .headerWrapper {
     margin-top: 4em;
     margin-bottom: 3em;
   }
-  /* line 174, ../scss/_views.home.scss */
+  /* line 173, ../scss/_views.home.scss */
   .homepage .section.qualityProof h1 {
     font-size: 175%;
   }
-  /* line 178, ../scss/_views.home.scss */
+  /* line 177, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer {
     position: relative;
   }
-  /* line 181, ../scss/_views.home.scss */
+  /* line 180, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1, .homepage .section.qualityProof .tilesContainer .tile2 {
     position: absolute;
     top: 0;
     height: 100%;
   }
-  /* line 187, ../scss/_views.home.scss */
+  /* line 186, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile1 {
     right: 0;
   }
-  /* line 191, ../scss/_views.home.scss */
+  /* line 190, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .tile2 {
     left: 0;
   }
-  /* line 195, ../scss/_views.home.scss */
+  /* line 194, ../scss/_views.home.scss */
   .homepage .section.qualityProof .tilesContainer .contentContainer-large {
     max-width: 24em;
     margin: 0 auto;
   }
-  /* line 202, ../scss/_views.home.scss */
+  /* line 201, ../scss/_views.home.scss */
   .homepage .section.testimonials {
     padding-bottom: 8em;
   }
-  /* line 205, ../scss/_views.home.scss */
+  /* line 204, ../scss/_views.home.scss */
   .homepage .section.testimonials .headerWrapper {
     margin-top: 5em;
     margin-bottom: 4em;
   }
-  /* line 210, ../scss/_views.home.scss */
+  /* line 209, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes {
     display: block;
     padding: 0;
@@ -9777,7 +9776,7 @@ p {
   .homepage .section.testimonials .quotes > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 215, ../scss/_views.home.scss */
+  /* line 214, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li {
     text-align: left;
     display: inline-block;
@@ -9786,39 +9785,39 @@ p {
     vertical-align: middle;
     margin-top: 0;
   }
-  /* line 223, ../scss/_views.home.scss */
+  /* line 222, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li:first-child {
     margin-left: 0;
   }
-  /* line 227, ../scss/_views.home.scss */
+  /* line 226, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes li > .content {
     margin-left: 120px;
   }
-  /* line 232, ../scss/_views.home.scss */
+  /* line 231, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .quote {
     font-size: 123%;
   }
-  /* line 236, ../scss/_views.home.scss */
+  /* line 235, ../scss/_views.home.scss */
   .homepage .section.testimonials .quotes .author {
     font-size: 94%;
   }
-  /* line 242, ../scss/_views.home.scss */
+  /* line 241, ../scss/_views.home.scss */
   .homepage .section.getStarted {
     position: relative;
   }
-  /* line 245, ../scss/_views.home.scss */
+  /* line 244, ../scss/_views.home.scss */
   .homepage .section.getStarted h1 {
     font-size: 425%;
     margin-top: 0.2em;
   }
-  /* line 250, ../scss/_views.home.scss */
+  /* line 249, ../scss/_views.home.scss */
   .homepage .section.getStarted > .description {
     position: absolute;
     height: 100%;
     right: 0;
     top: 0;
   }
-  /* line 256, ../scss/_views.home.scss */
+  /* line 255, ../scss/_views.home.scss */
   .homepage .section.getStarted > .description .contentContainer-large {
     max-width: 41em;
     margin: 0 auto;
@@ -9967,5 +9966,38 @@ p {
   /* line 56, ../scss/_views.pricing.scss */
   .pricing .section.whatHappensNext .items li:first-child {
     margin-left: 0;
+  }
+}
+
+/* line 3, ../scss/_views.marketplace.scss */
+.marketplace .section {
+  text-align: center;
+}
+/* line 7, ../scss/_views.marketplace.scss */
+.marketplace .section.intro {
+  background: url("../images/views/marketplace/header.jpg") no-repeat scroll 16% center;
+  background-size: cover;
+  height: 266px;
+}
+/* line 14, ../scss/_views.marketplace.scss */
+.marketplace .section.comingSoon {
+  padding-top: 1em;
+  padding-bottom: 4em;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/* line 20, ../scss/_views.marketplace.scss */
+.marketplace .section.comingSoon h1 {
+  font-size: 157%;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 28, ../scss/_views.marketplace.scss */
+  .marketplace .section.comingSoon {
+    padding-bottom: 12em;
+    padding-top: 6em;
+  }
+  /* line 32, ../scss/_views.marketplace.scss */
+  .marketplace .section.comingSoon h1 {
+    font-size: 300%;
   }
 }

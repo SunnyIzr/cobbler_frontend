@@ -40,13 +40,10 @@
   .otherContacts {
     margin-top: 4em;
   }
-}
 
 
-@media #{$large-up} {
-  .contactUs {
-
-    .section.map {
+  @media #{$large-up} {
+   .section.map {
       height: 730px;
 
       img {
@@ -67,3 +64,5 @@
     }
   }
 }
+
+

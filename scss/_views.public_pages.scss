@@ -1,0 +1,145 @@
+.section {
+  text-align: center;
+
+  .contentContainer {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    .contentContainerCell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .headerWrapper {
+    margin-top: 2.2em;
+    margin-bottom: 1em;
+  }
+}
+
+.section.intro {
+  background-size: cover;
+
+  h1 {
+    font-size: 114%;
+  }
+}
+
+.section.pricing {
+
+  .items, .benefits {
+    font-family: $headerFont;
+  }
+
+  .items {
+    padding-bottom: 2em;
+    font-size: 93%;
+
+    li {
+      vertical-align: bottom;
+    }
+
+    .description {
+      text-transform: uppercase;
+
+      * {
+        vertical-align: middle;
+      }
+    }
+
+    .price {
+      font-size: 231%;
+      font-weight: 700;
+    }
+  }
+
+  .benefitsWrapper {
+    background: #eff2f6;
+  }
+
+  .benefits {
+    font-size: 86%;
+    text-align: left;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 2.5;
+    padding: 1em 0;
+    margin-bottom: 0;
+    margin-left: 2em;
+
+    vertical-align: middle;
+
+    list-style: none;
+
+    li {
+      padding-left: 20px;
+
+      background: url('../images/checkmark.png') no-repeat scroll left center;
+    }
+  }
+}
+
+@media #{$large-up} {
+
+  .section {
+
+    .contentContainer-large {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      > .contentContainerCell-large {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .section.intro {
+    h1 {
+      font-size: 156%;
+    }
+  }
+
+  .section.pricing {
+    padding-bottom: 4em;
+
+    .headerWrapper {
+      margin-top: 4em;
+    }
+
+    .items {
+      @include block-grid(3);
+      max-width: 1400px;
+      margin: 3em auto 0;
+
+      li {
+        display: inline-block;
+        margin-left: -4px;
+        vertical-align: bottom;
+        float: none;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .benefitsWrapper {
+      margin-top: 4em;
+    }
+
+    .benefits {
+
+      li {
+        display: inline-block;
+        margin-left: 2em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

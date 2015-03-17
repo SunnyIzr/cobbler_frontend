@@ -10134,39 +10134,44 @@ p {
   padding-top: 5em;
   padding-bottom: 5em;
 }
-/* line 21, ../scss/_views.about_us.scss */
+/* line 19, ../scss/_views.about_us.scss */
 .aboutUs .section.introText p {
   max-width: 1400px;
   margin: 0 auto;
 }
-/* line 27, ../scss/_views.about_us.scss */
+/* line 25, ../scss/_views.about_us.scss */
 .aboutUs .section.teamSection {
   padding: 3.5em 0;
 }
-/* line 30, ../scss/_views.about_us.scss */
+/* line 28, ../scss/_views.about_us.scss */
+.aboutUs .section.teamSection > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 33, ../scss/_views.about_us.scss */
 .aboutUs .section.teamSection .teamWrapper {
   overflow: hidden;
 }
-/* line 34, ../scss/_views.about_us.scss */
+/* line 37, ../scss/_views.about_us.scss */
 .aboutUs .section.teamSection .team {
   white-space: nowrap;
   overflow: auto;
   margin-bottom: -16px;
   padding-bottom: 16px;
 }
-/* line 40, ../scss/_views.about_us.scss */
+/* line 43, ../scss/_views.about_us.scss */
 .aboutUs .section.teamSection .team li {
   display: inline-block;
   vertical-align: top;
   width: 62%;
 }
-/* line 45, ../scss/_views.about_us.scss */
+/* line 48, ../scss/_views.about_us.scss */
 .aboutUs .section.teamSection .team li .photo {
   display: inline-block;
   border-radius: 100%;
   overflow: hidden;
 }
-/* line 51, ../scss/_views.about_us.scss */
+/* line 54, ../scss/_views.about_us.scss */
 .aboutUs .section.teamSection .team li .name {
   margin-top: 1em;
   font-family: "futura-pt";
@@ -10177,37 +10182,37 @@ p {
   text-align: center;
   line-height: 1.2;
 }
-/* line 62, ../scss/_views.about_us.scss */
+/* line 65, ../scss/_views.about_us.scss */
 .aboutUs .section.teamSection .team li .contacts {
   margin-top: 0.7em;
 }
-/* line 70, ../scss/_views.about_us.scss */
+/* line 73, ../scss/_views.about_us.scss */
 .aboutUs .section.tilesSection .tile {
   height: 195px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 77, ../scss/_views.about_us.scss */
+/* line 80, ../scss/_views.about_us.scss */
 .aboutUs .section.tilesSection .tile1 {
   background-image: url("../images/views/about_us/tile_1.jpg");
   background-position: 36% center;
 }
-/* line 82, ../scss/_views.about_us.scss */
+/* line 85, ../scss/_views.about_us.scss */
 .aboutUs .section.tilesSection .tile2 {
   background-image: url("../images/views/about_us/tile_2.jpg");
   background-position: 72% center;
 }
-/* line 87, ../scss/_views.about_us.scss */
+/* line 90, ../scss/_views.about_us.scss */
 .aboutUs .section.tilesSection .tile3 {
   background-image: url("../images/views/about_us/tile_3.jpg");
   background-position: 73% center;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 96, ../scss/_views.about_us.scss */
+  /* line 99, ../scss/_views.about_us.scss */
   .aboutUs .section.teamSection {
     padding: 10em 0 6em;
   }
-  /* line 99, ../scss/_views.about_us.scss */
+  /* line 102, ../scss/_views.about_us.scss */
   .aboutUs .section.teamSection .team {
     display: block;
     padding: 0;
@@ -10248,14 +10253,14 @@ p {
   .aboutUs .section.teamSection .team > li:nth-of-type(4n+1) {
     clear: both;
   }
-  /* line 107, ../scss/_views.about_us.scss */
+  /* line 110, ../scss/_views.about_us.scss */
   .aboutUs .section.teamSection .team li {
     display: inline-block;
     float: none;
     margin-left: -4px;
     padding-bottom: 6em;
   }
-  /* line 118, ../scss/_views.about_us.scss */
+  /* line 121, ../scss/_views.about_us.scss */
   .aboutUs .section.tilesSection .tile {
     height: 390px;
   }

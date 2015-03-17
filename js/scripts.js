@@ -1,5 +1,10 @@
 $(document).on('ready', function () {
     resizeSlide();
+
+
+    $('.faqs .questions .question').on('click', function() {
+        $(this).closest('.item').toggleClass('expanded');
+    });
 });
 
 $(window).on('resize', function () {

@@ -94,12 +94,38 @@ p {
   color: $footerTextColor;
   text-transform: uppercase;
   text-align: center;
-  padding: 2em 0 2em;
+  padding: 2em 0 4em;
   font-family: $headerFont;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $pageColor;
+    }
+  }
 
   .logo {
     font-weight: 700;
-    text-align: left;
+    text-align: center;
+    opacity: 0.6;
+  }
+
+  .socialShare {
+    margin-top: 2em;
+
+    > a {
+      margin-left: 1em;
+      opacity: 0.6;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   .logosWrapper {
@@ -116,10 +142,6 @@ p {
 
       &:first-child {
         margin-left: 0;
-      }
-
-      a {
-        color: inherit;
       }
     }
   }
@@ -176,6 +198,12 @@ p {
     padding: 4em 2em 7em;
 
     text-align: left;
+
+    .logo {
+      text-align: left;
+    }
+
+
 
     .logosWrapper {
       margin-top: 1.5em;

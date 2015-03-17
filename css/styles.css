@@ -10296,60 +10296,61 @@ p {
   background-position: 73% center;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 150, ../scss/_views.faqs.scss */
-  .faqs .section.teamSection {
-    padding: 10em 0 6em;
-  }
-  /* line 153, ../scss/_views.faqs.scss */
-  .faqs .section.teamSection .team {
+  /* line 152, ../scss/_views.faqs.scss */
+  .faqs .section.questionsSection .questions {
     display: block;
     padding: 0;
     margin: 0 -0.625rem;
     max-width: 1400px;
-    margin: 0 auto;
-    text-align: center;
-    white-space: normal;
-    overflow: hidden;
+    margin: 5em auto 0;
   }
   /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
-  .faqs .section.teamSection .team:before, .faqs .section.teamSection .team:after {
+  .faqs .section.questionsSection .questions:before, .faqs .section.questionsSection .questions:after {
     content: " ";
     display: table;
   }
   /* line 173, ../bower/foundation/scss/foundation/components/_global.scss */
-  .faqs .section.teamSection .team:after {
+  .faqs .section.questionsSection .questions:after {
     clear: both;
   }
   /* line 51, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .faqs .section.teamSection .team > li {
+  .faqs .section.questionsSection .questions > li {
     display: block;
     height: auto;
     float: left;
     padding: 0 0.625rem 1.25rem;
   }
   /* line 62, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .faqs .section.teamSection .team > li {
-    width: 25%;
+  .faqs .section.questionsSection .questions > li {
+    width: 33.33333%;
     padding: 0 0.625rem 1.25rem;
     list-style: none;
   }
   /* line 69, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .faqs .section.teamSection .team > li:nth-of-type(1n) {
+  .faqs .section.questionsSection .questions > li:nth-of-type(1n) {
     clear: none;
   }
   /* line 70, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .faqs .section.teamSection .team > li:nth-of-type(4n+1) {
+  .faqs .section.questionsSection .questions > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 161, ../scss/_views.faqs.scss */
-  .faqs .section.teamSection .team li {
-    display: inline-block;
-    float: none;
-    margin-left: -4px;
-    padding-bottom: 6em;
+  /* line 157, ../scss/_views.faqs.scss */
+  .faqs .section.questionsSection .questions li {
+    border-bottom: none;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 4em;
   }
-  /* line 172, ../scss/_views.faqs.scss */
-  .faqs .section.tilesSection .tile {
-    height: 390px;
+  /* line 163, ../scss/_views.faqs.scss */
+  .faqs .section.questionsSection .questions li .question {
+    cursor: inherit;
+  }
+  /* line 167, ../scss/_views.faqs.scss */
+  .faqs .section.questionsSection .questions li .answer {
+    display: block;
+  }
+  /* line 171, ../scss/_views.faqs.scss */
+  .faqs .section.questionsSection .questions li .expandMark {
+    display: none;
   }
 }

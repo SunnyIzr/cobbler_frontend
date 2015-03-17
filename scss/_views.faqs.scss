@@ -147,30 +147,31 @@
 
   @media #{$large-up} {
 
-    .section.teamSection {
-      padding: 10em 0 6em;
+    .section.questionsSection {
 
-      .team {
-        @include block-grid(4);
+      .questions {
+        @include block-grid(3);
         max-width: 1400px;
-        margin: 0 auto;
-        text-align: center;
-        white-space: normal;
-        overflow: hidden;
+        margin: 5em auto 0;
 
         li {
-          display: inline-block;
-          float: none;
-          margin-left: -4px;
-          padding-bottom: 6em;
+          border-bottom: none;
+          vertical-align: top;
+          margin-top: 0;
+          margin-bottom: 4em;
 
+          .question {
+            cursor: inherit;
+          }
+          
+          .answer {
+            display: block;
+          }
+
+          .expandMark {
+            display: none;
+          }
         }
-      }
-    }
-
-    .section.tilesSection {
-      .tile {
-        height: 390px;
       }
     }
   }

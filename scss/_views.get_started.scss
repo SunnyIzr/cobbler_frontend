@@ -5,8 +5,11 @@
   }
 
   .section.orderFormSection {
-    background: url('../images/views/get_started/bg.jpg') no-repeat scroll center center;
-    background-size: cover;
+    background: url('../images/views/get_started/bg.jpg') no-repeat scroll 11% 0;
+  }
+
+  .section.orderFormSection.mobile {
+    //background-size: cover;
     padding-top: 10em;
 
     .orderForm {
@@ -136,6 +139,230 @@
       }
     }
   }
+
+  .section.orderFormSection.desktop {
+    background-size: cover;
+    padding: 12em 0 6em;
+
+    .orderForm {
+      width: 800px;
+      height: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      line-height: 800px;
+
+      text-transform: uppercase;
+
+      .item {
+        line-height: 1.2;
+        display: inline-block;
+        width: 33%;
+        margin-left: -4px;
+        vertical-align: middle;
+
+        &.womenQuantityContainer {
+          text-align: left;
+        }
+
+        &.menQuantityContainer {
+          text-align: right;
+        }
+
+        .upDownButton, .valueContainer {
+          display: inline-block;
+          vertical-align: bottom;
+          text-align: center;
+        }
+
+        .upDownButton {
+          padding: 0;
+          margin: 0;
+          background: none;
+
+          >a {
+            display: block;
+            width: 47px;
+            height: 46px;
+            border: 1px solid;
+            color: $pageColor;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: transparent;
+
+            &.incButton {
+              background-image: url('../images/arrow_up.png');
+              border-radius: 4px 4px 0 0;
+            }
+
+            &.decButton {
+              background-image: url('../images/arrow_down.png');
+              border-radius: 0 0 4px 4px;
+              margin-top: -1px;
+            }
+          }
+        }
+
+        &.handbagsQuantityContainer {
+          .upDownButton, .valueContainer {
+            display: block;
+          }
+
+          .upDownButton {
+            margin: 0.6em auto 0;
+
+            >a {
+              display: inline-block;
+
+              &.incButton {
+                border-radius: 4px 0 0 4px;
+              }
+
+              &.decButton {
+                border-radius: 0 4px 4px 0;
+                margin-left: -1px;
+              }
+            }
+          }
+
+        }
+
+        .valueContainer {
+          font-size: 94%;
+        }
+
+        &.womenQuantityContainer .valueContainer {
+          margin-left: 1em;
+        }
+
+        &.menQuantityContainer .valueContainer {
+          margin-right: 1em;
+        }
+
+        .value {
+          font-family: $headerFont;
+          font-weight: bold;
+          font-size: 425%;
+          border-bottom: 1px solid;
+          min-width: 1.3em;
+          display: inline-block;
+          text-align: center;
+          padding: 0.11em 0;
+        }
+
+        &.totalContainer {
+          .value {
+            font-size: 853%;
+            border-bottom: none;
+
+            span {
+              vertical-align: sub;
+            }
+
+            .currencySymbol {
+              vertical-align: super;
+              font-size: 26%;
+            }
+          }
+        }
+      }
+
+      .bottomRow {
+        line-height: 1.2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    .orderFormWrapper {
+      position: relative;
+      display: inline-block;
+
+      .circleWrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+      }
+
+      .mainCircleWrapper {
+        padding: 200px;
+
+        .circle {
+          width: 100%;
+          height: 100%;
+          border: 10px solid;
+          border-radius: 100%;
+        }
+      }
+
+      .secondaryCircleWrapper {
+        padding: 110px;
+
+        .circle {
+          position: absolute;
+          height: 270.28%;
+
+          opacity: .5;
+          border: 1px solid;
+          border-radius: 100%;
+        }
+
+        .circleSection {
+          position: relative;
+          height: 37%;
+          overflow: hidden;
+
+          &.half {
+            width: 100%;
+          }
+
+          &.quarter {
+            width: 37%;
+
+            .circle {
+              width: 270.28%;
+            }
+          }
+        }
+
+        .topHalf {
+          .circle {
+            top: 0;
+            left: 0;
+            width: 100%;
+          }
+        }
+
+        .verticalSpacer {
+          height: 26%;
+        }
+
+        .bottomLeftQuarter {
+          float: left;
+
+          .circle {
+            bottom: 0;
+            left: 0;
+          }
+        }
+
+        .bottomRightQuarter {
+          float: right;
+
+          .circle {
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
 
 
   @media #{$large-up} {

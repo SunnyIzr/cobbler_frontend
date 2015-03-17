@@ -10470,41 +10470,43 @@ table tr th {
 }
 /* line 7, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection {
-  background: url("../images/views/get_started/bg.jpg") no-repeat scroll center center;
-  background-size: cover;
+  background: url("../images/views/get_started/bg.jpg") no-repeat scroll 11% 0;
+}
+/* line 11, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile {
   padding-top: 10em;
 }
-/* line 12, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm {
+/* line 15, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm {
   text-transform: uppercase;
 }
-/* line 15, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm table {
+/* line 18, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm table {
   width: 100%;
   background: transparent;
   border: none;
   border-collapse: collapse;
 }
-/* line 21, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm table tr {
+/* line 24, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm table tr {
   background: transparent;
 }
-/* line 24, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm table tr th, .getStarted .section.orderFormSection .orderForm table tr td {
+/* line 27, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm table tr th, .getStarted .section.orderFormSection.mobile .orderForm table tr td {
   vertical-align: middle;
   line-height: 1.2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 32, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm table tr:last-child th, .getStarted .section.orderFormSection .orderForm table tr:last-child td {
+/* line 35, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm table tr:last-child th, .getStarted .section.orderFormSection.mobile .orderForm table tr:last-child td {
   border-bottom: none;
 }
-/* line 38, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm table td {
+/* line 41, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm table td {
   text-align: right;
 }
-/* line 43, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .value {
+/* line 46, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .value {
   display: inline-block;
   width: 2em;
   text-align: center;
@@ -10513,18 +10515,18 @@ table tr th {
   font-size: 286%;
   vertical-align: middle;
 }
-/* line 52, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .value .currencySymbol {
+/* line 55, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .value .currencySymbol {
   font-size: 48%;
   vertical-align: super;
   margin-right: 0.5em;
 }
-/* line 59, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .totalRow .value {
+/* line 62, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .totalRow .value {
   text-align: right;
 }
-/* line 63, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .upDownButton {
+/* line 66, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .upDownButton {
   display: inline-block;
   vertical-align: middle;
   padding: 0;
@@ -10537,23 +10539,23 @@ table tr th {
   border: 1px solid;
   border-radius: 4px;
 }
-/* line 77, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .upDownButton.increase {
+/* line 80, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .upDownButton.increase {
   background-image: url("../images/arrow_up.png");
 }
-/* line 81, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .upDownButton.decrease {
+/* line 84, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .upDownButton.decrease {
   background-image: url("../images/arrow_down.png");
 }
-/* line 86, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .hint {
+/* line 89, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .hint {
   display: inline-block;
   position: relative;
   margin-left: 0.5em;
   cursor: pointer;
 }
-/* line 92, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .hint .icon {
+/* line 95, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .hint .icon {
   position: absolute;
   left: 100%;
   bottom: 100%;
@@ -10562,8 +10564,8 @@ table tr th {
   height: 18px;
   width: 18px;
 }
-/* line 102, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .hint .content {
+/* line 105, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .hint .content {
   color: #000101;
   display: none;
   position: absolute;
@@ -10572,8 +10574,8 @@ table tr th {
   left: -40px;
   width: 245px;
 }
-/* line 111, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .hint .content > .arrow {
+/* line 114, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .hint .content > .arrow {
   background: url("../images/tooltip_arrow.png") no-repeat scroll center center;
   position: absolute;
   z-index: 2;
@@ -10582,18 +10584,232 @@ table tr th {
   width: 14px;
   height: 13px;
 }
-/* line 121, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .hint .content .container {
+/* line 124, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .hint .content .container {
   text-transform: none;
   background: #ffffff;
   border-radius: 15px;
   padding: 1.5em;
 }
-/* line 128, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .hint .content .title {
+/* line 131, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .hint .content .title {
   color: inherit;
 }
-/* line 133, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection .orderForm .hint:hover .content {
+/* line 136, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.mobile .orderForm .hint:hover .content {
   display: block;
+}
+/* line 143, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop {
+  background-size: cover;
+  padding: 12em 0 6em;
+}
+/* line 147, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  line-height: 800px;
+  text-transform: uppercase;
+}
+/* line 157, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item {
+  line-height: 1.2;
+  display: inline-block;
+  width: 33%;
+  margin-left: -4px;
+  vertical-align: middle;
+}
+/* line 164, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.womenQuantityContainer {
+  text-align: left;
+}
+/* line 168, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.menQuantityContainer {
+  text-align: right;
+}
+/* line 172, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton, .getStarted .section.orderFormSection.desktop .orderForm .item .valueContainer {
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+}
+/* line 178, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton {
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+/* line 183, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a {
+  display: block;
+  width: 47px;
+  height: 46px;
+  border: 1px solid;
+  color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+/* line 193, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a.incButton {
+  background-image: url("../images/arrow_up.png");
+  border-radius: 4px 4px 0 0;
+}
+/* line 198, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a.decButton {
+  background-image: url("../images/arrow_down.png");
+  border-radius: 0 0 4px 4px;
+  margin-top: -1px;
+}
+/* line 207, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton, .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .valueContainer {
+  display: block;
+}
+/* line 211, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton {
+  margin: 0.6em auto 0;
+}
+/* line 214, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > a {
+  display: inline-block;
+}
+/* line 217, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > a.incButton {
+  border-radius: 4px 0 0 4px;
+}
+/* line 221, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > a.decButton {
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px;
+}
+/* line 230, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item .valueContainer {
+  font-size: 94%;
+}
+/* line 234, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.womenQuantityContainer .valueContainer {
+  margin-left: 1em;
+}
+/* line 238, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.menQuantityContainer .valueContainer {
+  margin-right: 1em;
+}
+/* line 242, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item .value {
+  font-family: "futura-pt";
+  font-weight: bold;
+  font-size: 425%;
+  border-bottom: 1px solid;
+  min-width: 1.3em;
+  display: inline-block;
+  text-align: center;
+  padding: 0.11em 0;
+}
+/* line 254, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value {
+  font-size: 853%;
+  border-bottom: none;
+}
+/* line 258, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value span {
+  vertical-align: sub;
+}
+/* line 262, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value .currencySymbol {
+  vertical-align: super;
+  font-size: 26%;
+}
+/* line 270, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderForm .bottomRow {
+  line-height: 1.2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 279, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper {
+  position: relative;
+  display: inline-block;
+}
+/* line 283, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .circleWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* line 292, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .mainCircleWrapper {
+  padding: 200px;
+}
+/* line 295, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .mainCircleWrapper .circle {
+  width: 100%;
+  height: 100%;
+  border: 10px solid;
+  border-radius: 100%;
+}
+/* line 303, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper {
+  padding: 110px;
+}
+/* line 306, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circle {
+  position: absolute;
+  height: 270.28%;
+  opacity: .5;
+  border: 1px solid;
+  border-radius: 100%;
+}
+/* line 315, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection {
+  position: relative;
+  height: 37%;
+  overflow: hidden;
+}
+/* line 320, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection.half {
+  width: 100%;
+}
+/* line 324, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection.quarter {
+  width: 37%;
+}
+/* line 327, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection.quarter .circle {
+  width: 270.28%;
+}
+/* line 334, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .topHalf .circle {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 341, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .verticalSpacer {
+  height: 26%;
+}
+/* line 345, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomLeftQuarter {
+  float: left;
+}
+/* line 348, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomLeftQuarter .circle {
+  bottom: 0;
+  left: 0;
+}
+/* line 354, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomRightQuarter {
+  float: right;
+}
+/* line 357, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomRightQuarter .circle {
+  bottom: 0;
+  right: 0;
 }

@@ -1,6 +1,6 @@
 include _layout.jade
 +document('getStarted')
-    .row.section.orderFormSection.hidden-for-large-up.alteredText
+    .row.section.hide-for-large-up.alteredText.orderFormSection.mobile
         .columns.small-12
             h1 How Many Shoes Or Handbags Are You Sending Us?
 
@@ -39,3 +39,51 @@ include _layout.jade
                             span.value
                                 span.currencySymbol $
                                 | 0
+
+    .row.section.hide-for-medium-down.alteredText.orderFormSection.desktop
+        .columns.small-12
+            h1 How Many Shoes Or Handbags Are You Sending Us?
+
+            .orderFormWrapper
+                .circleWrapper.secondaryCircleWrapper
+                    .circleSection.half.topHalf
+                        .circle
+                    .verticalSpacer
+                    .circleSection.quarter.bottomLeftQuarter
+                        .circle
+                    .circleSection.quarter.bottomRightQuarter
+                        .circle
+                .circleWrapper.mainCircleWrapper
+                    .circle
+
+                form.orderForm
+                    .item.womenQuantityContainer
+                        button.upDownButton.double
+                            a.incButton(href='javascript:void(0);')
+                            a.decButton(href='javascript:void(0);')
+                        .valueContainer
+                            .fieldLabel Women's
+                            div
+                                span.value 0
+                    .item.totalContainer
+                        span.value
+                            span.currencySymbol $
+                            span 0
+                    .item.menQuantityContainer
+                        .valueContainer
+                            .fieldLabel Men's
+                            div
+                                span.value 0
+                        button.upDownButton.double
+                            a.incButton(href='javascript:void(0);')
+                            a.decButton(href='javascript:void(0);')
+
+                    .bottomRow
+                        .item.handbagsQuantityContainer
+                            .valueContainer
+                                .fieldLabel Handbags
+                                div
+                                    span.value 0
+                            button.upDownButton.double.horizontal
+                                a.incButton(href='javascript:void(0);')
+                                a.decButton(href='javascript:void(0);')

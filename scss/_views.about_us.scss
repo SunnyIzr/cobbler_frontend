@@ -1,0 +1,125 @@
+.aboutUs {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/about_us/header.jpg') no-repeat scroll 50% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.introText {
+    border-bottom: 1px solid $panelColor;
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+
+
+    p {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+
+  .section.teamSection {
+    padding: 3.5em 0;
+
+    .teamWrapper {
+      overflow: hidden;
+    }
+
+    .team {
+      white-space: nowrap;
+      overflow: auto;
+      margin-bottom: -16px;
+      padding-bottom: 16px;
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        width: 62%;
+
+        .photo {
+          display: inline-block;
+          border-radius: 100%;
+          overflow: hidden;
+        }
+
+        .name {
+          margin-top: 1em;
+          font-family: $headerFont;
+          font-size: 129%;
+          font-weight: bold;
+          text-transform: uppercase;
+          white-space: normal;
+          text-align: center;
+          line-height: 1.2;
+        }
+
+        .contacts {
+          margin-top: 0.7em;
+        }
+      }
+    }
+  }
+
+  .section.tilesSection {
+    .tile {
+      height: 195px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .tile1 {
+      background-image: url('../images/views/about_us/tile_1.jpg');
+      background-position: 36% center;
+    }
+
+    .tile2 {
+      background-image: url('../images/views/about_us/tile_2.jpg');
+      background-position: 72% center;
+    }
+
+    .tile3 {
+      background-image: url('../images/views/about_us/tile_3.jpg');
+      background-position: 73% center;
+    }
+  }
+
+
+  @media #{$large-up} {
+
+    .section.teamSection {
+      padding: 10em 0 6em;
+
+      .team {
+        @include block-grid(4);
+        max-width: 1400px;
+        margin: 0 auto;
+        text-align: center;
+        white-space: normal;
+        overflow: hidden;
+
+        li {
+          display: inline-block;
+          float: none;
+          margin-left: -4px;
+          padding-bottom: 6em;
+
+        }
+      }
+    }
+
+    .section.tilesSection {
+      .tile {
+        height: 390px;
+      }
+    }
+  }
+}
+
+

@@ -10472,40 +10472,92 @@ table tr th {
 .getStarted .section.orderFormSection {
   background: url("../images/views/get_started/bg.jpg") no-repeat scroll 11% 0;
 }
-/* line 11, ../scss/_views.get_started.scss */
+/* line 10, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .hint {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+/* line 16, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .hint .icon {
+  position: absolute;
+  left: 100%;
+  bottom: 100%;
+  z-index: 1;
+  background: url("../images/icon_info.png") no-repeat scroll center center;
+  height: 18px;
+  width: 18px;
+}
+/* line 26, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .hint .content {
+  color: #000101;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  bottom: 32px;
+  left: -40px;
+  width: 245px;
+}
+/* line 35, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .hint .content > .arrow {
+  background: url("../images/tooltip_arrow.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 42px;
+  width: 14px;
+  height: 13px;
+}
+/* line 45, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .hint .content .container {
+  text-transform: none;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.5em;
+}
+/* line 52, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .hint .content .title {
+  color: inherit;
+}
+/* line 57, ../scss/_views.get_started.scss */
+.getStarted .section.orderFormSection .hint:hover .content {
+  display: block;
+}
+/* line 63, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile {
   padding-top: 10em;
 }
-/* line 15, ../scss/_views.get_started.scss */
+/* line 67, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm {
   text-transform: uppercase;
 }
-/* line 18, ../scss/_views.get_started.scss */
+/* line 70, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm table {
   width: 100%;
   background: transparent;
   border: none;
   border-collapse: collapse;
 }
-/* line 24, ../scss/_views.get_started.scss */
+/* line 76, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm table tr {
   background: transparent;
 }
-/* line 27, ../scss/_views.get_started.scss */
+/* line 79, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm table tr th, .getStarted .section.orderFormSection.mobile .orderForm table tr td {
   vertical-align: middle;
   line-height: 1.2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 35, ../scss/_views.get_started.scss */
+/* line 87, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm table tr:last-child th, .getStarted .section.orderFormSection.mobile .orderForm table tr:last-child td {
   border-bottom: none;
 }
-/* line 41, ../scss/_views.get_started.scss */
+/* line 93, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm table td {
   text-align: right;
 }
-/* line 46, ../scss/_views.get_started.scss */
+/* line 98, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .value {
   display: inline-block;
   width: 2em;
@@ -10515,17 +10567,17 @@ table tr th {
   font-size: 286%;
   vertical-align: middle;
 }
-/* line 55, ../scss/_views.get_started.scss */
+/* line 107, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .value .currencySymbol {
   font-size: 48%;
   vertical-align: super;
   margin-right: 0.5em;
 }
-/* line 62, ../scss/_views.get_started.scss */
+/* line 114, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .totalRow .value {
   text-align: right;
 }
-/* line 66, ../scss/_views.get_started.scss */
+/* line 118, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .upDownButton {
   display: inline-block;
   vertical-align: middle;
@@ -10539,65 +10591,13 @@ table tr th {
   border: 1px solid;
   border-radius: 4px;
 }
-/* line 80, ../scss/_views.get_started.scss */
+/* line 132, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .upDownButton.increase {
   background-image: url("../images/arrow_up.png");
 }
-/* line 84, ../scss/_views.get_started.scss */
+/* line 136, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .upDownButton.decrease {
   background-image: url("../images/arrow_down.png");
-}
-/* line 89, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection.mobile .orderForm .hint {
-  display: inline-block;
-  position: relative;
-  margin-left: 0.5em;
-  cursor: pointer;
-}
-/* line 95, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection.mobile .orderForm .hint .icon {
-  position: absolute;
-  left: 100%;
-  bottom: 100%;
-  z-index: 1;
-  background: url("../images/icon_info.png") no-repeat scroll center center;
-  height: 18px;
-  width: 18px;
-}
-/* line 105, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection.mobile .orderForm .hint .content {
-  color: #000101;
-  display: none;
-  position: absolute;
-  z-index: 2;
-  bottom: 32px;
-  left: -40px;
-  width: 245px;
-}
-/* line 114, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection.mobile .orderForm .hint .content > .arrow {
-  background: url("../images/tooltip_arrow.png") no-repeat scroll center center;
-  position: absolute;
-  z-index: 2;
-  top: 100%;
-  left: 42px;
-  width: 14px;
-  height: 13px;
-}
-/* line 124, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection.mobile .orderForm .hint .content .container {
-  text-transform: none;
-  background: #ffffff;
-  border-radius: 15px;
-  padding: 1.5em;
-}
-/* line 131, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection.mobile .orderForm .hint .content .title {
-  color: inherit;
-}
-/* line 136, ../scss/_views.get_started.scss */
-.getStarted .section.orderFormSection.mobile .orderForm .hint:hover .content {
-  display: block;
 }
 /* line 143, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop {

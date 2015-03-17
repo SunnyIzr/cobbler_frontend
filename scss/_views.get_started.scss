@@ -6,6 +6,58 @@
 
   .section.orderFormSection {
     background: url('../images/views/get_started/bg.jpg') no-repeat scroll 11% 0;
+
+    .hint {
+      display: inline-block;
+      position: relative;
+      margin-left: 0.5em;
+      cursor: pointer;
+
+      .icon {
+        position: absolute;
+        left: 100%;
+        bottom: 100%;
+        z-index: 1;
+        background: url('../images/icon_info.png') no-repeat scroll center center;
+        height: 18px;
+        width: 18px;
+      }
+
+      .content {
+        color: $textColor;
+        display: none;
+        position: absolute;
+        z-index: 2;
+        bottom: 32px;
+        left: -40px;
+        width: 245px;
+
+        > .arrow {
+          background: url('../images/tooltip_arrow.png') no-repeat scroll center center;
+          position: absolute;
+          z-index: 2;
+          top: 100%;
+          left: 42px;
+          width: 14px;
+          height: 13px;
+        }
+
+        .container {
+          text-transform: none;
+          background: $pageColor;
+          border-radius: 15px;
+          padding: 1.5em;
+        }
+
+        .title {
+          color: inherit;
+        }
+      }
+
+      &:hover .content {
+        display: block;
+      }
+    }
   }
 
   .section.orderFormSection.mobile {
@@ -83,58 +135,6 @@
 
         &.decrease{
           background-image: url('../images/arrow_down.png');
-        }
-      }
-
-      .hint {
-        display: inline-block;
-        position: relative;
-        margin-left: 0.5em;
-        cursor: pointer;
-
-        .icon {
-          position: absolute;
-          left: 100%;
-          bottom: 100%;
-          z-index: 1;
-          background: url('../images/icon_info.png') no-repeat scroll center center;
-          height: 18px;
-          width: 18px;
-        }
-
-        .content {
-          color: $textColor;
-          display: none;
-          position: absolute;
-          z-index: 2;
-          bottom: 32px;
-          left: -40px;
-          width: 245px;
-
-          > .arrow {
-            background: url('../images/tooltip_arrow.png') no-repeat scroll center center;
-            position: absolute;
-            z-index: 2;
-            top: 100%;
-            left: 42px;
-            width: 14px;
-            height: 13px;
-          }
-
-          .container {
-            text-transform: none;
-            background: $pageColor;
-            border-radius: 15px;
-            padding: 1.5em;
-          }
-
-          .title {
-            color: inherit;
-          }
-        }
-
-        &:hover .content {
-          display: block;
         }
       }
     }

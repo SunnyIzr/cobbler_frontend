@@ -20,21 +20,69 @@ mixin document(contentClass)
         .bodyWrapper
             .bodyCell
                 #page.container
+                    #menuOverlay.alteredText
+                        div
+                            a.closeButton(href='javascript:void(0);')
+                        .columns.small-12
+                            .row
+                                .columns.small-12
+                                    .logo
+                                        img(src='/images/logo.png')
+
+                                    ul.semanticList.menu
+                                        li.item
+                                            a(href='/get-started.html') Get Started
+                                        li.item
+                                            a(href='/login.html') Login
+                                        li.item
+                                            a(href='/pricing.html') Pricing
+                                        li.item
+                                            a(href='/marketplace.html') Marketplace
+                                        li.item
+                                            a(href='/about-us.html') About
+                                        li.item
+                                            a(href='/contact-us.html') Contact Us
+                                        li.item
+                                            a(href='/faqs.html') FAQs
+                                        li.item
+                                            a(href='/privacy-and-terms.html') Privacy & Terms
+
+                                    .row
+                                        .socialShare
+                                            a.facebook(href='//facebook.com', target='_blank')
+                                                img(src='/images/facebook.png')
+                                            a.twitter(href='//twitter.com', target='_blank')
+                                                img(src='/images/twitter.png')
+                                            a.instagram(href='//instagram.com', target='_blank')
+                                                img(src='/images/instagram.png')
+
+
                     #header.row
                         .logo
                             a(href='item.html')
                                 img(src='/images/logo.png')
-                        .menu.columns.small-6
+                        .menu
+                            a.menuToggleAction(href='javascript:void(0);')
 
                     #content.row(class=contentClass)
                         .columns.small-12
                             if block
                                 block
                     #footer.row.collapse
-                        .row.hidden-for-medium-down
-                            .columns.small-4.logo
-                                img(src='/images/logo_footer.png')
-                            .columns.small-8.bottomMenu
+                        .row
+                            .columns.small-12.large-4
+                                .row.logo
+                                    img(src='/images/logo_footer.png')
+                                .row
+                                    .socialShare
+                                        a.facebook(href='//facebook.com', target='_blank')
+                                            img(src='/images/facebook.png')
+                                        a.twitter(href='//twitter.com', target='_blank')
+                                            img(src='/images/twitter.png')
+                                        a.instagram(href='//instagram.com', target='_blank')
+                                            img(src='/images/instagram.png')
+
+                            .columns.hide-for-medium-down.large-8.bottomMenu
                                 ul.semanticList
                                     li
                                         a(href='#') About
@@ -44,19 +92,6 @@ mixin document(contentClass)
                                         a(href='#') FAQS
                                     li
                                         a(href='#') Privacy & Terms
-                        .row.logosWrapper
-                            .columns.small-12 As Seen In
-                            ul.semanticList.logos
-                                li
-                                    img(src="/images/views/home/logo_NYC.png")
-                                li
-                                    img(src="/images/views/home/logo_esquare.png")
-                                li
-                                    img(src="/images/views/home/logo_townAndCountry.png")
-                                li
-                                    img(src="/images/views/home/logo_dailyNews.png")
-                                li
-                                    img(src="/images/views/home/logo_gq.png")
 
                 // jQuery (necessary for Bootstrap's JavaScript plugins)
                 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')

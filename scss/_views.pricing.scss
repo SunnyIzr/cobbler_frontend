@@ -1,0 +1,66 @@
+.pricing {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/pricing/header.jpg') no-repeat scroll 26% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.pricing {
+
+    .benefitsWrapper {
+      background: none;
+    }
+  }
+
+  .section.whatHappensNext {
+    background: #eff2f6;
+    padding-bottom: 5em;
+
+    .items {
+      li {
+        margin-top: 3em;
+
+        .content {
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+
+  @media #{$large-up} {
+    .section {
+      .headerWrapper {
+        margin-top: 4em;
+      }
+    }
+
+
+    .section.whatHappensNext {
+      .items {
+        @include block-grid(4);
+        max-width: 1400px;
+        margin: 0 auto;
+
+        li {
+          display: inline-block;
+          margin-left: -5px;
+          vertical-align: top;
+          float: none;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+

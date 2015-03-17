@@ -1,0 +1,39 @@
+.marketplace {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/marketplace/header.jpg') no-repeat scroll 16% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.comingSoon {
+    padding-top: 1em;
+    padding-bottom: 4em;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 157%;
+    }
+  }
+
+
+  @media #{$large-up} {
+
+    .section.comingSoon {
+      padding-bottom: 12em;
+      padding-top: 6em;
+
+      h1 {
+        font-size: 300%;
+      }
+    }
+  }
+}
+
+

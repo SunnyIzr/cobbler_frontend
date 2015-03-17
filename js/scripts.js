@@ -1,5 +1,20 @@
 $(document).on('ready', function () {
     resizeSlide();
+
+
+    $('.faqs .questions .question').on('click', function() {
+        $(this).closest('.item').toggleClass('expanded');
+        return false;
+    });
+
+    $('.menuToggleAction').on('click', function () {
+        $('#menuOverlay').addClass('activated');
+    });
+
+    $('#menuOverlay').find('.closeButton').on('click', function () {
+        $(this).closest('#menuOverlay').removeClass('activated');
+        return false;
+    });
 });
 
 $(window).on('resize', function () {

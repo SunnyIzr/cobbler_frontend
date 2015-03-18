@@ -27,7 +27,8 @@ mixin document(contentClass)
                             .row
                                 .columns.small-12
                                     .logo
-                                        img(src='/images/logo.png')
+                                        a(href='/')
+                                            img(src='/images/logo.png')
 
                                     ul.semanticList.menu
                                         li.item
@@ -59,7 +60,7 @@ mixin document(contentClass)
 
                     #header.row
                         .logo
-                            a(href='item.html')
+                            a(href='/')
                                 img(src='/images/logo.png')
                         .menu
                             a.menuToggleAction(href='javascript:void(0);')
@@ -85,13 +86,13 @@ mixin document(contentClass)
                             .columns.hide-for-medium-down.large-8.bottomMenu
                                 ul.semanticList
                                     li
-                                        a(href='#') About
+                                        a(href='/about-us.html') About
                                     li
-                                        a(href='#') Contact
+                                        a(href='/contact-us.html') Contact
                                     li
-                                        a(href='#') FAQS
+                                        a(href='/faqs.html') FAQS
                                     li
-                                        a(href='#') Privacy & Terms
+                                        a(href='/privacy-and-terms.html') Privacy & Terms
 
                 // jQuery (necessary for Bootstrap's JavaScript plugins)
                 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')

@@ -1,0 +1,84 @@
+#content.paymentReview {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/faqs/header.jpg') no-repeat scroll 42% center;
+    background-size: cover;
+
+    height: 266px;
+
+    .subtitle {
+      text-transform: uppercase;
+      font-family: $headerFont;
+    }
+  }
+
+  .section.paymentReview {
+
+    .orderCalculation {
+      margin-top: 3em;
+      width: 100%;
+      border-collapse: collapse;
+      text-transform: uppercase;
+      border: none;
+      font-family: $headerFont;
+      font-size: 93%;
+
+      tr {
+        background: none;
+      }
+
+      td {
+        line-height: 2;
+      }
+
+      .amount, .quantity {
+        text-align: right;
+      }
+
+      .amount {
+        font-weight: bold;
+      }
+
+      .verticalSpacer {
+        height: 2.5em;
+      }
+
+      .totalsRow {
+        font-size: 138%;
+        border-top: 1px solid $panelColor;
+        border-bottom: 1px solid $panelColor;
+
+        td {
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
+      }
+    }
+
+    .actionProceed {
+      margin-top: 3em;
+      margin-bottom: 0;
+    }
+  }
+
+  .section.explanationText {
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    p {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+
+
+  @media #{$large-up} {
+
+  }
+}
+
+

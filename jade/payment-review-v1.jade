@@ -1,0 +1,37 @@
+include _layout.jade
++document('paymentReview')
+    .row.section.intro.alteredText
+        .columns.small-12
+            .contentContainer
+                .contentContainerCell
+                    h1 Payment
+                    .subtitle Review Your Order: Step 1 of 2
+
+    .row.section.paymentReview
+        .columns.small-12
+            table.orderCalculation
+                tr
+                    td.quantity 5
+                    td Women's Shoes
+                    td.amount $100
+                tr
+                    td.quantity 2
+                    td Men's Shoes
+                    td.amount $125
+                tr
+                    td.quantity 1
+                    td Handbag
+                    td.amount $150
+                tr.verticalSpacer
+                    td(colspan=3)
+                tr.totalsRow
+                    td
+                    td Your Total
+                    td.amount $375
+
+            a.button.actionProceed(href='#') Next: Payment Info
+
+    .row.section.explanationText
+        .columns.small-12
+            p.
+                Whether you need service on both shoes or 1 shoe, you still need to send us both to make sure we are matching the other one. If you send your shoes in and we dont hear back from you in 10 days we will return your shoes back to you

@@ -2,15 +2,20 @@ include _layout.jade
 +document('orderConfirmation')
     .row.section.orderConfirmation.alteredText
         .columns.small-12
-            .columns.small-12
-                .headerWrapper
-                    .stroke
-                    h1 Congratulations! Your Cobble delivery Package is on it's way!
+            .row.sectionContentWrapper
+                .columns.small-12.large-7
+                    .headerWrapper
+                        .stroke
+                        h1 Congratulations! Your Cobble delivery Package is on it's way!
 
-                .messageFromStore
-                    p
-                        | Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque. Morbi pulvinar consectetur elementum. Etiam ut lectus accumsan, egestas leo id, placerat nulla. Pellentesque ut ornare erat, ac congue velit. Maecenas sapien ligula, feugiat at ipsum quis, finibus faucibus nibh.
-                .columns.small-8.small-centered
+                    .messageFromStore
+                        p
+                            | Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque. Morbi pulvinar consectetur elementum. Etiam ut lectus accumsan, egestas leo id, placerat nulla. Pellentesque ut ornare erat, ac congue velit. Maecenas sapien ligula, feugiat at ipsum quis, finibus faucibus nibh.
+
+                .columns.large-1
+                    span &nbsp;
+
+                .columns.small-8.small-centered.large-uncentered.large-4
                     .orderInfo
                         .amount
                             span.currencySymbol $
@@ -33,7 +38,7 @@ include _layout.jade
                     .stroke
                     h1.header  What Happens Next
 
-            .navigationHint
+            .navigationHint.hidden-for-large-up
                 | Swipe right for more
 
             .itemsWrapper

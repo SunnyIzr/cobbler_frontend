@@ -9205,57 +9205,63 @@ table tr th {
 }
 
 /* line 44, ../scss/_general.scss */
+label {
+  color: inherit;
+  font-weight: inherit;
+}
+
+/* line 49, ../scss/_general.scss */
 .alteredText {
   color: #ffffff;
 }
-/* line 47, ../scss/_general.scss */
+/* line 52, ../scss/_general.scss */
 .alteredText h1, .alteredText h2, .alteredText h3, .alteredText h4, .alteredText h5, .alteredText h6 {
   color: #ffffff;
 }
 
-/* line 52, ../scss/_general.scss */
+/* line 57, ../scss/_general.scss */
 .button {
   font-family: inherit;
   font-size: 86%;
   text-transform: uppercase;
   background-color: #0047ad;
 }
-/* line 59, ../scss/_general.scss */
+/* line 64, ../scss/_general.scss */
 .button:hover {
   background-color: #0047ad;
 }
 
-/* line 64, ../scss/_general.scss */
+/* line 69, ../scss/_general.scss */
 .semanticList {
   list-style: none;
   margin: 0;
 }
 
-/* line 69, ../scss/_general.scss */
+/* line 74, ../scss/_general.scss */
 .headerWrapper {
   display: inline-block;
 }
-/* line 72, ../scss/_general.scss */
+/* line 77, ../scss/_general.scss */
 .headerWrapper .stroke {
   margin: 0 11%;
   height: 4px;
   background: #6481ab;
 }
-/* line 78, ../scss/_general.scss */
+/* line 83, ../scss/_general.scss */
 .headerWrapper .header {
   margin-top: 0.5em;
 }
 
-/* line 83, ../scss/_general.scss */
+/* line 88, ../scss/_general.scss */
 .contentPanel {
   background-color: #c8cdd2;
 }
 
-/* line 87, ../scss/_general.scss */
+/* line 92, ../scss/_general.scss */
 #header {
   position: relative;
 }
-/* line 90, ../scss/_general.scss */
+/* line 95, ../scss/_general.scss */
 #header .logo {
   position: absolute;
   right: 0;
@@ -9264,14 +9270,14 @@ table tr th {
   width: 75px;
   height: 75px;
 }
-/* line 100, ../scss/_general.scss */
+/* line 105, ../scss/_general.scss */
 #header .menu {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
-/* line 106, ../scss/_general.scss */
+/* line 111, ../scss/_general.scss */
 #header .menu .menuToggleAction {
   margin-top: 1em;
   margin-left: 1em;
@@ -9281,18 +9287,18 @@ table tr th {
   height: 14px;
 }
 
-/* line 118, ../scss/_general.scss */
+/* line 123, ../scss/_general.scss */
 #page {
   background: #ffffff;
   position: relative;
   margin: 0 auto;
 }
-/* line 125, ../scss/_general.scss */
+/* line 130, ../scss/_general.scss */
 #page > .row {
   max-width: 100%;
 }
 
-/* line 131, ../scss/_general.scss */
+/* line 136, ../scss/_general.scss */
 #footer {
   background: #000000;
   color: #989797;
@@ -9301,40 +9307,40 @@ table tr th {
   padding: 2em 0 4em;
   font-family: "futura-pt";
 }
-/* line 139, ../scss/_general.scss */
+/* line 144, ../scss/_general.scss */
 #footer a {
   color: inherit;
 }
-/* line 142, ../scss/_general.scss */
+/* line 147, ../scss/_general.scss */
 #footer a:hover {
   color: #ffffff;
 }
-/* line 147, ../scss/_general.scss */
+/* line 152, ../scss/_general.scss */
 #footer .logo {
   font-weight: 700;
   text-align: center;
   opacity: 0.6;
 }
-/* line 153, ../scss/_general.scss */
+/* line 158, ../scss/_general.scss */
 #footer .logosWrapper {
   font-size: 93%;
 }
-/* line 157, ../scss/_general.scss */
+/* line 162, ../scss/_general.scss */
 #footer .bottomMenu {
   text-align: right;
 }
-/* line 160, ../scss/_general.scss */
+/* line 165, ../scss/_general.scss */
 #footer .bottomMenu li {
   display: inline-block;
   margin-left: 3em;
   font-size: 81%;
 }
-/* line 165, ../scss/_general.scss */
+/* line 170, ../scss/_general.scss */
 #footer .bottomMenu li:first-child {
   margin-left: 0;
 }
 
-/* line 172, ../scss/_general.scss */
+/* line 177, ../scss/_general.scss */
 #menuOverlay {
   position: absolute;
   left: 0;
@@ -9347,15 +9353,15 @@ table tr th {
   padding: 4em 0 6em;
   display: none;
 }
-/* line 184, ../scss/_general.scss */
+/* line 189, ../scss/_general.scss */
 #menuOverlay.activated {
   display: block;
 }
-/* line 188, ../scss/_general.scss */
+/* line 193, ../scss/_general.scss */
 #menuOverlay a {
   color: inherit;
 }
-/* line 192, ../scss/_general.scss */
+/* line 197, ../scss/_general.scss */
 #menuOverlay .closeButton {
   position: absolute;
   top: 15px;
@@ -9364,42 +9370,42 @@ table tr th {
   height: 27px;
   background: url("../images/icon_close_white.png") no-repeat scroll center center;
 }
-/* line 203, ../scss/_general.scss */
+/* line 208, ../scss/_general.scss */
 #menuOverlay .logo {
   width: 124px;
   margin: 0 auto;
 }
-/* line 208, ../scss/_general.scss */
+/* line 213, ../scss/_general.scss */
 #menuOverlay .menu {
   text-transform: uppercase;
   font-size: 129%;
   margin-top: 2em;
 }
-/* line 213, ../scss/_general.scss */
+/* line 218, ../scss/_general.scss */
 #menuOverlay .menu .item {
   padding: 0.8em 0;
 }
 
-/* line 219, ../scss/_general.scss */
+/* line 224, ../scss/_general.scss */
 .socialShare {
   margin-top: 2em;
 }
-/* line 222, ../scss/_general.scss */
+/* line 227, ../scss/_general.scss */
 .socialShare > a {
   margin-left: 1em;
   opacity: 0.6;
 }
-/* line 226, ../scss/_general.scss */
+/* line 231, ../scss/_general.scss */
 .socialShare > a:first-child {
   margin-left: 0;
 }
-/* line 230, ../scss/_general.scss */
+/* line 235, ../scss/_general.scss */
 .socialShare > a:hover {
   opacity: 1;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 239, ../scss/_general.scss */
+  /* line 244, ../scss/_general.scss */
   #footer .logos {
     display: block;
     padding: 0;
@@ -9437,65 +9443,65 @@ table tr th {
   #footer .logos > li:nth-of-type(2n+1) {
     clear: both;
   }
-  /* line 244, ../scss/_general.scss */
+  /* line 249, ../scss/_general.scss */
   #footer .logos li {
     padding-bottom: 0;
   }
-  /* line 247, ../scss/_general.scss */
+  /* line 252, ../scss/_general.scss */
   #footer .logos li:nth-of-type(2n+1) {
     text-align: right;
   }
-  /* line 251, ../scss/_general.scss */
+  /* line 256, ../scss/_general.scss */
   #footer .logos li:nth-of-type(2n) {
     text-align: left;
   }
-  /* line 255, ../scss/_general.scss */
+  /* line 260, ../scss/_general.scss */
   #footer .logos li:last-child {
     width: 100%;
     text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 265, ../scss/_general.scss */
+  /* line 270, ../scss/_general.scss */
   html, body {
     font-size: 16px;
   }
 
-  /* line 269, ../scss/_general.scss */
+  /* line 274, ../scss/_general.scss */
   h1 {
     font-size: 138%;
   }
 
-  /* line 273, ../scss/_general.scss */
+  /* line 278, ../scss/_general.scss */
   .button {
     font-size: 75%;
   }
 
-  /* line 278, ../scss/_general.scss */
+  /* line 283, ../scss/_general.scss */
   #header .logo {
     width: auto;
     height: auto;
   }
 
-  /* line 284, ../scss/_general.scss */
+  /* line 289, ../scss/_general.scss */
   #footer {
     padding: 4em 2em 7em;
     text-align: left;
   }
-  /* line 289, ../scss/_general.scss */
+  /* line 294, ../scss/_general.scss */
   #footer .logo {
     text-align: left;
   }
-  /* line 295, ../scss/_general.scss */
+  /* line 300, ../scss/_general.scss */
   #footer .logosWrapper {
     margin-top: 1.5em;
     font-size: 81%;
   }
-  /* line 299, ../scss/_general.scss */
+  /* line 304, ../scss/_general.scss */
   #footer .logosWrapper .logos {
     margin-left: -3px;
   }
-  /* line 302, ../scss/_general.scss */
+  /* line 307, ../scss/_general.scss */
   #footer .logosWrapper .logos li {
     display: inline-block;
   }
@@ -10912,68 +10918,141 @@ table tr th {
   border-collapse: collapse;
   text-transform: uppercase;
   border: none;
-  font-family: "futura-pt";
   font-size: 93%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 34, ../scss/_views.payment_review.scss */
+/* line 33, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation tr {
   background: none;
 }
-/* line 38, ../scss/_views.payment_review.scss */
-#content.paymentReview .section.paymentReview .orderCalculation td {
-  line-height: 2;
+/* line 37, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .quantity, #content.paymentReview .section.paymentReview .orderCalculation .name, #content.paymentReview .section.paymentReview .orderCalculation .amount {
+  font-family: "futura-pt";
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
-/* line 42, ../scss/_views.payment_review.scss */
+/* line 43, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .amount, #content.paymentReview .section.paymentReview .orderCalculation .quantity {
   text-align: right;
 }
-/* line 46, ../scss/_views.payment_review.scss */
+/* line 47, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .amount {
   font-weight: bold;
 }
-/* line 50, ../scss/_views.payment_review.scss */
+/* line 51, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .verticalSpacer {
   height: 2.5em;
 }
-/* line 54, ../scss/_views.payment_review.scss */
+/* line 55, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td {
+  text-align: center;
+  font-size: 108%;
+}
+/* line 59, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .question {
+  font-family: "futura-pt";
+  font-weight: bold;
+}
+/* line 64, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .note {
+  text-transform: none;
+  margin-top: 1em;
+}
+/* line 69, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options {
+  margin-top: 2em;
+  font-family: "futura-pt";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 75, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options input[type=radio] {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin: 0;
+}
+/* line 83, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label {
+  font-size: 100%;
+  vertical-align: middle;
+  margin-left: -30px;
+  padding-left: 30px;
+}
+/* line 89, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label > .checkbox {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c8cdd2;
+}
+/* line 97, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label > .text {
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+/* line 103, ../scss/_views.payment_review.scss */
+#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options input[type=radio]:checked + label .checkbox {
+  background: #000101;
+}
+/* line 110, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .totalsRow {
   font-size: 138%;
   border-top: 1px solid #c8cdd2;
   border-bottom: 1px solid #c8cdd2;
 }
-/* line 59, ../scss/_views.payment_review.scss */
+/* line 115, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .totalsRow td {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
-/* line 66, ../scss/_views.payment_review.scss */
+/* line 122, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .actionProceed {
   margin-top: 3em;
   margin-bottom: 0;
 }
-/* line 72, ../scss/_views.payment_review.scss */
+/* line 128, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.explanationText {
   padding-top: 4em;
   padding-bottom: 4em;
 }
-/* line 76, ../scss/_views.payment_review.scss */
+/* line 132, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.explanationText p {
   max-width: 800px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 87, ../scss/_views.payment_review.scss */
+  /* line 143, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.paymentReview .orderCalculation {
     font-size: 113%;
   }
-  /* line 90, ../scss/_views.payment_review.scss */
+  /* line 146, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.paymentReview .orderCalculation .totalsRow {
     font-size: 200%;
   }
-  /* line 96, ../scss/_views.payment_review.scss */
+  /* line 150, ../scss/_views.payment_review.scss */
+  #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td {
+    text-align: left;
+    font-size: 89%;
+  }
+  /* line 154, ../scss/_views.payment_review.scss */
+  #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .note {
+    margin-top: 0.5em;
+  }
+  /* line 158, ../scss/_views.payment_review.scss */
+  #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options {
+    text-align: right;
+    margin-top: 0;
+  }
+  /* line 162, ../scss/_views.payment_review.scss */
+  #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label {
+    margin-right: 0;
+  }
+  /* line 170, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.explanationText {
     padding-bottom: 8em;
   }

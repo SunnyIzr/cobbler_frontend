@@ -59,31 +59,55 @@
             </div>
             <div class="row section paymentReview">
               <div class="columns small-12">
-                <table class="orderCalculation">
-                  <tr>
-                    <td class="quantity">5</td>
-                    <td>Women's Shoes</td>
-                    <td class="amount">$100</td>
-                  </tr>
-                  <tr>
-                    <td class="quantity">2</td>
-                    <td>Men's Shoes</td>
-                    <td class="amount">$125</td>
-                  </tr>
-                  <tr>
-                    <td class="quantity">1</td>
-                    <td>Handbag</td>
-                    <td class="amount">$150</td>
-                  </tr>
-                  <tr class="verticalSpacer">
-                    <td colspan="3"></td>
-                  </tr>
-                  <tr class="totalsRow">
-                    <td></td>
-                    <td>Your Total</td>
-                    <td class="amount">$375</td>
-                  </tr>
-                </table><a href="#" class="button actionProceed">Next: Payment Info</a>
+                <form action="" method="post">
+                  <table class="orderCalculation">
+                    <tr>
+                      <td class="quantity">5</td>
+                      <td class="name">Women's Shoes</td>
+                      <td class="amount">$100</td>
+                    </tr>
+                    <tr class="positionClarification">
+                      <td></td>
+                      <td colspan="2">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <div class="question">Are you sending a pair of tall boots?</div>
+                            <div class="note">* There is no additional charge. We want to make sure your box is large enough</div>
+                          </div>
+                          <div class="columns small-12 large-5 options">
+                            <input id="orderContainTallBootsYes" type="radio" name="orderContainTallBoots"/>
+                            <label for="orderContainTallBootsYes">
+                              <div class="checkbox"></div><span class="text">Yes</span>
+                            </label>
+                            <input id="orderContainTallBootsNo" type="radio" name="orderContainTallBoots"/>
+                            <label for="orderContainTallBootsNo">
+                              <div class="checkbox"></div><span class="text">No</span>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="quantity">2</td>
+                      <td class="name">Men's Shoes</td>
+                      <td class="amount">$125</td>
+                    </tr>
+                    <tr>
+                      <td class="quantity">1</td>
+                      <td class="name">Handbag</td>
+                      <td class="amount">$150</td>
+                    </tr>
+                    <tr class="verticalSpacer">
+                      <td colspan="3"></td>
+                    </tr>
+                    <tr class="totalsRow">
+                      <td></td>
+                      <td class="name">Your Total</td>
+                      <td class="amount">$375</td>
+                    </tr>
+                  </table>
+                  <input type="submit" value="Next: Payment Info" class="button actionProceed"/>
+                </form>
               </div>
             </div>
             <div class="row section explanationText">

@@ -41,6 +41,11 @@ table {
   }
 }
 
+label {
+  color: inherit;
+  font-weight: inherit;
+}
+
 .alteredText {
   color: $pageColor;
 

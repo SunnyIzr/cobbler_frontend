@@ -24,7 +24,6 @@
       border-collapse: collapse;
       text-transform: uppercase;
       border: none;
-      font-family: $headerFont;
       font-size: 93%;
 
       max-width: 800px;
@@ -35,8 +34,10 @@
         background: none;
       }
 
-      td {
-        line-height: 2;
+      .quantity, .name, .amount {
+        font-family: $headerFont;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
       }
 
       .amount, .quantity {
@@ -51,14 +52,69 @@
         height: 2.5em;
       }
 
+      .positionClarification td {
+        text-align: center;
+        font-size: 108%;
+        
+        .question {
+          font-family: $headerFont;
+          font-weight: bold;
+        }
+
+        .note {
+          text-transform: none;
+          margin-top: 1em;
+        }
+
+        .options {
+          margin-top: 2em;
+          font-family: $headerFont;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          input[type=radio] {
+            opacity: 0;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin: 0;
+          }
+
+          label {
+            font-size: 100%;
+            vertical-align: middle;
+            margin-left: -30px;
+            padding-left: 30px;
+
+            > .checkbox {
+              vertical-align: middle;
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              border: 1px solid $panelColor;
+            }
+
+            > .text {
+              vertical-align: middle;
+              margin-left: 0.5em;
+            }
+          }
+
+          input[type=radio]:checked + label .checkbox {
+            background: $textColor;
+          }
+
+        }
+      }
+
       .totalsRow {
         font-size: 138%;
         border-top: 1px solid $panelColor;
         border-bottom: 1px solid $panelColor;
 
         td {
-          padding-top: 1em;
-          padding-bottom: 1em;
+          padding-top: 1.5em;
+          padding-bottom: 1.5em;
         }
       }
     }
@@ -89,6 +145,24 @@
 
         .totalsRow {
           font-size: 200%;
+        }
+
+        .positionClarification td {
+          text-align: left;
+          font-size: 89%;
+
+          .note {
+            margin-top: 0.5em;
+          }
+
+          .options {
+            text-align: right;
+            margin-top: 0;
+
+            label {
+              margin-right: 0;
+            }
+          }
         }
       }
     }

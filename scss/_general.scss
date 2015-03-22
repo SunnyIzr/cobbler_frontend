@@ -89,6 +89,12 @@ label {
   background-color: $panelColor;
 }
 
+.currencySymbol {
+  font-size: 48%;
+  vertical-align: super;
+  margin-right: 0.2em;
+}
+
 #header {
   position: relative;
 

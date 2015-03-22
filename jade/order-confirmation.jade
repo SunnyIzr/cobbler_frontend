@@ -1,0 +1,68 @@
+include _layout.jade
++document('orderConfirmation')
+    .row.section.orderConfirmation.alteredText
+        .columns.small-12
+            .columns.small-12
+                .headerWrapper
+                    .stroke
+                    h1 Congratulations! Your Cobble delivery Package is on it's way!
+
+                .messageFromStore
+                    p
+                        | Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque. Morbi pulvinar consectetur elementum. Etiam ut lectus accumsan, egestas leo id, placerat nulla. Pellentesque ut ornare erat, ac congue velit. Maecenas sapien ligula, feugiat at ipsum quis, finibus faucibus nibh.
+                .columns.small-8.small-centered
+                    .orderInfo
+                        .amount
+                            span.currencySymbol $
+                            span 375
+                        ul.semanticList.orderItems
+                            li
+                                span.quantity 5
+                                span.name Women's shoes
+                            li
+                                span.quantity 2
+                                span.name Men's shoes
+                            li
+                                span.quantity 1
+                                span.name Handbags
+
+    .row.section.whatHappensNext
+        .columns.small-12
+            div
+                .headerWrapper
+                    .stroke
+                    h1.header  What Happens Next
+
+            .navigationHint
+                | Swipe right for more
+
+            .itemsWrapper
+                ul.semanticList.items
+                    li
+                        img(src='/images/views/pricing/what_happens_next_details_email.png')
+                        .content
+                            h6.title Details Email
+                            p.
+                                Durabitur non sem et turpiss gravida porta eget sit amet eros am lobortis.
+
+                    li
+                        img(src='/images/views/pricing/what_happens_next_delivery_box.png')
+                        .content
+                            h6.title Delivery Box
+                            p.
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+
+                    li
+                        img(src='/images/views/pricing/what_happens_next_personal_concierge.png')
+                        .content
+                            h6.title Personal Concierge
+                            p.
+                                Durabitur non sem et turpiss gravida porta eget sit amet eros am lobortis.
+
+                    li
+                        img(src='/images/views/pricing/what_happens_next_receive_your_shoes.png')
+                        .content
+                            h6.title Details Email
+                            p.
+                                Nam tincidunt, est nec accumsan sodales, ligula justo rhon cus mauris
+

@@ -9258,10 +9258,17 @@ label {
 }
 
 /* line 92, ../scss/_general.scss */
+.currencySymbol {
+  font-size: 48%;
+  vertical-align: super;
+  margin-right: 0.2em;
+}
+
+/* line 98, ../scss/_general.scss */
 #header {
   position: relative;
 }
-/* line 95, ../scss/_general.scss */
+/* line 101, ../scss/_general.scss */
 #header .logo {
   position: absolute;
   right: 0;
@@ -9270,14 +9277,14 @@ label {
   width: 75px;
   height: 75px;
 }
-/* line 105, ../scss/_general.scss */
+/* line 111, ../scss/_general.scss */
 #header .menu {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
-/* line 111, ../scss/_general.scss */
+/* line 117, ../scss/_general.scss */
 #header .menu .menuToggleAction {
   margin-top: 1em;
   margin-left: 1em;
@@ -9287,18 +9294,18 @@ label {
   height: 14px;
 }
 
-/* line 123, ../scss/_general.scss */
+/* line 129, ../scss/_general.scss */
 #page {
   background: #ffffff;
   position: relative;
   margin: 0 auto;
 }
-/* line 130, ../scss/_general.scss */
+/* line 136, ../scss/_general.scss */
 #page > .row {
   max-width: 100%;
 }
 
-/* line 136, ../scss/_general.scss */
+/* line 142, ../scss/_general.scss */
 #footer {
   background: #000000;
   color: #989797;
@@ -9307,40 +9314,40 @@ label {
   padding: 2em 0 4em;
   font-family: "futura-pt";
 }
-/* line 144, ../scss/_general.scss */
+/* line 150, ../scss/_general.scss */
 #footer a {
   color: inherit;
 }
-/* line 147, ../scss/_general.scss */
+/* line 153, ../scss/_general.scss */
 #footer a:hover {
   color: #ffffff;
 }
-/* line 152, ../scss/_general.scss */
+/* line 158, ../scss/_general.scss */
 #footer .logo {
   font-weight: 700;
   text-align: center;
   opacity: 0.6;
 }
-/* line 158, ../scss/_general.scss */
+/* line 164, ../scss/_general.scss */
 #footer .logosWrapper {
   font-size: 93%;
 }
-/* line 162, ../scss/_general.scss */
+/* line 168, ../scss/_general.scss */
 #footer .bottomMenu {
   text-align: right;
 }
-/* line 165, ../scss/_general.scss */
+/* line 171, ../scss/_general.scss */
 #footer .bottomMenu li {
   display: inline-block;
   margin-left: 3em;
   font-size: 81%;
 }
-/* line 170, ../scss/_general.scss */
+/* line 176, ../scss/_general.scss */
 #footer .bottomMenu li:first-child {
   margin-left: 0;
 }
 
-/* line 177, ../scss/_general.scss */
+/* line 183, ../scss/_general.scss */
 #menuOverlay {
   position: absolute;
   left: 0;
@@ -9353,15 +9360,15 @@ label {
   padding: 4em 0 6em;
   display: none;
 }
-/* line 189, ../scss/_general.scss */
+/* line 195, ../scss/_general.scss */
 #menuOverlay.activated {
   display: block;
 }
-/* line 193, ../scss/_general.scss */
+/* line 199, ../scss/_general.scss */
 #menuOverlay a {
   color: inherit;
 }
-/* line 197, ../scss/_general.scss */
+/* line 203, ../scss/_general.scss */
 #menuOverlay .closeButton {
   position: absolute;
   top: 15px;
@@ -9370,42 +9377,42 @@ label {
   height: 27px;
   background: url("../images/icon_close_white.png") no-repeat scroll center center;
 }
-/* line 208, ../scss/_general.scss */
+/* line 214, ../scss/_general.scss */
 #menuOverlay .logo {
   width: 124px;
   margin: 0 auto;
 }
-/* line 213, ../scss/_general.scss */
+/* line 219, ../scss/_general.scss */
 #menuOverlay .menu {
   text-transform: uppercase;
   font-size: 129%;
   margin-top: 2em;
 }
-/* line 218, ../scss/_general.scss */
+/* line 224, ../scss/_general.scss */
 #menuOverlay .menu .item {
   padding: 0.8em 0;
 }
 
-/* line 224, ../scss/_general.scss */
+/* line 230, ../scss/_general.scss */
 .socialShare {
   margin-top: 2em;
 }
-/* line 227, ../scss/_general.scss */
+/* line 233, ../scss/_general.scss */
 .socialShare > a {
   margin-left: 1em;
   opacity: 0.6;
 }
-/* line 231, ../scss/_general.scss */
+/* line 237, ../scss/_general.scss */
 .socialShare > a:first-child {
   margin-left: 0;
 }
-/* line 235, ../scss/_general.scss */
+/* line 241, ../scss/_general.scss */
 .socialShare > a:hover {
   opacity: 1;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 244, ../scss/_general.scss */
+  /* line 250, ../scss/_general.scss */
   #footer .logos {
     display: block;
     padding: 0;
@@ -9443,65 +9450,65 @@ label {
   #footer .logos > li:nth-of-type(2n+1) {
     clear: both;
   }
-  /* line 249, ../scss/_general.scss */
+  /* line 255, ../scss/_general.scss */
   #footer .logos li {
     padding-bottom: 0;
   }
-  /* line 252, ../scss/_general.scss */
+  /* line 258, ../scss/_general.scss */
   #footer .logos li:nth-of-type(2n+1) {
     text-align: right;
   }
-  /* line 256, ../scss/_general.scss */
+  /* line 262, ../scss/_general.scss */
   #footer .logos li:nth-of-type(2n) {
     text-align: left;
   }
-  /* line 260, ../scss/_general.scss */
+  /* line 266, ../scss/_general.scss */
   #footer .logos li:last-child {
     width: 100%;
     text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 270, ../scss/_general.scss */
+  /* line 276, ../scss/_general.scss */
   html, body {
     font-size: 16px;
   }
 
-  /* line 274, ../scss/_general.scss */
+  /* line 280, ../scss/_general.scss */
   h1 {
     font-size: 138%;
   }
 
-  /* line 278, ../scss/_general.scss */
+  /* line 284, ../scss/_general.scss */
   .button {
     font-size: 75%;
   }
 
-  /* line 283, ../scss/_general.scss */
+  /* line 289, ../scss/_general.scss */
   #header .logo {
     width: auto;
     height: auto;
   }
 
-  /* line 289, ../scss/_general.scss */
+  /* line 295, ../scss/_general.scss */
   #footer {
     padding: 4em 2em 7em;
     text-align: left;
   }
-  /* line 294, ../scss/_general.scss */
+  /* line 300, ../scss/_general.scss */
   #footer .logo {
     text-align: left;
   }
-  /* line 300, ../scss/_general.scss */
+  /* line 306, ../scss/_general.scss */
   #footer .logosWrapper {
     margin-top: 1.5em;
     font-size: 81%;
   }
-  /* line 304, ../scss/_general.scss */
+  /* line 310, ../scss/_general.scss */
   #footer .logosWrapper .logos {
     margin-left: -3px;
   }
-  /* line 307, ../scss/_general.scss */
+  /* line 313, ../scss/_general.scss */
   #footer .logosWrapper .logos li {
     display: inline-block;
   }
@@ -10582,15 +10589,13 @@ label {
 }
 /* line 107, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .value .currencySymbol {
-  font-size: 48%;
-  vertical-align: super;
   margin-right: 0.5em;
 }
-/* line 114, ../scss/_views.get_started.scss */
+/* line 112, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .totalRow .value {
   text-align: right;
 }
-/* line 118, ../scss/_views.get_started.scss */
+/* line 116, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .upDownButton {
   display: inline-block;
   vertical-align: middle;
@@ -10604,20 +10609,20 @@ label {
   border: 1px solid;
   border-radius: 4px;
 }
-/* line 132, ../scss/_views.get_started.scss */
+/* line 130, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .upDownButton.increase {
   background-image: url("../images/arrow_up.png");
 }
-/* line 136, ../scss/_views.get_started.scss */
+/* line 134, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.mobile .orderForm .upDownButton.decrease {
   background-image: url("../images/arrow_down.png");
 }
-/* line 143, ../scss/_views.get_started.scss */
+/* line 141, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop {
   background-size: cover;
   padding: 12em 0 6em;
 }
-/* line 147, ../scss/_views.get_started.scss */
+/* line 145, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm {
   width: 800px;
   height: 800px;
@@ -10627,7 +10632,7 @@ label {
   line-height: 800px;
   text-transform: uppercase;
 }
-/* line 157, ../scss/_views.get_started.scss */
+/* line 155, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item {
   line-height: 1.2;
   display: inline-block;
@@ -10635,27 +10640,27 @@ label {
   margin-left: -4px;
   vertical-align: middle;
 }
-/* line 164, ../scss/_views.get_started.scss */
+/* line 162, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.womenQuantityContainer {
   text-align: left;
 }
-/* line 168, ../scss/_views.get_started.scss */
+/* line 166, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.menQuantityContainer {
   text-align: right;
 }
-/* line 172, ../scss/_views.get_started.scss */
+/* line 170, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton, .getStarted .section.orderFormSection.desktop .orderForm .item .valueContainer {
   display: inline-block;
   vertical-align: bottom;
   text-align: center;
 }
-/* line 178, ../scss/_views.get_started.scss */
+/* line 176, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton {
   padding: 0;
   margin: 0;
   background: none;
 }
-/* line 183, ../scss/_views.get_started.scss */
+/* line 181, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a {
   display: block;
   width: 47px;
@@ -10666,51 +10671,51 @@ label {
   background-repeat: no-repeat;
   background-color: transparent;
 }
-/* line 193, ../scss/_views.get_started.scss */
+/* line 191, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a.incButton {
   background-image: url("../images/arrow_up.png");
   border-radius: 4px 4px 0 0;
 }
-/* line 198, ../scss/_views.get_started.scss */
+/* line 196, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a.decButton {
   background-image: url("../images/arrow_down.png");
   border-radius: 0 0 4px 4px;
   margin-top: -1px;
 }
-/* line 207, ../scss/_views.get_started.scss */
+/* line 205, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton, .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .valueContainer {
   display: block;
 }
-/* line 211, ../scss/_views.get_started.scss */
+/* line 209, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton {
   margin: 0.6em auto 0;
 }
-/* line 214, ../scss/_views.get_started.scss */
+/* line 212, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > a {
   display: inline-block;
 }
-/* line 217, ../scss/_views.get_started.scss */
+/* line 215, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > a.incButton {
   border-radius: 4px 0 0 4px;
 }
-/* line 221, ../scss/_views.get_started.scss */
+/* line 219, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > a.decButton {
   border-radius: 0 4px 4px 0;
   margin-left: -1px;
 }
-/* line 230, ../scss/_views.get_started.scss */
+/* line 228, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item .valueContainer {
   font-size: 94%;
 }
-/* line 234, ../scss/_views.get_started.scss */
+/* line 232, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.womenQuantityContainer .valueContainer {
   margin-left: 1em;
 }
-/* line 238, ../scss/_views.get_started.scss */
+/* line 236, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.menQuantityContainer .valueContainer {
   margin-right: 1em;
 }
-/* line 242, ../scss/_views.get_started.scss */
+/* line 240, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item .value {
   font-family: "futura-pt";
   font-weight: bold;
@@ -10721,21 +10726,21 @@ label {
   text-align: center;
   padding: 0.11em 0;
 }
-/* line 254, ../scss/_views.get_started.scss */
+/* line 252, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value {
   font-size: 853%;
   border-bottom: none;
 }
-/* line 258, ../scss/_views.get_started.scss */
+/* line 256, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value span {
   vertical-align: sub;
 }
-/* line 262, ../scss/_views.get_started.scss */
+/* line 260, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value .currencySymbol {
   vertical-align: super;
   font-size: 26%;
 }
-/* line 270, ../scss/_views.get_started.scss */
+/* line 268, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderForm .bottomRow {
   line-height: 1.2;
   position: absolute;
@@ -10743,12 +10748,12 @@ label {
   left: 0;
   width: 100%;
 }
-/* line 279, ../scss/_views.get_started.scss */
+/* line 277, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper {
   position: relative;
   display: inline-block;
 }
-/* line 283, ../scss/_views.get_started.scss */
+/* line 281, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .circleWrapper {
   position: absolute;
   width: 100%;
@@ -10757,22 +10762,22 @@ label {
   top: 0;
   z-index: 0;
 }
-/* line 292, ../scss/_views.get_started.scss */
+/* line 290, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .mainCircleWrapper {
   padding: 200px;
 }
-/* line 295, ../scss/_views.get_started.scss */
+/* line 293, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .mainCircleWrapper .circle {
   width: 100%;
   height: 100%;
   border: 10px solid;
   border-radius: 100%;
 }
-/* line 303, ../scss/_views.get_started.scss */
+/* line 301, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper {
   padding: 110px;
 }
-/* line 306, ../scss/_views.get_started.scss */
+/* line 304, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circle {
   position: absolute;
   height: 270.28%;
@@ -10780,48 +10785,48 @@ label {
   border: 1px solid;
   border-radius: 100%;
 }
-/* line 315, ../scss/_views.get_started.scss */
+/* line 313, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection {
   position: relative;
   height: 37%;
   overflow: hidden;
 }
-/* line 320, ../scss/_views.get_started.scss */
+/* line 318, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection.half {
   width: 100%;
 }
-/* line 324, ../scss/_views.get_started.scss */
+/* line 322, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection.quarter {
   width: 37%;
 }
-/* line 327, ../scss/_views.get_started.scss */
+/* line 325, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .circleSection.quarter .circle {
   width: 270.28%;
 }
-/* line 334, ../scss/_views.get_started.scss */
+/* line 332, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .topHalf .circle {
   top: 0;
   left: 0;
   width: 100%;
 }
-/* line 341, ../scss/_views.get_started.scss */
+/* line 339, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .verticalSpacer {
   height: 26%;
 }
-/* line 345, ../scss/_views.get_started.scss */
+/* line 343, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomLeftQuarter {
   float: left;
 }
-/* line 348, ../scss/_views.get_started.scss */
+/* line 346, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomLeftQuarter .circle {
   bottom: 0;
   left: 0;
 }
-/* line 354, ../scss/_views.get_started.scss */
+/* line 352, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomRightQuarter {
   float: right;
 }
-/* line 357, ../scss/_views.get_started.scss */
+/* line 355, ../scss/_views.get_started.scss */
 .getStarted .section.orderFormSection.desktop .orderFormWrapper .secondaryCircleWrapper .bottomRightQuarter .circle {
   bottom: 0;
   right: 0;
@@ -11165,5 +11170,150 @@ label {
   /* line 81, ../scss/_views.accessories.scss */
   .accessories .processControls {
     text-align: center;
+  }
+}
+
+/* line 3, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section {
+  text-align: center;
+}
+/* line 7, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation {
+  background: url("../images/views/order_confirmation/bg.jpg") no-repeat scroll 63% center;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 2em;
+  height: auto;
+}
+/* line 15, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation .messageFromStore {
+  font-size: 86%;
+  color: #909090;
+}
+/* line 21, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation .orderInfo .amount {
+  font-size: 571%;
+  font-family: "futura-pt";
+  font-weight: bold;
+}
+/* line 27, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation .orderInfo .orderItems {
+  font-family: "futura-pt";
+  font-size: 71%;
+  text-transform: uppercase;
+}
+/* line 32, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation .orderInfo .orderItems li {
+  border-bottom: 1px solid #c8cdd2;
+  padding: 1em;
+}
+/* line 36, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation .orderInfo .orderItems li:last-child {
+  border-bottom: none;
+}
+/* line 40, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation .orderInfo .orderItems li .quantity {
+  font-weight: bold;
+}
+/* line 44, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.orderConfirmation .orderInfo .orderItems li .name {
+  margin-left: 0.5em;
+}
+/* line 52, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext {
+  padding-bottom: 5em;
+}
+/* line 56, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext .headerWrapper {
+  margin-bottom: 0;
+}
+/* line 60, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext .navigationHint {
+  text-transform: uppercase;
+  font-size: 86%;
+}
+/* line 65, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 70, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext .itemsWrapper {
+  overflow: hidden;
+}
+/* line 74, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext .items {
+  white-space: nowrap;
+  overflow: auto;
+  margin-bottom: -16px;
+  padding-bottom: 16px;
+}
+/* line 80, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext .items li {
+  padding-top: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  white-space: normal;
+}
+/* line 89, ../scss/_views.order_confirmation.scss */
+.orderConfirmation .section.whatHappensNext .items li .content {
+  margin-top: 2em;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 98, ../scss/_views.order_confirmation.scss */
+  .orderConfirmation .section .headerWrapper {
+    margin-top: 4em;
+  }
+  /* line 105, ../scss/_views.order_confirmation.scss */
+  .orderConfirmation .section.whatHappensNext .items {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
+  .orderConfirmation .section.whatHappensNext .items:before, .orderConfirmation .section.whatHappensNext .items:after {
+    content: " ";
+    display: table;
+  }
+  /* line 173, ../bower/foundation/scss/foundation/components/_global.scss */
+  .orderConfirmation .section.whatHappensNext .items:after {
+    clear: both;
+  }
+  /* line 51, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .orderConfirmation .section.whatHappensNext .items > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+  /* line 62, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .orderConfirmation .section.whatHappensNext .items > li {
+    width: 25%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+  /* line 69, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .orderConfirmation .section.whatHappensNext .items > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 70, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .orderConfirmation .section.whatHappensNext .items > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+  /* line 110, ../scss/_views.order_confirmation.scss */
+  .orderConfirmation .section.whatHappensNext .items li {
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+    float: none;
+  }
+  /* line 116, ../scss/_views.order_confirmation.scss */
+  .orderConfirmation .section.whatHappensNext .items li:first-child {
+    margin-left: 0;
   }
 }

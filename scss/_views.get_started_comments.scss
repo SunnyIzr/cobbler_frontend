@@ -1,0 +1,67 @@
+#content.getStartedComments {
+  background: url('../images/views/get_started/bg.jpg') no-repeat scroll 11% 0;
+  background-size: cover;
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    height: 190px;
+
+    .contentContainer .contentContainerCell {
+      vertical-align: bottom;
+    }
+
+  }
+  
+  .section.commentsForOrderItems {
+    padding-bottom: 5em;
+
+    .commentsForm {
+      .headerWrapper {
+        margin-top: 0;
+      }
+
+      div:first-child .headerWrapper {
+        margin-top: 2.2em;
+      }
+
+      input[type=text] {
+        display: inline-block;
+        color: inherit;
+        background: none;
+        border: none;
+        vertical-align: baseline;
+        margin: 0;
+      }
+
+      li {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 0.4em 0;
+      }
+    }
+  }
+
+  .processControls {
+    background: $accentColor;
+    font-size: 79%;
+    padding: 1.5em 1em;
+    text-align: right;
+    text-transform: uppercase;
+
+    .button {
+      font-size: 100%;
+      margin: 0 0 0 2em;
+    }
+  }
+
+  @media #{$large-up} {
+
+    .processControls {
+      text-align: center;
+    }
+  }
+}
+
+

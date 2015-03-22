@@ -10876,7 +10876,13 @@ table tr th {
   margin: 0 0 0 2em;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 61, ../scss/_views.get_started_comments.scss */
+  /* line 62, ../scss/_views.get_started_comments.scss */
+  #content.getStartedComments .section.commentsForOrderItems .commentsForm {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 69, ../scss/_views.get_started_comments.scss */
   #content.getStartedComments .processControls {
     text-align: center;
   }

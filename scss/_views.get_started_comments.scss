@@ -58,6 +58,14 @@
 
   @media #{$large-up} {
 
+    .section.commentsForOrderItems {
+      .commentsForm {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
     .processControls {
       text-align: center;
     }

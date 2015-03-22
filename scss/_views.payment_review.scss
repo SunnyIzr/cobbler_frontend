@@ -27,6 +27,10 @@
       font-family: $headerFont;
       font-size: 93%;
 
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+
       tr {
         background: none;
       }
@@ -70,7 +74,7 @@
     padding-bottom: 4em;
 
     p {
-      max-width: 1400px;
+      max-width: 800px;
       margin: 0 auto;
     }
   }
@@ -78,6 +82,20 @@
 
   @media #{$large-up} {
 
+    .section.paymentReview {
+
+      .orderCalculation {
+        font-size: 113%;
+
+        .totalsRow {
+          font-size: 200%;
+        }
+      }
+    }
+
+    .section.explanationText {
+      padding-bottom: 8em;
+    }
   }
 }
 

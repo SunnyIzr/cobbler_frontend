@@ -10914,52 +10914,69 @@ table tr th {
   border: none;
   font-family: "futura-pt";
   font-size: 93%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 30, ../scss/_views.payment_review.scss */
+/* line 34, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation tr {
   background: none;
 }
-/* line 34, ../scss/_views.payment_review.scss */
+/* line 38, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation td {
   line-height: 2;
 }
-/* line 38, ../scss/_views.payment_review.scss */
+/* line 42, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .amount, #content.paymentReview .section.paymentReview .orderCalculation .quantity {
   text-align: right;
 }
-/* line 42, ../scss/_views.payment_review.scss */
+/* line 46, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .amount {
   font-weight: bold;
 }
-/* line 46, ../scss/_views.payment_review.scss */
+/* line 50, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .verticalSpacer {
   height: 2.5em;
 }
-/* line 50, ../scss/_views.payment_review.scss */
+/* line 54, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .totalsRow {
   font-size: 138%;
   border-top: 1px solid #c8cdd2;
   border-bottom: 1px solid #c8cdd2;
 }
-/* line 55, ../scss/_views.payment_review.scss */
+/* line 59, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .totalsRow td {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-/* line 62, ../scss/_views.payment_review.scss */
+/* line 66, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .actionProceed {
   margin-top: 3em;
   margin-bottom: 0;
 }
-/* line 68, ../scss/_views.payment_review.scss */
+/* line 72, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.explanationText {
   padding-top: 4em;
   padding-bottom: 4em;
 }
-/* line 72, ../scss/_views.payment_review.scss */
+/* line 76, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.explanationText p {
-  max-width: 1400px;
+  max-width: 800px;
   margin: 0 auto;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 87, ../scss/_views.payment_review.scss */
+  #content.paymentReview .section.paymentReview .orderCalculation {
+    font-size: 113%;
+  }
+  /* line 90, ../scss/_views.payment_review.scss */
+  #content.paymentReview .section.paymentReview .orderCalculation .totalsRow {
+    font-size: 200%;
+  }
+  /* line 96, ../scss/_views.payment_review.scss */
+  #content.paymentReview .section.explanationText {
+    padding-bottom: 8em;
+  }
 }
 
 /* line 3, ../scss/_views.accessories.scss */

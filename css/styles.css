@@ -11358,3 +11358,244 @@ label {
     margin-left: 0;
   }
 }
+
+/* line 3, ../scss/_views.my_shoes.scss */
+.myShoes .section {
+  text-align: center;
+}
+/* line 7, ../scss/_views.my_shoes.scss */
+.myShoes .section.intro {
+  background: url("../images/views/my_shoes/header.jpg") no-repeat scroll 36% center;
+  background-size: cover;
+  height: 266px;
+}
+/* line 14, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress {
+  padding: 3em 1em 3em 2em;
+  text-transform: uppercase;
+  font-family: "futura-pt";
+  font-weight: bold;
+  font-size: 79%;
+  text-align: left;
+}
+/* line 22, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li {
+  line-height: 1;
+  padding-top: 3.5em;
+  position: relative;
+}
+/* line 27, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li:first-child {
+  padding-top: 0;
+}
+/* line 31, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li .progressorDot, .myShoes .section.orderProgress li .title {
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 36, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li .progressorDot {
+  display: inline-block;
+  visibility: hidden;
+  background: #6481ab;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 2;
+}
+/* line 48, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li .title {
+  margin-left: 1.5em;
+}
+/* line 52, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li:before {
+  position: absolute;
+  left: 7px;
+  bottom: 10px;
+  height: 100%;
+  width: 6px;
+  background: #ffffff;
+  content: '';
+}
+/* line 62, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li:first-child:before {
+  display: none;
+}
+/* line 67, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li.complete .progressorDot {
+  visibility: visible;
+}
+/* line 71, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderProgress li.complete:before {
+  background: #6481ab;
+}
+/* line 78, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent {
+  text-align: left;
+  padding: 0 1em 3em;
+}
+/* line 83, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .orderDate {
+  font-family: "futura-pt";
+  font-size: 114%;
+  text-transform: uppercase;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+/* line 92, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li {
+  border-bottom: 1px solid #c8cdd2;
+}
+/* line 95, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li:first-child {
+  border-top: 1px solid #c8cdd2;
+}
+/* line 99, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemHeader {
+  font-size: 143%;
+  text-transform: uppercase;
+  font-family: "futura-pt";
+  padding-bottom: 1em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+/* line 107, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemHeader .quantity {
+  font-weight: bold;
+  text-align: right;
+}
+/* line 112, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemHeader .expandMark {
+  text-align: right;
+}
+/* line 115, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemHeader .expandMark .expanded {
+  display: none;
+}
+/* line 122, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li.expanded .itemHeader .expandMark .expanded {
+  display: block;
+}
+/* line 126, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li.expanded .itemHeader .expandMark .collapsed {
+  display: none;
+}
+/* line 131, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails {
+  display: none;
+  padding-bottom: 1em;
+  font-family: "futura-pt";
+}
+/* line 136, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .photos {
+  margin-top: 1em;
+}
+/* line 139, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .photos li {
+  margin-top: 1em;
+}
+/* line 142, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .photos li:first-child {
+  margin-top: 0;
+}
+/* line 146, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .photos li .photo, .myShoes .section.orderContent .items > li .itemDetails .photos li .name {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 151, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .photos li .name {
+  margin-left: 1em;
+  font-size: 114%;
+}
+/* line 158, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .comment {
+  margin-top: 1em;
+  line-height: 1.2;
+  font-size: 114%;
+}
+/* line 164, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .storeReply {
+  margin-top: 3em;
+  font-size: 114%;
+}
+/* line 168, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .storeReply .photo {
+  text-align: center;
+}
+/* line 171, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .storeReply .photo .photoWrapper {
+  width: 75px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100%;
+}
+/* line 179, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .storeReply .content {
+  margin-top: 1em;
+  line-height: 1.2;
+}
+/* line 183, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li .itemDetails .storeReply .content .author {
+  font-weight: bold;
+}
+/* line 190, ../scss/_views.my_shoes.scss */
+.myShoes .section.orderContent .items > li.expanded .itemDetails {
+  display: block;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 199, ../scss/_views.my_shoes.scss */
+  .myShoes .section .headerWrapper {
+    margin-top: 4em;
+  }
+  /* line 206, ../scss/_views.my_shoes.scss */
+  .myShoes .section.whatHappensNext .items {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
+  .myShoes .section.whatHappensNext .items:before, .myShoes .section.whatHappensNext .items:after {
+    content: " ";
+    display: table;
+  }
+  /* line 173, ../bower/foundation/scss/foundation/components/_global.scss */
+  .myShoes .section.whatHappensNext .items:after {
+    clear: both;
+  }
+  /* line 51, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .myShoes .section.whatHappensNext .items > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+  /* line 62, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .myShoes .section.whatHappensNext .items > li {
+    width: 25%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+  /* line 69, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .myShoes .section.whatHappensNext .items > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 70, ../bower/foundation/scss/foundation/components/_block-grid.scss */
+  .myShoes .section.whatHappensNext .items > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+  /* line 211, ../scss/_views.my_shoes.scss */
+  .myShoes .section.whatHappensNext .items li {
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+    float: none;
+  }
+  /* line 217, ../scss/_views.my_shoes.scss */
+  .myShoes .section.whatHappensNext .items li:first-child {
+    margin-left: 0;
+  }
+}

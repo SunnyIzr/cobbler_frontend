@@ -1,0 +1,227 @@
+.myShoes {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/my_shoes/header.jpg') no-repeat scroll 36% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.orderProgress {
+    padding: 3em 1em 3em 2em;
+    text-transform: uppercase;
+    font-family: $headerFont;
+    font-weight: bold;
+    font-size: 79%;
+    text-align: left;
+
+    li {
+      line-height: 1;
+      padding-top: 3.5em;
+      position: relative;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      .progressorDot, .title {
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      .progressorDot {
+        display: inline-block;
+        visibility: hidden;
+        background: $accentColor;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+
+        position: relative;
+        z-index: 2;
+      }
+
+      .title {
+        margin-left: 1.5em;
+      }
+
+      &:before {
+        position: absolute;
+        left: 7px;
+        bottom: 10px;
+        height: 100%;
+        width: 6px;
+        background: $pageColor;
+        content: '';
+      }
+
+      &:first-child:before {
+        display: none;
+      }
+
+      &.complete {
+        .progressorDot {
+          visibility: visible;
+        }
+
+        &:before {
+          background: $accentColor;
+        }
+      }
+    }
+  }
+
+  .section.orderContent {
+    text-align: left;
+    //background: #eff2f6;
+    padding: 0 1em 3em;
+
+    .orderDate {
+      font-family: $headerFont;
+      font-size: 114%;
+      text-transform: uppercase;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    .items {
+      > li {
+        border-bottom: 1px solid $panelColor;
+
+        &:first-child {
+          border-top:    1px solid $panelColor;
+        }
+
+        .itemHeader {
+          font-size: 143%;
+          text-transform: uppercase;
+          font-family: $headerFont;
+          padding-bottom: 1em;
+          padding-top: 1em;
+          cursor: pointer;
+
+          .quantity {
+            font-weight: bold;
+            text-align: right;
+          }
+
+          .expandMark {
+            text-align: right;
+
+            .expanded {
+              display: none;
+            }
+          }
+        }
+
+        &.expanded .itemHeader .expandMark {
+          .expanded {
+            display: block;
+          }
+
+          .collapsed {
+            display: none;
+          }
+        }
+
+        .itemDetails {
+          display:  none;
+          padding-bottom: 1em;
+          font-family: $headerFont;
+
+          .photos {
+            margin-top: 1em;
+
+            li {
+              margin-top: 1em;
+
+              &:first-child {
+                margin-top: 0;
+              }
+
+              .photo, .name {
+                display: inline-block;
+                vertical-align: middle;
+              }
+
+              .name {
+                margin-left: 1em;
+                font-size: 114%;
+              }
+            }
+          }
+
+          .comment {
+            margin-top: 1em;
+            line-height: 1.2;
+            font-size: 114%;
+          }
+
+          .storeReply {
+            margin-top: 3em;
+            font-size: 114%;
+
+            .photo {
+              text-align: center;
+
+              .photoWrapper {
+                width: 75px;
+                display: inline-block;
+                overflow: hidden;
+                border-radius: 100%;
+              }
+            }
+
+            .content {
+              margin-top: 1em;
+              line-height: 1.2;
+
+              .author {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        &.expanded .itemDetails {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media #{$large-up} {
+    .section {
+      .headerWrapper {
+        margin-top: 4em;
+      }
+    }
+
+
+    .section.whatHappensNext {
+      .items {
+        @include block-grid(4);
+        max-width: 1400px;
+        margin: 0 auto;
+
+        li {
+          display: inline-block;
+          margin-left: -5px;
+          vertical-align: top;
+          float: none;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+

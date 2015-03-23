@@ -133,28 +133,6 @@
           padding-bottom: 1em;
           font-family: $headerFont;
 
-          .photos {
-            margin-top: 1em;
-
-            li {
-              margin-top: 1em;
-
-              &:first-child {
-                margin-top: 0;
-              }
-
-              .photo, .name {
-                display: inline-block;
-                vertical-align: middle;
-              }
-
-              .name {
-                margin-left: 1em;
-                font-size: 114%;
-              }
-            }
-          }
-
           .comment {
             margin-top: 1em;
             line-height: 1.2;
@@ -165,7 +143,7 @@
             margin-top: 3em;
             font-size: 114%;
 
-            .photo {
+            .profilePhoto {
               text-align: center;
 
               .photoWrapper {
@@ -182,6 +160,28 @@
 
               .author {
                 font-weight: bold;
+              }
+            }
+          }
+
+          .attachments {
+            margin-top: 1em;
+
+            li {
+              margin-top: 1em;
+
+              &:first-child {
+                margin-top: 0;
+              }
+
+              .icon, .name {
+                display: inline-block;
+                vertical-align: middle;
+              }
+
+              .name {
+                margin-left: 1em;
+                font-size: 114%;
               }
             }
           }

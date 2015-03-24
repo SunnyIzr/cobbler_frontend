@@ -11894,34 +11894,50 @@ label {
   width: 100%;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 57, ../scss/_views.create_account.scss */
-  #content.createAccount .section.paymentReview .orderCalculation {
-    font-size: 113%;
-  }
-  /* line 60, ../scss/_views.create_account.scss */
-  #content.createAccount .section.paymentReview .orderCalculation .totalsRow {
-    font-size: 200%;
+  /* line 55, ../scss/_views.create_account.scss */
+  #content.createAccount .section.createAccount {
+    text-align: left;
+    padding: 4em 0 8em;
+    max-width: 800px;
+    margin: 0 auto;
   }
   /* line 64, ../scss/_views.create_account.scss */
-  #content.createAccount .section.paymentReview .orderCalculation .positionClarification td {
-    text-align: left;
-    font-size: 89%;
+  #content.createAccount .section.createAccount form .error .inputWrapper {
+    position: relative;
   }
-  /* line 68, ../scss/_views.create_account.scss */
-  #content.createAccount .section.paymentReview .orderCalculation .positionClarification td .note {
-    margin-top: 0.5em;
+  /* line 67, ../scss/_views.create_account.scss */
+  #content.createAccount .section.createAccount form .error .inputWrapper .errorLabelWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    height: 70%;
+    vertical-align: middle;
   }
-  /* line 72, ../scss/_views.create_account.scss */
-  #content.createAccount .section.paymentReview .orderCalculation .positionClarification td .options {
-    text-align: right;
-    margin-top: 0;
+  /* line 74, ../scss/_views.create_account.scss */
+  #content.createAccount .section.createAccount form .error .inputWrapper .errorLabelWrapper > div {
+    display: table;
+    height: 100%;
   }
-  /* line 76, ../scss/_views.create_account.scss */
-  #content.createAccount .section.paymentReview .orderCalculation .positionClarification td .options label {
-    margin-right: 0;
+  /* line 78, ../scss/_views.create_account.scss */
+  #content.createAccount .section.createAccount form .error .inputWrapper .errorLabelWrapper > div > * {
+    display: table-cell;
+    vertical-align: middle;
   }
-  /* line 84, ../scss/_views.create_account.scss */
-  #content.createAccount .section.explanationText {
-    padding-bottom: 8em;
+  /* line 85, ../scss/_views.create_account.scss */
+  #content.createAccount .section.createAccount form .error .inputWrapper small.error {
+    border-right: 5px solid;
+    color: #ad0000;
+    background: transparent;
+    padding: 0 1em 0 0;
+    margin-bottom: 0;
+  }
+  /* line 95, ../scss/_views.create_account.scss */
+  #content.createAccount .section.createAccount form .submitButtonRow {
+    text-align: center;
+  }
+  /* line 99, ../scss/_views.create_account.scss */
+  #content.createAccount .section.createAccount form input[type='submit'] {
+    width: auto;
+    width: 50%;
   }
 }

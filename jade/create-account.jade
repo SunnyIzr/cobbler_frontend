@@ -15,12 +15,19 @@ include _layout.jade
 
                 div.fieldWrapper.error
                     label Enter Your Desired Password
-                    input(type='password', name='password')
-                    small.error Password is too short
+                    .inputWrapper
+                        input(type='password', name='password')
+                        div.errorLabelWrapper
+                            div
+                                small.error Password is too short
 
                 div.fieldWrapper.error
                     label Re-Enter Your Password
-                    input(type='password', name='passwordConfirmation')
-                    small.error Password doesn't match
+                    .inputWrapper
+                        input(type='password', name='passwordConfirmation')
+                        div.errorLabelWrapper
+                            div
+                                small.error Password doesn't match
 
-                input.button(type='submit', value='Create Account')
+                .submitButtonRow
+                    input.button(type='submit', value='Create Account')

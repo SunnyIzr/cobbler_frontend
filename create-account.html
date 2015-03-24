@@ -65,13 +65,25 @@
                   </div>
                   <div class="fieldWrapper error">
                     <label>Enter Your Desired Password</label>
-                    <input type="password" name="password"/><small class="error">Password is too short</small>
+                    <div class="inputWrapper">
+                      <input type="password" name="password"/>
+                      <div class="errorLabelWrapper">
+                        <div><small class="error">Password is too short</small></div>
+                      </div>
+                    </div>
                   </div>
                   <div class="fieldWrapper error">
                     <label>Re-Enter Your Password</label>
-                    <input type="password" name="passwordConfirmation"/><small class="error">Password doesn't match</small>
+                    <div class="inputWrapper">
+                      <input type="password" name="passwordConfirmation"/>
+                      <div class="errorLabelWrapper">
+                        <div><small class="error">Password doesn't match</small></div>
+                      </div>
+                    </div>
                   </div>
-                  <input type="submit" value="Create Account" class="button"/>
+                  <div class="submitButtonRow">
+                    <input type="submit" value="Create Account" class="button"/>
+                  </div>
                 </form>
               </div>
             </div>

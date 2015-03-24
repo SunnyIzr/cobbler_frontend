@@ -60,15 +60,15 @@
               <div class="columns small-12">
                 <ul class="semanticList steps">
                   <li class="complete">
-                    <div class="progressorDot"></div>
+                    <div class="progressorPart"></div>
                     <div class="title">Package sent</div>
                   </li>
                   <li class="complete">
-                    <div class="progressorDot"></div>
+                    <div class="progressorPart"></div>
                     <div class="title"> Shoes being cobbled</div>
                   </li>
                   <li>
-                    <div class="progressorDot"></div>
+                    <div class="progressorPart"></div>
                     <div class="title"> Shoes sent back</div>
                   </li>
                 </ul>
@@ -77,108 +77,442 @@
             <div class="row section orderContent">
               <div class="columns small-12">
                 <div class="orderDate">Feburary 20th 2015</div>
-                <ul class="semanticList items">
+                <ul class="semanticList itemTypes">
                   <li class="item">
                     <div class="row itemHeader">
-                      <div class="columns small-2 quantity">5</div>
-                      <div class="columns small-8 name">Women's shoes</div>
-                      <div class="columns small-2 expandMark">
+                      <div class="columns small-10 large-10 name"><span class="quantity">5</span>Women's shoes</div>
+                      <div class="columns small-2 hide-for-large-up expandMark">
                         <div class="collapsed">+</div>
                         <div class="expanded">-</div>
                       </div>
+                      <div class="columns hide-for-medium-down large-2 amount">$100</div>
                     </div>
-                    <div class="itemDetails">
-                      <h6 class="title">Yellow Prada Handbag</h6>
-                      <div class="comment">
-                        Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
-                        Morbi pulvinar consectetur elementum.
-                        Etiam ut lectus accumsan, egestas leo id, placerat nulla.
-                      </div>
-                      <div class="storeReply">
-                        <div class="profilePhoto">
-                          <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                    <ul class="semanticList orderItems">
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
                         </div>
-                        <div class="content"><span class="author">Beth Says:</span>I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
-                        <ul class="semanticList attachments">
-                          <li>
-                            <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
-                            <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
-                          </li>
-                          <li>
-                            <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
-                            <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
+                        </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
+                        </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
+                        </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
+                        </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                   <li class="item">
                     <div class="row itemHeader">
-                      <div class="columns small-2 quantity">2</div>
-                      <div class="columns small-8 name">Men's shoes</div>
-                      <div class="columns small-2 expandMark">
+                      <div class="columns small-10 large-10 name"><span class="quantity">2</span>Men's shoes</div>
+                      <div class="columns small-2 hide-for-large-up expandMark">
                         <div class="collapsed">+</div>
                         <div class="expanded">-</div>
                       </div>
+                      <div class="columns hide-for-medium-down large-2 amount">$125</div>
                     </div>
-                    <div class="itemDetails">
-                      <h6 class="title">Yellow Prada Handbag</h6>
-                      <div class="comment">
-                        Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
-                        Morbi pulvinar consectetur elementum.
-                        Etiam ut lectus accumsan, egestas leo id, placerat nulla.
-                      </div>
-                      <div class="storeReply">
-                        <div class="profilePhoto">
-                          <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                    <ul class="semanticList orderItems">
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
                         </div>
-                        <div class="content"><span class="author">Beth Says:</span>I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
-                        <ul class="semanticList attachments">
-                          <li>
-                            <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
-                            <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
-                          </li>
-                          <li>
-                            <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
-                            <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
+                        </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                   <li class="item">
                     <div class="row itemHeader">
-                      <div class="columns small-2 quantity">1</div>
-                      <div class="columns small-8 name">Handbag</div>
-                      <div class="columns small-2 expandMark">
+                      <div class="columns small-10 large-10 name"><span class="quantity">1</span>Handbag</div>
+                      <div class="columns small-2 hide-for-large-up expandMark">
                         <div class="collapsed">+</div>
                         <div class="expanded">-</div>
                       </div>
+                      <div class="columns hide-for-medium-down large-2 amount">$150</div>
                     </div>
-                    <div class="itemDetails">
-                      <h6 class="title">Yellow Prada Handbag</h6>
-                      <div class="comment">
-                        Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
-                        Morbi pulvinar consectetur elementum.
-                        Etiam ut lectus accumsan, egestas leo id, placerat nulla.
-                      </div>
-                      <div class="storeReply">
-                        <div class="profilePhoto">
-                          <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                    <ul class="semanticList orderItems">
+                      <li class="item">
+                        <div class="row">
+                          <div class="columns small-12 large-7">
+                            <h6 class="orderItemTitle">Yellow Prada Handbag</h6>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotoHeader">Before And After Photos</div>
                         </div>
-                        <div class="content"><span class="author">Beth Says:</span>I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
-                        <ul class="semanticList attachments">
-                          <li>
-                            <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
-                            <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
-                          </li>
-                          <li>
-                            <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
-                            <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                        <div class="row itemDetails">
+                          <div class="columns small-12 large-7 comments">
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper">
+                                  <div class="userAvatarPlaceholder">You</div>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText">
+                                  Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
+                                  Morbi pulvinar consectetur elementum.
+                                  Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message">
+                              <div class="profilePhoto">
+                                <div class="photoWrapper"><img src="/images/views/about_us/team_member_1.jpg"/></div>
+                              </div>
+                              <div class="content">
+                                <div class="messageText"><span class="author">Beth Says:</span> I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.</div>
+                                <ul class="semanticList attachments">
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                  <li>
+                                    <div class="icon"><a href="#"><img src="/images/views/my_shoes/item_1_photo_1.jpg"/></a></div>
+                                    <div class="name"><a href="#">Prada_shot_body.jpg</a></div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns hide-for-medium-down large-5 statePhotos">
+                            <div class="row">
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_before.jpg"><img src="/images/views/my_shoes/item_1_before.jpg"/></a></div>
+                              <div class="columns small-6"><a href="/images/views/my_shoes/item_1_after.jpg"><img src="/images/views/my_shoes/item_1_after.jpg"/></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>

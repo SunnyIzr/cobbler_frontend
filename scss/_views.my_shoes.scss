@@ -19,6 +19,12 @@
     font-size: 79%;
     text-align: left;
 
+    > div > * {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     li {
       line-height: 1;
       padding-top: 3.5em;
@@ -28,13 +34,12 @@
         padding-top: 0;
       }
 
-      .progressorDot, .title {
+      .progressorPart, .title {
         vertical-align: middle;
         display: inline-block;
       }
 
-      .progressorDot {
-        display: inline-block;
+      .progressorPart {
         visibility: hidden;
         background: $accentColor;
         border-radius: 100%;
@@ -64,7 +69,7 @@
       }
 
       &.complete {
-        .progressorDot {
+        .progressorPart {
           visibility: visible;
         }
 
@@ -80,6 +85,12 @@
     //background: #eff2f6;
     padding: 0 1em 3em;
 
+    > div > * {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .orderDate {
       font-family: $headerFont;
       font-size: 114%;
@@ -88,12 +99,12 @@
       padding-bottom: 2em;
     }
 
-    .items {
+    .itemTypes {
       > li {
         border-bottom: 1px solid $panelColor;
 
         &:first-child {
-          border-top:    1px solid $panelColor;
+          border-top: 1px solid $panelColor;
         }
 
         .itemHeader {
@@ -107,6 +118,7 @@
           .quantity {
             font-weight: bold;
             text-align: right;
+            margin-right: .5em;
           }
 
           .expandMark {
@@ -128,39 +140,72 @@
           }
         }
 
-        .itemDetails {
-          display:  none;
+        > .orderItems {
+          display: none;
           padding-bottom: 1em;
           font-family: $headerFont;
+        }
 
-          .comment {
+        &.expanded .orderItems {
+          display: block;
+        }
+      }
+    }
+
+    .orderItems {
+      >li {
+        margin-top: 5em;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .orderItemTitle {
+          margin: 0;
+        }
+
+        .statePhotoHeader {
+          text-transform: uppercase;
+          font-size: 88%;
+          text-align: center;
+        }
+
+        .message {
+          margin-top: 3em;
+          font-size: 114%;
+          line-height: 1.2;
+
+          &:first-child {
             margin-top: 1em;
-            line-height: 1.2;
-            font-size: 114%;
           }
 
-          .storeReply {
-            margin-top: 3em;
-            font-size: 114%;
+          .profilePhoto {
+            text-align: center;
 
-            .profilePhoto {
-              text-align: center;
-
-              .photoWrapper {
-                width: 75px;
-                display: inline-block;
-                overflow: hidden;
-                border-radius: 100%;
-              }
+            .photoWrapper {
+              width: 75px;
+              display: inline-block;
+              overflow: hidden;
+              border-radius: 100%;
             }
 
-            .content {
-              margin-top: 1em;
-              line-height: 1.2;
+            .userAvatarPlaceholder {
+              height: 75px;
+              line-height: 75px;
+              background: $accentColor;
+              color: $pageColor;
+              font-weight: bold;
+              text-align: center;
+              text-transform: uppercase;
+            }
+          }
 
-              .author {
-                font-weight: bold;
-              }
+          .content {
+            margin-top: 1em;
+            line-height: 1.2;
+
+            .author {
+              font-weight: bold;
             }
           }
 
@@ -181,14 +226,13 @@
 
               .name {
                 margin-left: 1em;
-                font-size: 114%;
               }
             }
           }
         }
 
-        &.expanded .itemDetails {
-          display: block;
+        .statePhotos {
+          text-align: right;
         }
       }
     }
@@ -202,25 +246,147 @@
     }
 
 
-    .section.whatHappensNext {
-      .items {
-        @include block-grid(4);
-        max-width: 1400px;
-        margin: 0 auto;
+    .section.orderProgress {
+      font-size: 69%;
+      padding-top: 4em;
+      padding-bottom: 5em;
 
+      .steps {
         li {
-          display: inline-block;
-          margin-left: -5px;
-          vertical-align: top;
-          float: none;
+          //line-height: 1;
+          //position: relative;
+          padding-top: 0;
+          width: 33%;
+          float: left;
 
-          &:first-child {
+          .progressorPart, .title {
+            display: block;
+          }
+
+          .progressorPart {
+            visibility: visible;
+            background: $pageColor;
+            border-radius: 0;
+            width: 100%;
+            height: 20px;
+
+            //position: relative;
+            //z-index: 2;
+          }
+
+          .title {
             margin-left: 0;
+            margin-top: 1.5em;
+            text-align: center;
+          }
+
+          &:first-child .title {
+            text-align: left;
+          }
+
+          &:last-child .title {
+            text-align: right;
+          }
+
+          &:before {
+            display: none
+          }
+
+          &.complete {
+            .progressorPart {
+              background: $accentColor;
+            }
           }
         }
       }
     }
 
+
+    .section.orderContent {
+
+      .itemTypes {
+        > li {
+          border-bottom: none;
+
+          padding-top: 5em;
+          padding-bottom: 6em;
+
+          &:first-child {
+            border-top: none;
+            padding-top: 0;
+          }
+
+          &:nth-of-type(even) {
+            background: #f5f5f5;
+
+            margin-left: -1000px;
+            margin-right: -1000px;
+
+            padding-left: 1000px;
+            padding-right: 1000px;
+          }
+
+          .itemHeader {
+            cursor: auto;
+
+            .amount {
+              font-weight: bold;
+              text-align: right;
+            }
+          }
+
+          > .orderItems {
+            display: block;
+          }
+        }
+      }
+
+      .orderItems {
+        > li {
+          .itemDetails {
+            margin-top: 2em;
+          }
+
+          .message {
+            margin-top: 2em;
+            overflow: hidden;
+
+            &:first-child {
+              margin-top: 0;
+            }
+
+            .profilePhoto {
+              float: left;
+              vertical-align: top;
+            }
+
+            .content {
+              vertical-align: top;
+              margin-left: 100px;
+              margin-top: 0;
+            }
+
+            .attachments {
+              margin-top: 0.5em;
+
+              li {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 0 0 1.5em;
+
+                &:first-child {
+                  margin-left: 0;
+                }
+
+                .name {
+                  margin-left: 0.3em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

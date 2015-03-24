@@ -7,7 +7,7 @@ $(document).on('ready', function () {
         return false;
     });
 
-    $('.myShoes .section.orderContent .items .itemHeader').on('click', function() {
+    $('.myShoes .section.orderContent .itemTypes .itemHeader').on('click', function() {
         $(this).closest('.item').toggleClass('expanded');
         return false;
     });

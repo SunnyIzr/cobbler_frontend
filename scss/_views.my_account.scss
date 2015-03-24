@@ -1,0 +1,100 @@
+.myAccount {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/pricing/header.jpg') no-repeat scroll 26% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.ordersList {
+    text-align: left;
+    padding: 3em 2em 5em;
+
+    .orders {
+
+      > li {
+        margin-top: 2em;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .orderDetails {
+          margin-top: 1em;
+          text-transform: uppercase;
+          font-family: $headerFont;
+          
+          > .amount {
+            font-weight: bold;
+            font-size: 171%;
+          }
+
+          > .date {
+            font-size: 114%;
+          }
+        }
+
+        .orderItemTypes {
+          margin-top: 1em;
+          font-size: 129%;
+
+          > li .quantity {
+            font-weight: bold;
+            margin-right: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .section.whatHappensNext {
+    background: #eff2f6;
+    padding-bottom: 5em;
+
+    .items {
+      li {
+        margin-top: 3em;
+
+        .content {
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+
+  @media #{$large-up} {
+    .section {
+      .headerWrapper {
+        margin-top: 4em;
+      }
+    }
+
+
+    .section.whatHappensNext {
+      .items {
+        @include block-grid(4);
+        max-width: 1400px;
+        margin: 0 auto;
+
+        li {
+          display: inline-block;
+          margin-left: -5px;
+          vertical-align: top;
+          float: none;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+

@@ -1,0 +1,26 @@
+include _layout.jade
++document('createAccount')
+    .row.section.intro.alteredText
+        .columns.small-12
+            .contentContainer
+                .contentContainerCell
+                    h1 Create Account
+
+    .row.section.createAccount
+        .columns.small-12
+            form(action='', method='post')
+                div.fieldWrapper
+                    label Enter Your Email Address
+                    input(type='email', name='email')
+
+                div.fieldWrapper.error
+                    label Enter Your Desired Password
+                    input(type='password', name='password')
+                    small.error Password is too short
+
+                div.fieldWrapper.error
+                    label Re-Enter Your Password
+                    input(type='password', name='passwordConfirmation')
+                    small.error Password doesn't match
+
+                input.button(type='submit', value='Create Account')

@@ -1,0 +1,90 @@
+#content.createAccount {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/faqs/header.jpg') no-repeat scroll 42% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.createAccount {
+    text-align: left;
+    padding: 4em 1.5em;
+
+    form {
+      input[type=text], input[type=password], input[type=email] {
+        margin-top: 1em;
+        border: none;
+        border-bottom: 1px solid $panelColor;
+        box-shadow: none;
+        font-size: 143%;
+        color: $actionColor;
+      }
+
+      .error input[type=text], input[type=password], input[type=email] {
+        color: $errorColor;
+      }
+
+      .fieldWrapper {
+        label {
+          text-transform: uppercase;
+          font-size: 114%;
+          font-family: $headerFont;
+          margin-top: 3em;
+        }
+
+        &:first-child label {
+          margin-top: 0;
+        }
+      }
+
+      input[type='submit'] {
+        margin-top: 4em;
+        width: 100%;
+      }
+    }
+  }
+
+
+  @media #{$large-up} {
+
+    .section.paymentReview {
+
+      .orderCalculation {
+        font-size: 113%;
+
+        .totalsRow {
+          font-size: 200%;
+        }
+
+        .positionClarification td {
+          text-align: left;
+          font-size: 89%;
+
+          .note {
+            margin-top: 0.5em;
+          }
+
+          .options {
+            text-align: right;
+            margin-top: 0;
+
+            label {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .section.explanationText {
+      padding-bottom: 8em;
+    }
+  }
+}
+
+

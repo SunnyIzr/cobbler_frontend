@@ -66,6 +66,23 @@ label {
   }
 }
 
+.error {
+  label {
+    color: inherit;
+  }
+
+  input {
+    color: $errorColor;
+  }
+
+  small.error {
+    background: $errorColor;
+    color: $pageColor;
+    text-align: center;
+    font-style: normal;
+  }
+}
+
 .semanticList {
   list-style: none;
   margin: 0;

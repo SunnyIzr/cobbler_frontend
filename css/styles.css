@@ -11719,7 +11719,7 @@ label {
 }
 /* line 7, ../scss/_views.my_account.scss */
 .myAccount .section.intro {
-  background: url("../images/views/pricing/header.jpg") no-repeat scroll 26% center;
+  background: url("../images/views/my_shoes/header.jpg") no-repeat scroll 36% center;
   background-size: cover;
   height: 266px;
 }
@@ -11761,26 +11761,17 @@ label {
   font-weight: bold;
   margin-right: 0.5em;
 }
-/* line 55, ../scss/_views.my_account.scss */
-.myAccount .section.whatHappensNext {
-  background: #eff2f6;
-  padding-bottom: 5em;
-}
-/* line 60, ../scss/_views.my_account.scss */
-.myAccount .section.whatHappensNext .items li {
-  margin-top: 3em;
-}
-/* line 63, ../scss/_views.my_account.scss */
-.myAccount .section.whatHappensNext .items li .content {
-  margin-top: 2em;
-}
 @media only screen and (min-width: 64.063em) {
-  /* line 72, ../scss/_views.my_account.scss */
+  /* line 57, ../scss/_views.my_account.scss */
   .myAccount .section .headerWrapper {
     margin-top: 4em;
   }
-  /* line 79, ../scss/_views.my_account.scss */
-  .myAccount .section.whatHappensNext .items {
+  /* line 63, ../scss/_views.my_account.scss */
+  .myAccount .section.ordersList {
+    padding: 6em 0 2em;
+  }
+  /* line 66, ../scss/_views.my_account.scss */
+  .myAccount .section.ordersList .orders {
     display: block;
     padding: 0;
     margin: 0 -0.625rem;
@@ -11788,44 +11779,56 @@ label {
     margin: 0 auto;
   }
   /* line 172, ../bower/foundation/scss/foundation/components/_global.scss */
-  .myAccount .section.whatHappensNext .items:before, .myAccount .section.whatHappensNext .items:after {
+  .myAccount .section.ordersList .orders:before, .myAccount .section.ordersList .orders:after {
     content: " ";
     display: table;
   }
   /* line 173, ../bower/foundation/scss/foundation/components/_global.scss */
-  .myAccount .section.whatHappensNext .items:after {
+  .myAccount .section.ordersList .orders:after {
     clear: both;
   }
   /* line 51, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .myAccount .section.whatHappensNext .items > li {
+  .myAccount .section.ordersList .orders > li {
     display: block;
     height: auto;
     float: left;
     padding: 0 0.625rem 1.25rem;
   }
   /* line 62, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .myAccount .section.whatHappensNext .items > li {
-    width: 25%;
+  .myAccount .section.ordersList .orders > li {
+    width: 33.33333%;
     padding: 0 0.625rem 1.25rem;
     list-style: none;
   }
   /* line 69, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .myAccount .section.whatHappensNext .items > li:nth-of-type(1n) {
+  .myAccount .section.ordersList .orders > li:nth-of-type(1n) {
     clear: none;
   }
   /* line 70, ../bower/foundation/scss/foundation/components/_block-grid.scss */
-  .myAccount .section.whatHappensNext .items > li:nth-of-type(4n+1) {
+  .myAccount .section.ordersList .orders > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 84, ../scss/_views.my_account.scss */
-  .myAccount .section.whatHappensNext .items li {
+  /* line 71, ../scss/_views.my_account.scss */
+  .myAccount .section.ordersList .orders > li {
+    text-align: center;
     display: inline-block;
+    margin-top: 0;
+    margin-bottom: 4em;
     margin-left: -5px;
     vertical-align: top;
     float: none;
   }
-  /* line 90, ../scss/_views.my_account.scss */
-  .myAccount .section.whatHappensNext .items li:first-child {
+  /* line 80, ../scss/_views.my_account.scss */
+  .myAccount .section.ordersList .orders > li:first-child {
     margin-left: 0;
+  }
+  /* line 84, ../scss/_views.my_account.scss */
+  .myAccount .section.ordersList .orders > li .orderWrapper {
+    display: inline-block;
+    text-align: left;
+  }
+  /* line 89, ../scss/_views.my_account.scss */
+  .myAccount .section.ordersList .orders > li .orderDetails {
+    margin-top: 2em;
   }
 }

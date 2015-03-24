@@ -5,7 +5,7 @@
   }
 
   .section.intro {
-    background: url('../images/views/pricing/header.jpg') no-repeat scroll 26% center;
+    background: url('../images/views/my_shoes/header.jpg') no-repeat scroll 36% center;
     background-size: cover;
 
     height: 266px;
@@ -52,21 +52,6 @@
     }
   }
 
-  .section.whatHappensNext {
-    background: #eff2f6;
-    padding-bottom: 5em;
-
-    .items {
-      li {
-        margin-top: 3em;
-
-        .content {
-          margin-top: 2em;
-        }
-      }
-    }
-  }
-
   @media #{$large-up} {
     .section {
       .headerWrapper {
@@ -75,14 +60,19 @@
     }
 
 
-    .section.whatHappensNext {
-      .items {
-        @include block-grid(4);
+    .section.ordersList {
+      padding: 6em 0 2em;
+
+      .orders {
+        @include block-grid(3);
         max-width: 1400px;
         margin: 0 auto;
 
-        li {
+        > li {
+          text-align: center;
           display: inline-block;
+          margin-top: 0;
+          margin-bottom: 4em;
           margin-left: -5px;
           vertical-align: top;
           float: none;
@@ -90,6 +80,16 @@
           &:first-child {
             margin-left: 0;
           }
+
+          .orderWrapper {
+            display: inline-block;
+            text-align: left;
+          }
+
+          .orderDetails {
+            margin-top: 2em;
+          }
+
         }
       }
     }

@@ -10988,92 +10988,56 @@ label {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 75, ../scss/_views.payment_review.scss */
-#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options input[type=radio] {
-  opacity: 0;
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-  margin: 0;
-}
-/* line 83, ../scss/_views.payment_review.scss */
-#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label {
-  font-size: 100%;
-  vertical-align: middle;
-  margin-left: -30px;
-  padding-left: 30px;
-}
-/* line 89, ../scss/_views.payment_review.scss */
-#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label > .checkbox {
-  vertical-align: middle;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #c8cdd2;
-}
-/* line 97, ../scss/_views.payment_review.scss */
-#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label > .text {
-  vertical-align: middle;
-  margin-left: 0.5em;
-}
-/* line 103, ../scss/_views.payment_review.scss */
-#content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options input[type=radio]:checked + label .checkbox {
-  background: #000101;
-}
-/* line 110, ../scss/_views.payment_review.scss */
+/* line 77, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .totalsRow {
   font-size: 138%;
   border-top: 1px solid #c8cdd2;
   border-bottom: 1px solid #c8cdd2;
 }
-/* line 115, ../scss/_views.payment_review.scss */
+/* line 82, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .orderCalculation .totalsRow td {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 122, ../scss/_views.payment_review.scss */
+/* line 89, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.paymentReview .actionProceed {
   margin-top: 3em;
   margin-bottom: 0;
 }
-/* line 128, ../scss/_views.payment_review.scss */
+/* line 95, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.explanationText {
   padding-top: 4em;
   padding-bottom: 4em;
 }
-/* line 132, ../scss/_views.payment_review.scss */
+/* line 99, ../scss/_views.payment_review.scss */
 #content.paymentReview .section.explanationText p {
   max-width: 800px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 143, ../scss/_views.payment_review.scss */
+  /* line 110, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.paymentReview .orderCalculation {
     font-size: 113%;
   }
-  /* line 146, ../scss/_views.payment_review.scss */
+  /* line 113, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.paymentReview .orderCalculation .totalsRow {
     font-size: 200%;
   }
-  /* line 150, ../scss/_views.payment_review.scss */
+  /* line 117, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td {
     text-align: left;
     font-size: 89%;
   }
-  /* line 154, ../scss/_views.payment_review.scss */
+  /* line 121, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .note {
     margin-top: 0.5em;
   }
-  /* line 158, ../scss/_views.payment_review.scss */
+  /* line 125, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options {
     text-align: right;
     margin-top: 0;
   }
-  /* line 162, ../scss/_views.payment_review.scss */
-  #content.paymentReview .section.paymentReview .orderCalculation .positionClarification td .options label {
-    margin-right: 0;
-  }
-  /* line 170, ../scss/_views.payment_review.scss */
+  /* line 133, ../scss/_views.payment_review.scss */
   #content.paymentReview .section.explanationText {
     padding-bottom: 8em;
   }

@@ -71,39 +71,6 @@
           font-family: $headerFont;
           font-weight: bold;
           text-transform: uppercase;
-
-          input[type=radio] {
-            opacity: 0;
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-            margin: 0;
-          }
-
-          label {
-            font-size: 100%;
-            vertical-align: middle;
-            margin-left: -30px;
-            padding-left: 30px;
-
-            > .checkbox {
-              vertical-align: middle;
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-              border: 1px solid $panelColor;
-            }
-
-            > .text {
-              vertical-align: middle;
-              margin-left: 0.5em;
-            }
-          }
-
-          input[type=radio]:checked + label .checkbox {
-            background: $textColor;
-          }
-
         }
       }
 
@@ -158,10 +125,6 @@
           .options {
             text-align: right;
             margin-top: 0;
-
-            label {
-              margin-right: 0;
-            }
           }
         }
       }

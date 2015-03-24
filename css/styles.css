@@ -11892,20 +11892,26 @@ label {
 #content.createAccount .section.createAccount form input[type='submit'] {
   margin-top: 4em;
   width: 100%;
+  margin-bottom: 0;
+}
+/* line 51, ../scss/_views.create_account.scss */
+#content.createAccount .section.createAccount form .loginLink {
+  margin-top: 2em;
+  text-align: center;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 55, ../scss/_views.create_account.scss */
+  /* line 61, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount {
     text-align: left;
     padding: 4em 0 8em;
     max-width: 800px;
     margin: 0 auto;
   }
-  /* line 64, ../scss/_views.create_account.scss */
+  /* line 70, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount form .error .inputWrapper {
     position: relative;
   }
-  /* line 67, ../scss/_views.create_account.scss */
+  /* line 73, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount form .error .inputWrapper .errorLabelWrapper {
     position: absolute;
     right: 0;
@@ -11913,17 +11919,17 @@ label {
     height: 70%;
     vertical-align: middle;
   }
-  /* line 74, ../scss/_views.create_account.scss */
+  /* line 80, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount form .error .inputWrapper .errorLabelWrapper > div {
     display: table;
     height: 100%;
   }
-  /* line 78, ../scss/_views.create_account.scss */
+  /* line 84, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount form .error .inputWrapper .errorLabelWrapper > div > * {
     display: table-cell;
     vertical-align: middle;
   }
-  /* line 85, ../scss/_views.create_account.scss */
+  /* line 91, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount form .error .inputWrapper small.error {
     border-right: 5px solid;
     color: #ad0000;
@@ -11931,13 +11937,12 @@ label {
     padding: 0 1em 0 0;
     margin-bottom: 0;
   }
-  /* line 95, ../scss/_views.create_account.scss */
+  /* line 101, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount form .submitButtonRow {
     text-align: center;
   }
-  /* line 99, ../scss/_views.create_account.scss */
+  /* line 105, ../scss/_views.create_account.scss */
   #content.createAccount .section.createAccount form input[type='submit'] {
-    width: auto;
     width: 50%;
   }
 }

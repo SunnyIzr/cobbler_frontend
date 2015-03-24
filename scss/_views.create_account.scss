@@ -45,6 +45,12 @@
       input[type='submit'] {
         margin-top: 4em;
         width: 100%;
+        margin-bottom: 0;
+      }
+
+      .loginLink {
+        margin-top: 2em;
+        text-align: center;
       }
     }
   }
@@ -97,7 +103,6 @@
         }
 
         input[type='submit'] {
-          width: auto;
           width: 50%;
         }
       }

@@ -1,0 +1,27 @@
+include _layout.jade
++document('login')
+    .row.section.intro.alteredText
+        .columns.small-12
+            .contentContainer
+                .contentContainerCell
+                    h1 Login
+
+    .row.section.login
+        .columns.small-12
+            form(action='', method='post')
+                div.fieldWrapper
+                    label Enter Your Email Address
+                    input(type='email', name='email')
+
+                div.fieldWrapper.error
+                    label Enter Your Password
+                    .inputWrapper
+                        input(type='password', name='password')
+                        div.errorLabelWrapper
+                            div
+                                small.error Password is incorrect
+
+                .submitButtonRow
+                    input.button(type='submit', value='Login')
+                .createAccountLink
+                    a(href='/create-account.html') Create account?

@@ -1,4 +1,4 @@
-#content.createAccount {
+#content.login {
 
   .section {
     text-align: center;
@@ -11,7 +11,7 @@
     height: 266px;
   }
 
-  .section.createAccount {
+  .section.login {
     text-align: left;
     padding: 4em 1.5em;
 
@@ -48,7 +48,7 @@
         margin-bottom: 0;
       }
 
-      .loginLink {
+      .createAccountLink {
         margin-top: 2em;
         text-align: center;
         text-decoration: underline;
@@ -59,7 +59,7 @@
 
   @media #{$large-up} {
 
-    .section.createAccount {
+    .section.login {
       text-align: left;
       padding: 4em 0 8em;
 

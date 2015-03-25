@@ -6257,7 +6257,7 @@ label {
   background-size: cover;
   height: 266px; }
 .pricing .section.services {
-  padding-bottom: 2em; }
+  padding-bottom: 3em; }
   .pricing .section.services > div {
     padding-left: 0;
     padding-right: 0; }
@@ -6268,7 +6268,7 @@ label {
     overflow: auto;
     margin-bottom: -16px;
     padding-bottom: 16px; }
-    .pricing .section.services .itemTypes li {
+    .pricing .section.services .itemTypes > li {
       padding-top: 2em;
       padding-left: 2%;
       padding-right: 2%;
@@ -6276,11 +6276,11 @@ label {
       vertical-align: bottom;
       width: 70%;
       white-space: normal; }
-      .pricing .section.services .itemTypes li .content {
+      .pricing .section.services .itemTypes > li .content {
         margin-top: 2em; }
-      .pricing .section.services .itemTypes li:first-child {
+      .pricing .section.services .itemTypes > li:first-child {
         margin-left: 15%; }
-      .pricing .section.services .itemTypes li:last-child {
+      .pricing .section.services .itemTypes > li:last-child {
         margin-right: 15%; }
   .pricing .section.services .servicesList {
     font-size: 129%;
@@ -6288,8 +6288,8 @@ label {
     text-align: left;
     display: inline-block;
     text-transform: uppercase;
-    margin-top: 3em;
-    margin-left: 2em;
+    margin-top: 1.5em;
+    margin-left: 0;
     vertical-align: middle;
     list-style: none; }
     .pricing .section.services .servicesList li {

@@ -1,0 +1,100 @@
+.myAccount {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/my_shoes/header.jpg') no-repeat scroll 36% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.ordersList {
+    text-align: left;
+    padding: 3em 2em 5em;
+
+    .orders {
+
+      > li {
+        margin-top: 2em;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .orderDetails {
+          margin-top: 1em;
+          text-transform: uppercase;
+          font-family: $headerFont;
+          
+          > .amount {
+            font-weight: bold;
+            font-size: 171%;
+          }
+
+          > .date {
+            font-size: 114%;
+          }
+        }
+
+        .orderItemTypes {
+          margin-top: 1em;
+          font-size: 129%;
+
+          > li .quantity {
+            font-weight: bold;
+            margin-right: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$large-up} {
+    .section {
+      .headerWrapper {
+        margin-top: 4em;
+      }
+    }
+
+
+    .section.ordersList {
+      padding: 6em 0 2em;
+
+      .orders {
+        @include block-grid(3);
+        max-width: 1400px;
+        margin: 0 auto;
+
+        > li {
+          text-align: center;
+          display: inline-block;
+          margin-top: 0;
+          margin-bottom: 4em;
+          margin-left: -5px;
+          vertical-align: top;
+          float: none;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          .orderWrapper {
+            display: inline-block;
+            text-align: left;
+          }
+
+          .orderDetails {
+            margin-top: 2em;
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+

@@ -1,0 +1,56 @@
+include _layout.jade
++document('paymentReview')
+    .row.section.intro.alteredText
+        .columns.small-12
+            .contentContainer
+                .contentContainerCell
+                    h1 Payment
+                    .subtitle Review Your Order: Step 1 of 2
+
+    .row.section.paymentReview
+        .columns.small-12
+            form(action='', method='post')
+                table.orderCalculation
+                    tr
+                        td.quantity 5
+                        td.name Women's Shoes
+                        td.amount $100
+                    tr.positionClarification
+                        td
+                        td(colspan=2)
+                            .row
+                                .columns.small-12.large-10
+                                    .question How many pairs of tall boots?
+                                    .note
+                                        | * There is no additional charge. We want to make sure your box is large enough
+
+                                .columns.small-12.large-2.options
+                                    .row
+                                        .columns.small-centered.small-6.large-12.selectWrapper
+                                            select(name='tallBootsQuantity')
+                                                option 1
+                                                option 2
+                                                option 3
+                                                option 4
+                                                option 5
+                    tr
+                        td.quantity 2
+                        td.name Men's Shoes
+                        td.amount $125
+                    tr
+                        td.quantity 1
+                        td.name Handbag
+                        td.amount $150
+                    tr.verticalSpacer
+                        td(colspan=3)
+                    tr.totalsRow
+                        td
+                        td.name Your Total
+                        td.amount $375
+
+                input.button.actionProceed(type='submit', value='Next: Payment Info')
+
+    .row.section.explanationText
+        .columns.small-12
+            p.
+                Whether you need service on both shoes or 1 shoe, you still need to send us both to make sure we are matching the other one. If you send your shoes in and we dont hear back from you in 10 days we will return your shoes back to you

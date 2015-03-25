@@ -1,0 +1,139 @@
+#content.paymentReview {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/faqs/header.jpg') no-repeat scroll 42% center;
+    background-size: cover;
+
+    height: 266px;
+
+    .subtitle {
+      text-transform: uppercase;
+      font-family: $headerFont;
+    }
+  }
+
+  .section.paymentReview {
+
+    .orderCalculation {
+      margin-top: 3em;
+      width: 100%;
+      border-collapse: collapse;
+      text-transform: uppercase;
+      border: none;
+      font-size: 93%;
+
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+
+      tr {
+        background: none;
+      }
+
+      .quantity, .name, .amount {
+        font-family: $headerFont;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+      }
+
+      .amount, .quantity {
+        text-align: right;
+      }
+
+      .amount {
+        font-weight: bold;
+      }
+
+      .verticalSpacer {
+        height: 2.5em;
+      }
+
+      .positionClarification td {
+        text-align: center;
+        font-size: 108%;
+        
+        .question {
+          font-family: $headerFont;
+          font-weight: bold;
+        }
+
+        .note {
+          text-transform: none;
+          margin-top: 1em;
+        }
+
+        .options {
+          margin-top: 2em;
+          font-family: $headerFont;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+
+      .totalsRow {
+        font-size: 138%;
+        border-top: 1px solid $panelColor;
+        border-bottom: 1px solid $panelColor;
+
+        td {
+          padding-top: 1.5em;
+          padding-bottom: 1.5em;
+        }
+      }
+    }
+
+    .actionProceed {
+      margin-top: 3em;
+      margin-bottom: 0;
+    }
+  }
+
+  .section.explanationText {
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+
+  @media #{$large-up} {
+
+    .section.paymentReview {
+
+      .orderCalculation {
+        font-size: 113%;
+
+        .totalsRow {
+          font-size: 200%;
+        }
+
+        .positionClarification td {
+          text-align: left;
+          font-size: 89%;
+
+          .note {
+            margin-top: 0.5em;
+          }
+
+          .options {
+            text-align: right;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    .section.explanationText {
+      padding-bottom: 8em;
+    }
+  }
+}
+
+

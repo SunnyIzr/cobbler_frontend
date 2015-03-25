@@ -1,6 +1,9 @@
+html, body {
+  font-size: 14px;
+}
+
 body {
   color: $textColor;
-  font-size: 14px;
   font-family: $textFont;
   font-weight: 300;
 }
@@ -16,7 +19,30 @@ h1 {
   font-size: 129%;
 }
 
-p {
+ul, ol, dl, p {
+  font-weight: inherit;
+  font-size: 100%;
+}
+
+table {
+  color: inherit;
+  font-size: 100%;
+
+  tr {
+    th, td {
+      color: inherit;
+      font-size: 100%;
+    }
+
+    th {
+      font-weight: normal;
+      font-family: $headerFont;
+    }
+  }
+}
+
+label {
+  color: inherit;
   font-weight: inherit;
 }
 
@@ -37,6 +63,23 @@ p {
 
   &:hover {
     background-color: $actionColor;
+  }
+}
+
+.error {
+  label {
+    color: inherit;
+  }
+
+  input {
+    color: $errorColor;
+  }
+
+  small.error {
+    background: $errorColor;
+    color: $pageColor;
+    text-align: center;
+    font-style: normal;
   }
 }
 
@@ -61,6 +104,12 @@ p {
 
 .contentPanel {
   background-color: $panelColor;
+}
+
+.currencySymbol {
+  font-size: 48%;
+  vertical-align: super;
+  margin-right: 0.2em;
 }
 
 #header {
@@ -241,7 +290,7 @@ p {
 }
 
 @media #{$large-up} {
-  body {
+  html, body {
     font-size: 16px;
   }
 

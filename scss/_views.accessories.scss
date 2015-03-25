@@ -1,0 +1,87 @@
+.accessories {
+
+  .section.intro {
+    background: url('../images/views/accessories/header.jpg') no-repeat scroll 0% center;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.accessories {
+    padding-bottom: 4em;
+
+    .items {
+      .button {
+        margin-bottom: 0;
+      }
+
+      li {
+        margin-top: 2em;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .processControls {
+    background: $accentColor;
+    font-size: 79%;
+    padding: 1.5em 1em;
+    text-align: right;
+    text-transform: uppercase;
+
+    .button {
+      font-size: 100%;
+      margin: 0 0 0 2em;
+    }
+  }
+
+
+  @media #{$large-up} {
+    .section {
+      .headerWrapper {
+        margin-top: 4em;
+      }
+    }
+
+    .section.accessories {
+      padding-bottom: 4em;
+
+      .items {
+        @include block-grid(2);
+        max-width: 1400px;
+        margin: 2em auto 0;
+
+        li {
+          display: inline-block;
+          margin-left: -5px;
+          margin-top: 0;
+          vertical-align: top;
+          float: none;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          .photo {
+            float: left;
+            width: 50%;
+          }
+
+          .description {
+            margin-left: 50%;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .processControls {
+      text-align: center;
+    }
+  }
+}
+
+

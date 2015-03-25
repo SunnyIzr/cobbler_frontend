@@ -1,0 +1,114 @@
+#content.createAccount {
+
+  .section {
+    text-align: center;
+  }
+
+  .section.intro {
+    background: url('../images/views/create_account/header.jpg') no-repeat scroll 22% 0;
+    background-size: cover;
+
+    height: 266px;
+  }
+
+  .section.createAccount {
+    text-align: left;
+    padding: 4em 1.5em;
+
+    form {
+      input[type=text], input[type=password], input[type=email] {
+        margin-top: 1em;
+        border: none;
+        border-bottom: 1px solid $panelColor;
+        box-shadow: none;
+        font-size: 143%;
+        color: $actionColor;
+      }
+
+      .error input[type=text], input[type=password], input[type=email] {
+        color: $errorColor;
+      }
+
+      .fieldWrapper {
+        label {
+          text-transform: uppercase;
+          font-size: 114%;
+          font-family: $headerFont;
+          margin-top: 3em;
+        }
+
+        &:first-child label {
+          margin-top: 0;
+        }
+      }
+
+      input[type='submit'] {
+        margin-top: 4em;
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      .loginLink {
+        margin-top: 2em;
+        text-align: center;
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+  @media #{$large-up} {
+
+    .section.createAccount {
+      text-align: left;
+      padding: 4em 0 8em;
+
+      max-width: 800px;
+      margin: 0 auto;
+
+      form {
+
+        .error .inputWrapper {
+          position: relative;
+
+          .errorLabelWrapper {
+            position: absolute;
+            right: 0;
+            bottom: 15%;
+            height: 70%;
+            vertical-align: middle;
+
+            > div {
+              display: table;
+              height: 100%;
+
+              > * {
+                display: table-cell;
+                vertical-align: middle;
+              }
+            }
+          }
+
+          small.error {
+            border-right: 5px solid;
+            color: $errorColor;
+            background: transparent;
+            padding: 0 1em 0 0;
+            margin-bottom: 0;
+          }
+        }
+
+
+        .submitButtonRow {
+          text-align: center;
+        }
+
+        input[type='submit'] {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,98 @@
+include _layout.jade
++document('getStarted')
+    .row.section.hide-for-large-up.alteredText.orderFormSection.mobile
+        .columns.small-12
+            h1 How Many Shoes Or Handbags Are You Sending Us?
+
+            form.orderForm
+                table
+                    tr
+                        th Women's
+                        td
+                            button.upDownButton.increase
+                            span.value 0
+                            button.upDownButton.decrease
+                    tr
+                        th Men's
+                            .hint
+                                .icon
+                                .content
+                                    .arrow
+                                    .container
+                                        h6.title Why are men’s shoes more expensive
+                                        div.
+                                            Durabitur non sem et turpiss gra vida porta eget sit amet eros am lobortis.
+                                            Aenean metus leo, bibendum quis sem non, placer at auctor lacus. Mauris varius, erat eu plac erat egestas.
+                        td
+                            button.upDownButton.increase
+                            span.value 0
+                            button.upDownButton.decrease
+                    tr
+                        th Women's
+                        td
+                            button.upDownButton.increase
+                            span.value 0
+                            button.upDownButton.decrease
+                    tr.totalRow
+                        th Total
+                        td
+                            span.value
+                                span.currencySymbol $
+                                | 0
+
+    .row.section.hide-for-medium-down.alteredText.orderFormSection.desktop
+        .columns.small-12
+            h1 How Many Shoes Or Handbags Are You Sending Us?
+
+            .orderFormWrapper
+                .circleWrapper.secondaryCircleWrapper
+                    .circleSection.half.topHalf
+                        .circle
+                    .verticalSpacer
+                    .circleSection.quarter.bottomLeftQuarter
+                        .circle
+                    .circleSection.quarter.bottomRightQuarter
+                        .circle
+                .circleWrapper.mainCircleWrapper
+                    .circle
+
+                form.orderForm
+                    .item.womenQuantityContainer
+                        button.upDownButton.double
+                            a.incButton(href='javascript:void(0);')
+                            a.decButton(href='javascript:void(0);')
+                        .valueContainer
+                            .fieldLabel Women's
+                            div
+                                span.value 0
+                    .item.totalContainer
+                        span.value
+                            span.currencySymbol $
+                            span 0
+                    .item.menQuantityContainer
+                        .valueContainer
+                            .fieldLabel Men's
+                                .hint
+                                    .icon
+                                    .content
+                                        .arrow
+                                        .container
+                                            h6.title Why are men’s shoes more expensive
+                                            div.
+                                                Durabitur non sem et turpiss gra vida porta eget sit amet eros am lobortis.
+                                                Aenean metus leo, bibendum quis sem non, placer at auctor lacus. Mauris varius, erat eu plac erat egestas.
+                            div
+                                span.value 0
+                        button.upDownButton.double
+                            a.incButton(href='javascript:void(0);')
+                            a.decButton(href='javascript:void(0);')
+
+                    .bottomRow
+                        .item.handbagsQuantityContainer
+                            .valueContainer
+                                .fieldLabel Handbags
+                                div
+                                    span.value 0
+                            button.upDownButton.double.horizontal
+                                a.incButton(href='javascript:void(0);')
+                                a.decButton(href='javascript:void(0);')

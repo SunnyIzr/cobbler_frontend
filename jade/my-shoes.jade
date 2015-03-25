@@ -1,0 +1,71 @@
+include _layout.jade
++document('myShoes')
+    .row.section.intro.alteredText
+        .columns.small-12
+            .contentContainer
+                .contentContainerCell
+                    h1 My Shoes
+
+    .row.contentPanel.section.orderProgress
+        .columns.small-12
+            ul.semanticList.steps
+                li.complete
+                    .progressorPart
+                    .title Package sent
+                li.complete
+                    .progressorPart
+                    .title  Shoes being cobbled
+                li
+                    .progressorPart
+                    .title  Shoes sent back
+
+    .row.section.orderContent
+        .columns.small-12
+            .orderDate
+                | Feburary 20th 2015
+
+            ul.semanticList.itemTypes
+                li.item
+                    .row.itemHeader
+                        .columns.small-10.large-10.name
+                            span.quantity 5
+                            | Women's shoes
+                        .columns.small-2.hide-for-large-up.expandMark
+                            .collapsed +
+                            .expanded -
+                        .columns.hide-for-medium-down.large-2.amount
+                            | $100
+                    ul.semanticList.orderItems
+                        include my_shoes/_order_item
+                        include my_shoes/_order_item
+                        include my_shoes/_order_item
+                        include my_shoes/_order_item
+                        include my_shoes/_order_item
+
+                li.item
+                    .row.itemHeader
+                        .columns.small-10.large-10.name
+                            span.quantity 2
+                            | Men's shoes
+                        .columns.small-2.hide-for-large-up.expandMark
+                            .collapsed +
+                            .expanded -
+                        .columns.hide-for-medium-down.large-2.amount
+                            | $125
+
+                    ul.semanticList.orderItems
+                        include my_shoes/_order_item
+                        include my_shoes/_order_item
+
+                li.item
+                    .row.itemHeader
+                        .columns.small-10.large-10.name
+                            span.quantity 1
+                            | Handbag
+                        .columns.small-2.hide-for-large-up.expandMark
+                            .collapsed +
+                            .expanded -
+                        .columns.hide-for-medium-down.large-2.amount
+                            | $150
+                    ul.semanticList.orderItems
+                        include my_shoes/_order_item

@@ -1,0 +1,43 @@
+include _layout.jade
++document('getStartedComments')
+    .row.section.intro.alteredText
+        .columns.small-12
+            .contentContainer
+                .contentContainerCell
+                    h1 Would you like to leave any comments about your items?
+
+    .row.section.commentsForOrderItems.alteredText
+        .columns.small-12
+            form.commentsForm
+                .womensItems
+                    .headerWrapper
+                        .stroke
+                        h5.header Women's
+
+                    ol
+                        li
+                            input(type='text', name='comment[women[]]')
+                        li
+                            input(type='text', name='comment[women[]]')
+
+                .mensItems
+                    .headerWrapper
+                        .stroke
+                        h5.header Men's
+
+                    ol
+                        li
+                            input(type='text', name='comment[women[]]')
+
+                .handbags
+                    .headerWrapper
+                        .stroke
+                        h5.header Handbag's
+
+                    ol
+                        li
+                            input(type='text', name='comment[women[]]')
+
+    .row.processControls.alteredText
+        span Comments look good!
+        a.button.actionProceed(href='#') Next Step

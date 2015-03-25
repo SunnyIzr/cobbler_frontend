@@ -58,30 +58,7 @@
 
     .section.questionsSection {
 
-      .questions {
-        @include block-grid(3);
-        max-width: 1400px;
-        margin: 5em auto 0;
 
-        li {
-          border-bottom: none;
-          vertical-align: top;
-          margin-top: 0;
-          margin-bottom: 4em;
-
-          .question {
-            cursor: inherit;
-          }
-          
-          .answer {
-            display: block;
-          }
-
-          .expandMark {
-            display: none;
-          }
-        }
-      }
     }
   }
 }

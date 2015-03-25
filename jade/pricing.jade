@@ -11,9 +11,11 @@ include _layout.jade
             div
                 .headerWrapper
                     .stroke
-                    h2.header Any Repair You Need.
+                    h2.hide-for-large-up.header Any Repair You Need.
                         br
                         | One Concierge Price.
+                    h2.hide-for-medium-down.header Any Repair You Need. One Concierge Price.
+
 
             .itemsWrapper
                 ul.semanticList.itemTypes
@@ -48,42 +50,86 @@ include _layout.jade
                             li Zippers
                             li All Others
 
-
-
-
-    .row.section.contentPanel.pricing
+    .row.section.pricing
         .columns.small-12
             .firstItemPricing
                 h2 First Item
                 ul.semanticList.priceOptions
                     li
-                        .name Men's
-                        .price $135 / Pair
+                        .wrapper
+                            .name Men's
+                            .price $135 / Pair
 
                     li
-                        .name Women's
-                        .price $85 / Pair
+                        .wrapper
+                            .name Women's
+                            .price $85 / Pair
 
                     li
-                        .name Handbags
-                        .price $235 / Item
+                        .wrapper
+                            .name Handbags
+                            .price $235 / Item
 
             .additionalItemsPricing
-                h2 Additional
+                h2.hide-for-large-up Additional
                     br
                     | Items Cost:
+                h2.hide-for-medium-down Additional Items Cost:
                 ul.semanticList.priceOptions
                     li
-                        .name Men's
-                        .price $135 / Pair
+                        .wrapper
+                            .name Men's
+                            .price $135 / Pair
 
                     li
-                        .name Women's
-                        .price $85 / Pair
+                        .wrapper
+                            .name Women's
+                            .price $85 / Pair
 
                     li
-                        .name Handbags
-                        .price $235 / Item
+                        .wrapper
+                            .name Handbags
+                            .price $235 / Item
+
+    .row.hide-for-medium-down.section.howItWorks
+        .columns.small-12
+            div
+                .headerWrapper
+                    .stroke
+                    h2.header  How It Works
+
+            ul.semanticList.items
+                li.item
+                    .itemWrapper
+                        .number 1
+                        h3.title Details Email
+                        p.content.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla.
+                            Vestibulum sit amet augue ligula. Nam rhoncus dui ac porttitor luctus. Nullam auctor tur.
+                li.item
+                    .itemWrapper
+                        .number 2
+                        h3.title Delivery Box
+                        p.content.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla.
+                            Vestibulum sit amet augue ligula. Nam rhoncus dui ac porttitor luctus. Nullam auctor tur.
+                            Vestibulum sit amet augue ligula. Nam rhoncus dui ac porttitor luctus. Nullam auctor tur.
+                li.item
+                    .itemWrapper
+                        .number 3
+                        h3.title Personal Concierge
+                        p.content.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla.
+                            Vestibulum sit amet augue ligula. Nam rhoncus dui ac porttitor luctus. Nullam auctor tur.
+                li.item
+                    .itemWrapper
+                        .number 4
+                        h3.title Receive Yout Shoes
+                        p.content.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla.
+                            Vestibulum sit amet augue ligula. Nam rhoncus dui ac porttitor luctus. Nullam auctor tur.
+
+            a.button.getStartedAction(href='get-started.html') Get Started
 
     .row.section.quickFaq
         .columns.small-12
@@ -91,7 +137,6 @@ include _layout.jade
                 .headerWrapper
                     .stroke
                     h2.header  Quick Faq
-
 
             ul.semanticList.faqQuestions
                 li.item
@@ -138,3 +183,7 @@ include _layout.jade
                         .icon A
                         span.text.
                             Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla. Vestibulum sit amet augue ligula. Nam rhoncus dui acporttitor luctus. Nullam auctor rutrum efficitur.
+
+    .row.section
+        .columns.small-12
+            a.button.getStartedAction(href='get-started.html') Get Started

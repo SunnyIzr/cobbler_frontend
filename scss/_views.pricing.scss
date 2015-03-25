@@ -11,6 +11,21 @@
     height: 266px;
   }
 
+  .getStartedAction {
+    padding: 1.5em 3em;
+    font-size: 171%;
+    margin: 0;
+    width: 100%;
+  }
+
+  .section:last-child {
+    padding: 0;
+
+    >div {
+      padding: 0;
+    }
+  }
+
   .section.services {
     padding-bottom: 3em;
 
@@ -38,8 +53,9 @@
         width: 70%;
         white-space: normal;
 
-        .content {
-          margin-top: 2em;
+        >img {
+          display: block;
+          margin: 0 auto;
         }
 
         &:first-child {
@@ -74,6 +90,7 @@
 
   .section.pricing {
     padding: 3em 0 5em;
+    background: #eff2f6;
 
     h2 {
       font-size: 214%;
@@ -126,25 +143,132 @@
     }
 
 
-    .section.whatHappensNext {
-      .items {
-        @include block-grid(4);
-        max-width: 1400px;
-        margin: 0 auto;
+    .getStartedAction {
+      font-size: 150%;
+      margin-top: 2em;
+      padding: 1em 3em;
+      width: auto;
+    }
 
-        li {
+    .section:last-child {
+      padding: 3em 0;
+
+      .getStartedAction {
+        margin: 0;
+      }
+    }
+
+    .section.services {
+      padding-bottom: 5em;
+
+      h2 {
+        font-size: 188%;
+        margin-bottom: 0;
+      }
+
+      .itemTypes {
+        @include block-grid(3);
+        max-width: 1400px;
+        margin: 3em auto 0;
+
+        > li {
           display: inline-block;
           margin-left: -5px;
-          vertical-align: top;
+          vertical-align: bottom;
           float: none;
+          padding-left: 1em;
+          padding-right: 1em;
 
           &:first-child {
             margin-left: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
           }
         }
       }
     }
 
+    .section.pricing {
+      padding: 5em 0 8em;
+
+      h2 {
+        font-size: 188%;
+      }
+
+      .priceOptions {
+        @include block-grid(3);
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+        > li {
+          display: inline-block;
+          margin-left: -5px;
+          vertical-align: middle;
+          float: none;
+
+          .wrapper {
+            width: 50%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .section.howItWorks {
+      padding: 3em 0 5em;
+
+      .items {
+        max-width: 1400px;
+        margin: 0 auto;
+
+        > li {
+          text-align: center;
+          display: inline-block;
+          margin-left: -5px;
+          margin-bottom: 2em;
+          vertical-align: top;
+          width: 50%;
+
+          .itemWrapper {
+            width: 70%;
+            margin: 0 auto;
+          }
+
+          .number {
+            border-radius: 100%;
+            display: inline-block;
+            background: $textColor;
+            color: $pageColor;
+            font-weight: bold;
+            font-family: $headerFont;
+            font-size: 150%;
+            width: 37px;
+            height: 37px;
+            line-height: 37px;
+          }
+
+          .title {
+            margin-top: 1em;
+            font-size: 129%;
+          }
+
+          .content {
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+
+    .section.quickFaq {
+      background: #eff2f6;
+
+      h2 {
+        font-size: 188%;
+      }
+    }
   }
 }
 

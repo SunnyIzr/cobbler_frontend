@@ -5894,7 +5894,7 @@ label {
       font-size: 81%; }
       #footer .logosWrapper .logos {
         margin-left: -3px; }
-        #footer .logosWrapper .logos li {
+        #footer .logosWrapper .logos > li {
           display: inline-block; } }
 
 .section {
@@ -6051,7 +6051,42 @@ label {
       display: inline-block;
       margin-left: 2em; }
       .section.pricing .benefits li:first-child {
-        margin-left: 0; } }
+        margin-left: 0; }
+  .faqQuestions {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    max-width: 1400px;
+    margin: 5em auto 0; }
+    .faqQuestions:before, .faqQuestions:after {
+      content: " ";
+      display: table; }
+    .faqQuestions:after {
+      clear: both; }
+    .faqQuestions > li {
+      display: block;
+      height: auto;
+      float: left;
+      padding: 0 0.625rem 1.25rem; }
+    .faqQuestions > li {
+      width: 33.33333%;
+      padding: 0 0.625rem 1.25rem;
+      list-style: none; }
+      .faqQuestions > li:nth-of-type(1n) {
+        clear: none; }
+      .faqQuestions > li:nth-of-type(3n+1) {
+        clear: both; }
+    .faqQuestions li {
+      border-bottom: none;
+      vertical-align: top;
+      margin-top: 0;
+      margin-bottom: 4em; }
+      .faqQuestions li .question {
+        cursor: inherit; }
+      .faqQuestions li .answer {
+        display: block; }
+      .faqQuestions li .expandMark {
+        display: none; } }
 
 .homepage .section.intro {
   background: url('../images/views/home/intro_bg.jpg') no-repeat scroll 14% top;
@@ -6256,6 +6291,15 @@ label {
   background: url('../images/views/pricing/header.jpg') no-repeat scroll 26% center;
   background-size: cover;
   height: 266px; }
+.pricing .getStartedAction {
+  padding: 1.5em 3em;
+  font-size: 171%;
+  margin: 0;
+  width: 100%; }
+.pricing .section:last-child {
+  padding: 0; }
+  .pricing .section:last-child > div {
+    padding: 0; }
 .pricing .section.services {
   padding-bottom: 3em; }
   .pricing .section.services > div {
@@ -6276,8 +6320,9 @@ label {
       vertical-align: bottom;
       width: 70%;
       white-space: normal; }
-      .pricing .section.services .itemTypes > li .content {
-        margin-top: 2em; }
+      .pricing .section.services .itemTypes > li > img {
+        display: block;
+        margin: 0 auto; }
       .pricing .section.services .itemTypes > li:first-child {
         margin-left: 15%; }
       .pricing .section.services .itemTypes > li:last-child {
@@ -6296,7 +6341,8 @@ label {
       padding-left: 35px;
       background: url('../images/checkmark_blue.png') no-repeat scroll left center; }
 .pricing .section.pricing {
-  padding: 3em 0 5em; }
+  padding: 3em 0 5em;
+  background: #eff2f6; }
   .pricing .section.pricing h2 {
     font-size: 214%; }
   .pricing .section.pricing .priceOptions {
@@ -6324,37 +6370,127 @@ label {
 @media only screen and (min-width:64.063em) {
   .pricing .section .headerWrapper {
     margin-top: 4em; }
-  .pricing .section.whatHappensNext .items {
-    display: block;
-    padding: 0;
-    margin: 0 -0.625rem;
-    max-width: 1400px;
-    margin: 0 auto; }
-    .pricing .section.whatHappensNext .items:before, .pricing .section.whatHappensNext .items:after {
-      content: " ";
-      display: table; }
-    .pricing .section.whatHappensNext .items:after {
-      clear: both; }
-    .pricing .section.whatHappensNext .items > li {
+  .pricing .getStartedAction {
+    font-size: 150%;
+    margin-top: 2em;
+    padding: 1em 3em;
+    width: auto; }
+  .pricing .section:last-child {
+    padding: 3em 0; }
+    .pricing .section:last-child .getStartedAction {
+      margin: 0; }
+  .pricing .section.services {
+    padding-bottom: 5em; }
+    .pricing .section.services h2 {
+      font-size: 188%;
+      margin-bottom: 0; }
+    .pricing .section.services .itemTypes {
       display: block;
-      height: auto;
-      float: left;
-      padding: 0 0.625rem 1.25rem; }
-    .pricing .section.whatHappensNext .items > li {
-      width: 25%;
-      padding: 0 0.625rem 1.25rem;
-      list-style: none; }
-      .pricing .section.whatHappensNext .items > li:nth-of-type(1n) {
-        clear: none; }
-      .pricing .section.whatHappensNext .items > li:nth-of-type(4n+1) {
+      padding: 0;
+      margin: 0 -0.625rem;
+      max-width: 1400px;
+      margin: 3em auto 0; }
+      .pricing .section.services .itemTypes:before, .pricing .section.services .itemTypes:after {
+        content: " ";
+        display: table; }
+      .pricing .section.services .itemTypes:after {
         clear: both; }
-    .pricing .section.whatHappensNext .items li {
-      display: inline-block;
-      margin-left: -5px;
-      vertical-align: top;
-      float: none; }
-      .pricing .section.whatHappensNext .items li:first-child {
-        margin-left: 0; } }
+      .pricing .section.services .itemTypes > li {
+        display: block;
+        height: auto;
+        float: left;
+        padding: 0 0.625rem 1.25rem; }
+      .pricing .section.services .itemTypes > li {
+        width: 33.33333%;
+        padding: 0 0.625rem 1.25rem;
+        list-style: none; }
+        .pricing .section.services .itemTypes > li:nth-of-type(1n) {
+          clear: none; }
+        .pricing .section.services .itemTypes > li:nth-of-type(3n+1) {
+          clear: both; }
+      .pricing .section.services .itemTypes > li {
+        display: inline-block;
+        margin-left: -5px;
+        vertical-align: bottom;
+        float: none;
+        padding-left: 1em;
+        padding-right: 1em; }
+        .pricing .section.services .itemTypes > li:first-child {
+          margin-left: 0; }
+        .pricing .section.services .itemTypes > li:last-child {
+          margin-right: 0; }
+  .pricing .section.pricing {
+    padding: 5em 0 8em; }
+    .pricing .section.pricing h2 {
+      font-size: 188%; }
+    .pricing .section.pricing .priceOptions {
+      display: block;
+      padding: 0;
+      margin: 0 -0.625rem;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto; }
+      .pricing .section.pricing .priceOptions:before, .pricing .section.pricing .priceOptions:after {
+        content: " ";
+        display: table; }
+      .pricing .section.pricing .priceOptions:after {
+        clear: both; }
+      .pricing .section.pricing .priceOptions > li {
+        display: block;
+        height: auto;
+        float: left;
+        padding: 0 0.625rem 1.25rem; }
+      .pricing .section.pricing .priceOptions > li {
+        width: 33.33333%;
+        padding: 0 0.625rem 1.25rem;
+        list-style: none; }
+        .pricing .section.pricing .priceOptions > li:nth-of-type(1n) {
+          clear: none; }
+        .pricing .section.pricing .priceOptions > li:nth-of-type(3n+1) {
+          clear: both; }
+      .pricing .section.pricing .priceOptions > li {
+        display: inline-block;
+        margin-left: -5px;
+        vertical-align: middle;
+        float: none; }
+        .pricing .section.pricing .priceOptions > li .wrapper {
+          width: 50%;
+          margin: 0 auto; }
+  .pricing .section.howItWorks {
+    padding: 3em 0 5em; }
+    .pricing .section.howItWorks .items {
+      max-width: 1400px;
+      margin: 0 auto; }
+      .pricing .section.howItWorks .items > li {
+        text-align: center;
+        display: inline-block;
+        margin-left: -5px;
+        margin-bottom: 2em;
+        vertical-align: top;
+        width: 50%; }
+        .pricing .section.howItWorks .items > li .itemWrapper {
+          width: 70%;
+          margin: 0 auto; }
+        .pricing .section.howItWorks .items > li .number {
+          border-radius: 100%;
+          display: inline-block;
+          background: #000101;
+          color: #ffffff;
+          font-weight: bold;
+          font-family: "futura-pt";
+          font-size: 150%;
+          width: 37px;
+          height: 37px;
+          line-height: 37px; }
+        .pricing .section.howItWorks .items > li .title {
+          margin-top: 1em;
+          font-size: 129%; }
+        .pricing .section.howItWorks .items > li .content {
+          margin-top: 2em; }
+  .pricing .section.quickFaq {
+    background: #eff2f6; }
+    .pricing .section.quickFaq h2 {
+      font-size: 188%; } }
 
 .marketplace .section {
   text-align: center; }
@@ -6515,42 +6651,6 @@ label {
 .faqs .section.tilesSection .tile3 {
   background-image: url('../images/views/about_us/tile_3.jpg');
   background-position: 73% center; }
-@media only screen and (min-width:64.063em) {
-  .faqs .section.questionsSection .questions {
-    display: block;
-    padding: 0;
-    margin: 0 -0.625rem;
-    max-width: 1400px;
-    margin: 5em auto 0; }
-    .faqs .section.questionsSection .questions:before, .faqs .section.questionsSection .questions:after {
-      content: " ";
-      display: table; }
-    .faqs .section.questionsSection .questions:after {
-      clear: both; }
-    .faqs .section.questionsSection .questions > li {
-      display: block;
-      height: auto;
-      float: left;
-      padding: 0 0.625rem 1.25rem; }
-    .faqs .section.questionsSection .questions > li {
-      width: 33.33333%;
-      padding: 0 0.625rem 1.25rem;
-      list-style: none; }
-      .faqs .section.questionsSection .questions > li:nth-of-type(1n) {
-        clear: none; }
-      .faqs .section.questionsSection .questions > li:nth-of-type(3n+1) {
-        clear: both; }
-    .faqs .section.questionsSection .questions li {
-      border-bottom: none;
-      vertical-align: top;
-      margin-top: 0;
-      margin-bottom: 4em; }
-      .faqs .section.questionsSection .questions li .question {
-        cursor: inherit; }
-      .faqs .section.questionsSection .questions li .answer {
-        display: block; }
-      .faqs .section.questionsSection .questions li .expandMark {
-        display: none; } }
 
 .getStarted .section {
   text-align: center; }

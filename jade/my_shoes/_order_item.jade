@@ -16,6 +16,7 @@ li.item
                         Mauris faucibus ornare tincidunt. Vestibulum ornare neque neque.
                         Morbi pulvinar consectetur elementum.
                         Etiam ut lectus accumsan, egestas leo id, placerat nulla.
+                .clearfix
             .message
                 .profilePhoto
                     .photoWrapper
@@ -26,6 +27,8 @@ li.item
                         |  I see it. This is an easy fix. Won't effect the original estimate. Check out the photos.
                     ul.semanticList.attachments
                         li
+                            .preview.hide-for-medium-down
+                                img(src='/images/views/my_shoes/item_1_before.jpg')
                             .icon
                                 a(href='#')
                                     img(src='/images/views/my_shoes/item_1_photo_1.jpg')
@@ -33,16 +36,23 @@ li.item
                                 a(href='#') Prada_shot_body.jpg
 
                         li
+                            .preview.hide-for-medium-down
+                                img(src='/images/views/my_shoes/item_1_before.jpg')
                             .icon
                                 a(href='#')
                                     img(src='/images/views/my_shoes/item_1_photo_1.jpg')
                             .name
                                 a(href='#') Prada_shot_body.jpg
+                .clearfix
         .columns.hide-for-medium-down.large-5.statePhotos
             .row
                 .columns.small-6
-                    a(href='/images/views/my_shoes/item_1_before.jpg')
+                    .imageWrapper
+                        .largeImage
+                            img(src='/images/views/my_shoes/item_1_before.jpg')
                         img(src='/images/views/my_shoes/item_1_before.jpg')
                 .columns.small-6
-                    a(href='/images/views/my_shoes/item_1_after.jpg')
+                    .imageWrapper
+                        .largeImage
+                            img(src='/images/views/my_shoes/item_1_after.jpg')
                         img(src='/images/views/my_shoes/item_1_after.jpg')

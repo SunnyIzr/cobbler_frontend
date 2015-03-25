@@ -214,6 +214,7 @@
 
             li {
               margin-top: 1em;
+              position: relative;
 
               &:first-child {
                 margin-top: 0;
@@ -349,7 +350,7 @@
 
           .message {
             margin-top: 2em;
-            overflow: hidden;
+            //overflow: hidden;
 
             &:first-child {
               margin-top: 0;
@@ -381,6 +382,82 @@
                 .name {
                   margin-left: 0.3em;
                 }
+
+                .preview {
+                  visibility: hidden;
+                  opacity: 0;
+
+                  position: absolute;
+                  bottom: 120%;
+                  left: -90px;
+                  width: 500px;
+                  z-index: 10;
+
+                  background: $pageColor;
+                  padding: 4%;
+
+                  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+                  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+                  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+
+                  img {
+                    width: 100%;
+                  }
+                }
+
+                &:hover .preview {
+                  visibility: visible;
+
+                  opacity: 1;
+                  -webkit-transition: all .5s ease-in-out;
+                  -moz-transition: all .5s ease-in-out;
+                  -ms-transition: all .5s ease-in-out;
+                  -o-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out;
+                }
+              }
+            }
+          }
+
+          .statePhotos {
+            .imageWrapper {
+              position: relative;
+
+              >img {
+                cursor: zoom-in;
+              }
+
+              .largeImage {
+                visibility: hidden;
+                opacity: 0;
+
+                position: absolute;
+                bottom: 65%;
+                right: 55%;
+                width: 500px;
+                z-index: 10;
+
+                background: $pageColor;
+                padding: 4%;
+
+                -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              &:hover .largeImage {
+                visibility: visible;
+
+                opacity: 1;
+                -webkit-transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+                -ms-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
               }
             }
           }

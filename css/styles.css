@@ -11548,46 +11548,47 @@ label {
 /* line 215, ../scss/_views.my_shoes.scss */
 .myShoes .section.orderContent .orderItems > li .message .attachments li {
   margin-top: 1em;
+  position: relative;
 }
-/* line 218, ../scss/_views.my_shoes.scss */
+/* line 219, ../scss/_views.my_shoes.scss */
 .myShoes .section.orderContent .orderItems > li .message .attachments li:first-child {
   margin-top: 0;
 }
-/* line 222, ../scss/_views.my_shoes.scss */
+/* line 223, ../scss/_views.my_shoes.scss */
 .myShoes .section.orderContent .orderItems > li .message .attachments li .icon, .myShoes .section.orderContent .orderItems > li .message .attachments li .name {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 227, ../scss/_views.my_shoes.scss */
+/* line 228, ../scss/_views.my_shoes.scss */
 .myShoes .section.orderContent .orderItems > li .message .attachments li .name {
   margin-left: 1em;
 }
-/* line 234, ../scss/_views.my_shoes.scss */
+/* line 235, ../scss/_views.my_shoes.scss */
 .myShoes .section.orderContent .orderItems > li .statePhotos {
   text-align: right;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 243, ../scss/_views.my_shoes.scss */
+  /* line 244, ../scss/_views.my_shoes.scss */
   .myShoes .section .headerWrapper {
     margin-top: 4em;
   }
-  /* line 249, ../scss/_views.my_shoes.scss */
+  /* line 250, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress {
     font-size: 69%;
     padding-top: 4em;
     padding-bottom: 5em;
   }
-  /* line 255, ../scss/_views.my_shoes.scss */
+  /* line 256, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li {
     padding-top: 0;
     width: 33%;
     float: left;
   }
-  /* line 262, ../scss/_views.my_shoes.scss */
+  /* line 263, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li .progressorPart, .myShoes .section.orderProgress .steps li .title {
     display: block;
   }
-  /* line 266, ../scss/_views.my_shoes.scss */
+  /* line 267, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li .progressorPart {
     visibility: visible;
     background: #ffffff;
@@ -11595,40 +11596,40 @@ label {
     width: 100%;
     height: 20px;
   }
-  /* line 277, ../scss/_views.my_shoes.scss */
+  /* line 278, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li .title {
     margin-left: 0;
     margin-top: 1.5em;
     text-align: center;
   }
-  /* line 283, ../scss/_views.my_shoes.scss */
+  /* line 284, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li:first-child .title {
     text-align: left;
   }
-  /* line 287, ../scss/_views.my_shoes.scss */
+  /* line 288, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li:last-child .title {
     text-align: right;
   }
-  /* line 291, ../scss/_views.my_shoes.scss */
+  /* line 292, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li:before {
     display: none;
   }
-  /* line 296, ../scss/_views.my_shoes.scss */
+  /* line 297, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderProgress .steps li.complete .progressorPart {
     background: #6481ab;
   }
-  /* line 308, ../scss/_views.my_shoes.scss */
+  /* line 309, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .itemTypes > li {
     border-bottom: none;
     padding-top: 5em;
     padding-bottom: 6em;
   }
-  /* line 314, ../scss/_views.my_shoes.scss */
+  /* line 315, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .itemTypes > li:first-child {
     border-top: none;
     padding-top: 0;
   }
-  /* line 319, ../scss/_views.my_shoes.scss */
+  /* line 320, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .itemTypes > li:nth-of-type(even) {
     background: #f5f5f5;
     margin-left: -1000px;
@@ -11636,60 +11637,125 @@ label {
     padding-left: 1000px;
     padding-right: 1000px;
   }
-  /* line 329, ../scss/_views.my_shoes.scss */
+  /* line 330, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .itemTypes > li .itemHeader {
     cursor: auto;
   }
-  /* line 332, ../scss/_views.my_shoes.scss */
+  /* line 333, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .itemTypes > li .itemHeader .amount {
     font-weight: bold;
     text-align: right;
   }
-  /* line 338, ../scss/_views.my_shoes.scss */
+  /* line 339, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .itemTypes > li > .orderItems {
     display: block;
   }
-  /* line 346, ../scss/_views.my_shoes.scss */
+  /* line 347, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .itemDetails {
     margin-top: 2em;
   }
-  /* line 350, ../scss/_views.my_shoes.scss */
+  /* line 351, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message {
     margin-top: 2em;
-    overflow: hidden;
   }
-  /* line 354, ../scss/_views.my_shoes.scss */
+  /* line 355, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message:first-child {
     margin-top: 0;
   }
-  /* line 358, ../scss/_views.my_shoes.scss */
+  /* line 359, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message .profilePhoto {
     float: left;
     vertical-align: top;
   }
-  /* line 363, ../scss/_views.my_shoes.scss */
+  /* line 364, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message .content {
     vertical-align: top;
     margin-left: 100px;
     margin-top: 0;
   }
-  /* line 369, ../scss/_views.my_shoes.scss */
+  /* line 370, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message .attachments {
     margin-top: 0.5em;
   }
-  /* line 372, ../scss/_views.my_shoes.scss */
+  /* line 373, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message .attachments li {
     display: inline-block;
     vertical-align: top;
     margin: 0 0 0 1.5em;
   }
-  /* line 377, ../scss/_views.my_shoes.scss */
+  /* line 378, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message .attachments li:first-child {
     margin-left: 0;
   }
-  /* line 381, ../scss/_views.my_shoes.scss */
+  /* line 382, ../scss/_views.my_shoes.scss */
   .myShoes .section.orderContent .orderItems > li .message .attachments li .name {
     margin-left: 0.3em;
+  }
+  /* line 386, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .message .attachments li .preview {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 120%;
+    left: -90px;
+    width: 500px;
+    z-index: 10;
+    background: #ffffff;
+    padding: 4%;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+  }
+  /* line 403, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .message .attachments li .preview img {
+    width: 100%;
+  }
+  /* line 408, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .message .attachments li:hover .preview {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  /* line 423, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .statePhotos .imageWrapper {
+    position: relative;
+  }
+  /* line 426, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .statePhotos .imageWrapper > img {
+    cursor: zoom-in;
+  }
+  /* line 430, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .statePhotos .imageWrapper .largeImage {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 65%;
+    right: 55%;
+    width: 500px;
+    z-index: 10;
+    background: #ffffff;
+    padding: 4%;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+  }
+  /* line 447, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .statePhotos .imageWrapper .largeImage img {
+    width: 100%;
+  }
+  /* line 452, ../scss/_views.my_shoes.scss */
+  .myShoes .section.orderContent .orderItems > li .statePhotos .imageWrapper:hover .largeImage {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
   }
 }
 

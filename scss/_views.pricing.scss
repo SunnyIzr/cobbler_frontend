@@ -11,25 +11,112 @@
     height: 266px;
   }
 
-  .section.pricing {
+  .section.services {
+    padding-bottom: 2em;
 
-    .benefitsWrapper {
-      background: none;
+    > div {
+      padding-left: 0;
+      padding-right: 0;
     }
-  }
 
-  .section.whatHappensNext {
-    background: #eff2f6;
-    padding-bottom: 5em;
+    .itemsWrapper {
+      overflow: hidden;
+    }
 
-    .items {
+    .itemTypes {
+      white-space: nowrap;
+      overflow: auto;
+      margin-bottom: -16px;
+      padding-bottom: 16px;
+
       li {
-        margin-top: 3em;
+        padding-top: 2em;
+        padding-left: 2%;
+        padding-right: 2%;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 70%;
+        white-space: normal;
 
         .content {
           margin-top: 2em;
         }
+
+        &:first-child {
+          margin-left: 15%;
+        }
+
+        &:last-child {
+          margin-right: 15%;
+        }
       }
+    }
+
+    .servicesList {
+      font-size: 129%;
+      font-family: $headerFont;
+      text-align: left;
+      display: inline-block;
+      text-transform: uppercase;
+      margin-top: 3em;
+
+      margin-left: 2em;
+
+      vertical-align: middle;
+
+      list-style: none;
+
+      li {
+        padding-left: 35px;
+
+        background: url('../images/checkmark_blue.png') no-repeat scroll left center;
+      }
+    }
+  }
+
+  .section.pricing {
+    padding: 3em 0 5em;
+
+    h2 {
+      font-size: 214%;
+    }
+
+    .priceOptions {
+      font-family: $headerFont;
+      width: 50%;
+      display: inline-block;
+
+      li {
+        font-size: 143%;
+        text-transform: uppercase;
+        margin-top: 2em;
+
+        .name {
+          border-bottom: 1px solid $accentColor;
+          padding-bottom: 0.5em;
+        }
+
+        .price {
+          margin-top: 0.5em;
+        }
+      }
+    }
+
+    .additionalItemsPricing {
+      margin-top: 4em;
+    }
+  }
+
+  .section.quickFaq {
+    padding: 2em 0 5em;
+
+    h2 {
+      font-size: 214%;
+      margin-top: 0.3em;
+    }
+
+    .faqQuestions {
+      margin-top: 1em;
     }
   }
 

@@ -6,72 +6,117 @@ include _layout.jade
                 .contentContainerCell
                     h1 Pricing
 
-    .row.section.pricing
+    .row.section.services
         .columns.small-12
             div
                 .headerWrapper
                     .stroke
-                    h1.header Simple Pricing
+                    h2.header Any Repair You Need.
+                        br
+                        | One Concierge Price.
 
-            ul.items.semanticList
-                li
-                    img(src="/images/views/home/pricing_shoes_mens.jpg")
-                    .description
-                        span From
-                        span.price  $60
-                        span  / Pair
-                li
-                    img(src="/images/views/home/pricing_shoes_womens.jpg")
-                    .description
-                        span From
-                        span.price  $25
-                        span  / Pair
-                li
-                    img(src="/images/views/home/pricing_bag.jpg")
-                    .description
-                        span From
-                        span.price  $150
+            .itemsWrapper
+                ul.semanticList.itemTypes
+                    li
+                        img(src="/images/views/home/pricing_shoes_womens.jpg")
+                    li
+                        img(src="/images/views/home/pricing_shoes_mens.jpg")
+                    li
+                        img(src="/images/views/home/pricing_bag.jpg")
 
-            .contentPanel.row.benefitsWrapper
-                .columns.small-12
-                    ul.benefits
-                        li All Repairs Included
-                        li Free Shipping
-                        li Money-Back Guarantee
+            ul.servicesList
+                li Heels
+                li Soles
+                li Backbinding
+                li Backlining
+                li Taps
+                li Insoles
+                li All Others
 
-    .row.section.whatHappensNext
+    .row.section.contentPanel.pricing
+        .columns.small-12
+            .firstItemPricing
+                h2 First Item
+                ul.semanticList.priceOptions
+                    li
+                        .name Men's
+                        .price $135 / Pair
+
+                    li
+                        .name Women's
+                        .price $85 / Pair
+
+                    li
+                        .name Handbags
+                        .price $235 / Item
+
+            .additionalItemsPricing
+                h2 Additional
+                    br
+                    | Items Cost:
+                ul.semanticList.priceOptions
+                    li
+                        .name Men's
+                        .price $135 / Pair
+
+                    li
+                        .name Women's
+                        .price $85 / Pair
+
+                    li
+                        .name Handbags
+                        .price $235 / Item
+
+    .row.section.quickFaq
         .columns.small-12
             div
                 .headerWrapper
                     .stroke
-                    h1.header  What Happens Next
+                    h2.header  Quick Faq
 
-            ul.semanticList.items
-                li
-                    img(src='/images/views/pricing/what_happens_next_details_email.png')
-                    .content
-                        h6.title Details Email
-                        p.
-                            Durabitur non sem et turpiss gravida porta eget sit amet eros am lobortis.
 
-                li
-                    img(src='/images/views/pricing/what_happens_next_delivery_box.png')
-                    .content
-                        h6.title Delivery Box
-                        p.
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
-
-                li
-                    img(src='/images/views/pricing/what_happens_next_personal_concierge.png')
-                    .content
-                        h6.title Personal Concierge
-                        p.
-                            Durabitur non sem et turpiss gravida porta eget sit amet eros am lobortis.
-
-                li
-                    img(src='/images/views/pricing/what_happens_next_receive_your_shoes.png')
-                    .content
-                        h6.title Details Email
-                        p.
-                            Nam tincidunt, est nec accumsan sodales, ligula justo rhon cus mauris
-
+            ul.semanticList.faqQuestions
+                li.item
+                    .question
+                        .icon Q
+                        .expandMark
+                            .collapsed +
+                            .expanded -
+                        span.text Eibulum Sit Am Augue
+                    .answer
+                        .icon A
+                        span.text.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla. Vestibulum sit amet augue ligula. Nam rhoncus dui acporttitor luctus. Nullam auctor rutrum efficitur.
+                li.item
+                    .question
+                        .icon Q
+                        .expandMark
+                            .collapsed +
+                            .expanded -
+                        span.text Eibulum Sit Am Augue
+                    .answer
+                        .icon A
+                        span.text.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla. Vestibulum sit amet augue ligula. Nam rhoncus dui acporttitor luctus. Nullam auctor rutrum efficitur.
+                li.item
+                    .question
+                        .icon Q
+                        .expandMark
+                            .collapsed +
+                            .expanded -
+                        span.text Eibulum Sit Am Augue
+                    .answer
+                        .icon A
+                        span.text.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla. Vestibulum sit amet augue ligula. Nam rhoncus dui acporttitor luctus. Nullam auctor rutrum efficitur.
+                li.item
+                    .question
+                        .icon Q
+                        .expandMark
+                            .collapsed +
+                            .expanded -
+                        span.text Eibulum Sit Am Augue
+                    .answer
+                        .icon A
+                        span.text.
+                            Phasellus sagittis ipsum ligula, eget lobortis augue aliquet eu. Integer convallis pretium nulla. Vestibulum sit amet augue ligula. Nam rhoncus dui acporttitor luctus. Nullam auctor rutrum efficitur.

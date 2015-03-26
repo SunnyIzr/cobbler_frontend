@@ -39,8 +39,9 @@
       text-align: left;
       max-width: 920px;
 
-      li {
+      > li {
         margin-bottom: 2em;
+        overflow: hidden;
 
         > .bullet {
           width: 91px;
@@ -73,8 +74,14 @@
       font-size: 171%;
     }
 
-    .tilesContainer img {
-      width: 100%;
+    .tilesContainer {
+      .beforeAndAfterPhotos {
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+      }
     }
 
     .textBlock {
@@ -147,16 +154,22 @@
     .section.intro {
 
       .subTitle {
-        font-size: 94%;
+        font-size: 350%;
+        letter-spacing: 0.05em;
       }
 
       h1 {
         font-size: 250%;
+        letter-spacing: 0.25em;
       }
 
       .actionButtons {
         margin-top: 3em;
-        max-width: 460px;
+        max-width: 600px;
+
+        .optionButton {
+          font-size: 150%;
+        }
       }
     }
 

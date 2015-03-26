@@ -7,44 +7,56 @@ include _layout.jade
                     .subTitle Luxury Shoe Repair
                     h1 Delivered Directly To Your Door
                     .row
-                        .actionButtons.columns.small-8.small-centered.large-6
+                        .actionButtons.columns.small-8.small-centered.large-12
                             .row.collapse
                                 .columns.large-6
                                     a.button.optionButton(href='#') Watch The Video
                                 .columns.large-6
                                     a.button.optionButton(href='/get-started.html') Get Started
-    .row.section.pricing
+    .row.section.services
         .columns.small-12
             div
                 .headerWrapper
                     .stroke
-                    h1.header Simple Pricing
+                    h2.hide-for-large-up.header Any Repair You Need.
+                        br
+                        | One Concierge Price.
+                    h2.hide-for-medium-down.header Any Repair You Need. One Concierge Price.
 
-            ul.items.semanticList
-                li
-                    img(src="/images/views/home/pricing_shoes_mens.jpg")
-                    .description
-                        span From
-                        span.price  $60
-                        span  / Pair
-                li
-                    img(src="/images/views/home/pricing_shoes_womens.jpg")
-                    .description
-                        span From
-                        span.price  $25
-                        span  / Pair
-                li
-                    img(src="/images/views/home/pricing_bag.jpg")
-                    .description
-                        span From
-                        span.price  $150
+            .itemsWrapper
+                ul.semanticList.itemTypes
+                    li
+                        img(src="/images/views/home/pricing_shoes_mens.jpg")
+                        ul.servicesList
+                            li Lifts
+                            li Broken Hills
+                            li Soles
+                            li Backbinding
+                            li Backlining
+                            li Insoles
+                            li All Others
+                    li
+                        img(src="/images/views/home/pricing_shoes_womens.jpg")
+                        ul.servicesList
+                            li Heels
+                            li Soles
+                            li Backbinding
+                            li Backlining
+                            li Taps
+                            li Insoles
+                            li All Others
+                    li
+                        img(src="/images/views/home/pricing_bag.jpg")
+                        ul.servicesList
+                            li Cleaning
+                            li Reconditioning
+                            li Stain Removal
+                            li Refinishing
+                            li Fying
+                            li Zippers
+                            li All Others
 
-            .contentPanel.row.benefitsWrapper
-                .columns.small-12
-                    ul.benefits
-                        li All Repairs Included
-                        li Free Shipping
-                        li Money-Back Guarantee
+
     .row.section.howItWorks.hide-for-medium-down
         .columns.small-12
             div
@@ -56,23 +68,21 @@ include _layout.jade
                 li
                     .bullet 1
                     .content
-                        h6.title Place order and receive concierge box
-                        p.
-                            Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+                        h6.title Order Online (If you have 30 seconds free, you can do this right now)
 
                 li
                     .bullet 2
                     .content
-                        h6.title Send items for all-inclusive repair
-                        p.
-                            Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+                        h6.title Your Custom Concierge Box Sent to You (Zero Hassles and Zero Cost)
 
                 li
-                    .bullet 1
+                    .bullet 3
                     .content
-                        h6.title Products returned good as new
-                        p.
-                            Duis eros sapien, cursus id vulputate sed, malesuada eget mauris. Nam gravida lacus porttitor, malesuada libero eu, pretium mi. Praesent porta neque quis sollicitudin dictum.
+                        h6.title Your Items Are Repaired in Our Exclusive 5,500 Square Foot Facility (By the only Cobblers you should trust)
+                li
+                    .bullet 4
+                    .content
+                        h6.title Free Return Delivery (Your items safely return to you)
 
     .row.section.qualityProof
         .columns.small-12
@@ -90,9 +100,17 @@ include _layout.jade
                             p.
                                 In accumsan dictum pretium. Suspe nd is ase luctus ante nec nulla lobortis fini Nullam eleifend elit et turpis da pibus, sit amet dapibus nulla feugiat.
             .row.tilesContainer
-                .columns.small-12.large-6.large-push-6
-                    .row
-                        img(src="/images/views/home/quality_proof_tile_2.jpg")
+                .columns.small-12.large-6.large-push-6.beforeAndAfterPhotos
+                    .row.collapse
+                        .columns.small-6
+                            img(src="/images/views/home/quality_proof_tile_2.jpg")
+                        .columns.small-6
+                            img(src="/images/views/home/quality_proof_tile_2.jpg")
+                    .row.collapse
+                        .columns.small-6
+                            img(src="/images/views/home/quality_proof_tile_2.jpg")
+                        .columns.small-6
+                            img(src="/images/views/home/quality_proof_tile_2.jpg")
                 .columns.small-12.large-6.large-pull-6.textBlock.tile2
                     .contentContainer-large
                         .contentContainerCell-large

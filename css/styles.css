@@ -6000,6 +6000,47 @@ label {
   .faqQuestions li.expanded .answer {
     display: block; }
 
+.section.services {
+  padding-bottom: 3em; }
+  .section.services > div {
+    padding-left: 0;
+    padding-right: 0; }
+  .section.services .itemsWrapper {
+    overflow: hidden; }
+  .section.services .itemTypes {
+    white-space: nowrap;
+    overflow: auto;
+    margin-bottom: -16px;
+    padding-bottom: 16px; }
+    .section.services .itemTypes > li {
+      padding-top: 2em;
+      padding-left: 2%;
+      padding-right: 2%;
+      display: inline-block;
+      vertical-align: bottom;
+      width: 70%;
+      white-space: normal; }
+      .section.services .itemTypes > li > img {
+        display: block;
+        margin: 0 auto; }
+      .section.services .itemTypes > li:first-child {
+        margin-left: 15%; }
+      .section.services .itemTypes > li:last-child {
+        margin-right: 15%; }
+  .section.services .servicesList {
+    font-size: 129%;
+    font-family: "futura-pt";
+    text-align: left;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    margin-left: 0;
+    vertical-align: middle;
+    list-style: none; }
+    .section.services .servicesList li {
+      padding-left: 35px;
+      background: url('../images/checkmark_blue.png') no-repeat scroll left center; }
+
 @media only screen and (min-width:64.063em) {
   .section .contentContainer-large {
     display: table;
@@ -6086,7 +6127,49 @@ label {
       .faqQuestions li .answer {
         display: block; }
       .faqQuestions li .expandMark {
-        display: none; } }
+        display: none; }
+  .section.services {
+    padding-bottom: 5em; }
+    .section.services h2 {
+      font-size: 188%;
+      margin-bottom: 0; }
+    .section.services .headerWrapper {
+      margin-top: 4em; }
+    .section.services .itemTypes {
+      display: block;
+      padding: 0;
+      margin: 0 -0.625rem;
+      max-width: 1400px;
+      margin: 3em auto 0; }
+      .section.services .itemTypes:before, .section.services .itemTypes:after {
+        content: " ";
+        display: table; }
+      .section.services .itemTypes:after {
+        clear: both; }
+      .section.services .itemTypes > li {
+        display: block;
+        height: auto;
+        float: left;
+        padding: 0 0.625rem 1.25rem; }
+      .section.services .itemTypes > li {
+        width: 33.33333%;
+        padding: 0 0.625rem 1.25rem;
+        list-style: none; }
+        .section.services .itemTypes > li:nth-of-type(1n) {
+          clear: none; }
+        .section.services .itemTypes > li:nth-of-type(3n+1) {
+          clear: both; }
+      .section.services .itemTypes > li {
+        display: inline-block;
+        margin-left: -5px;
+        vertical-align: bottom;
+        float: none;
+        padding-left: 1em;
+        padding-right: 1em; }
+        .section.services .itemTypes > li:first-child {
+          margin-left: 0; }
+        .section.services .itemTypes > li:last-child {
+          margin-right: 0; } }
 
 .homepage .section.intro {
   background: url('../images/views/home/intro_bg.jpg') no-repeat scroll 14% top;
@@ -6114,9 +6197,10 @@ label {
     display: inline-block;
     text-align: left;
     max-width: 920px; }
-    .homepage .section.howItWorks .items li {
-      margin-bottom: 2em; }
-      .homepage .section.howItWorks .items li > .bullet {
+    .homepage .section.howItWorks .items > li {
+      margin-bottom: 2em;
+      overflow: hidden; }
+      .homepage .section.howItWorks .items > li > .bullet {
         width: 91px;
         height: 91px;
         float: left;
@@ -6127,13 +6211,15 @@ label {
         font-size: 219%;
         font-weight: 700;
         font-family: "futura-pt"; }
-      .homepage .section.howItWorks .items li > .content {
+      .homepage .section.howItWorks .items > li > .content {
         padding-top: 34px;
         margin-left: 134px; }
-      .homepage .section.howItWorks .items li .title {
+      .homepage .section.howItWorks .items > li .title {
         color: #ffffff; }
 .homepage .section.qualityProof h1 {
   font-size: 171%; }
+.homepage .section.qualityProof .tilesContainer .beforeAndAfterPhotos {
+  padding: 0; }
 .homepage .section.qualityProof .tilesContainer img {
   width: 100%; }
 .homepage .section.qualityProof .textBlock {
@@ -6168,12 +6254,16 @@ label {
     padding: 2em 5em; }
 @media only screen and (min-width:64.063em) {
   .homepage .section.intro .subTitle {
-    font-size: 94%; }
+    font-size: 350%;
+    letter-spacing: 0.05em; }
   .homepage .section.intro h1 {
-    font-size: 250%; }
+    font-size: 250%;
+    letter-spacing: 0.25em; }
   .homepage .section.intro .actionButtons {
     margin-top: 3em;
-    max-width: 460px; }
+    max-width: 600px; }
+    .homepage .section.intro .actionButtons .optionButton {
+      font-size: 150%; }
   .homepage .section.howItWorks .headerWrapper {
     margin-top: 4em;
     margin-bottom: 3em; }
@@ -6300,46 +6390,6 @@ label {
   padding: 0; }
   .pricing .section:last-child > div {
     padding: 0; }
-.pricing .section.services {
-  padding-bottom: 3em; }
-  .pricing .section.services > div {
-    padding-left: 0;
-    padding-right: 0; }
-  .pricing .section.services .itemsWrapper {
-    overflow: hidden; }
-  .pricing .section.services .itemTypes {
-    white-space: nowrap;
-    overflow: auto;
-    margin-bottom: -16px;
-    padding-bottom: 16px; }
-    .pricing .section.services .itemTypes > li {
-      padding-top: 2em;
-      padding-left: 2%;
-      padding-right: 2%;
-      display: inline-block;
-      vertical-align: bottom;
-      width: 70%;
-      white-space: normal; }
-      .pricing .section.services .itemTypes > li > img {
-        display: block;
-        margin: 0 auto; }
-      .pricing .section.services .itemTypes > li:first-child {
-        margin-left: 15%; }
-      .pricing .section.services .itemTypes > li:last-child {
-        margin-right: 15%; }
-  .pricing .section.services .servicesList {
-    font-size: 129%;
-    font-family: "futura-pt";
-    text-align: left;
-    display: inline-block;
-    text-transform: uppercase;
-    margin-top: 1.5em;
-    margin-left: 0;
-    vertical-align: middle;
-    list-style: none; }
-    .pricing .section.services .servicesList li {
-      padding-left: 35px;
-      background: url('../images/checkmark_blue.png') no-repeat scroll left center; }
 .pricing .section.pricing {
   padding: 3em 0 5em;
   background: #eff2f6; }
@@ -6379,46 +6429,6 @@ label {
     padding: 3em 0; }
     .pricing .section:last-child .getStartedAction {
       margin: 0; }
-  .pricing .section.services {
-    padding-bottom: 5em; }
-    .pricing .section.services h2 {
-      font-size: 188%;
-      margin-bottom: 0; }
-    .pricing .section.services .itemTypes {
-      display: block;
-      padding: 0;
-      margin: 0 -0.625rem;
-      max-width: 1400px;
-      margin: 3em auto 0; }
-      .pricing .section.services .itemTypes:before, .pricing .section.services .itemTypes:after {
-        content: " ";
-        display: table; }
-      .pricing .section.services .itemTypes:after {
-        clear: both; }
-      .pricing .section.services .itemTypes > li {
-        display: block;
-        height: auto;
-        float: left;
-        padding: 0 0.625rem 1.25rem; }
-      .pricing .section.services .itemTypes > li {
-        width: 33.33333%;
-        padding: 0 0.625rem 1.25rem;
-        list-style: none; }
-        .pricing .section.services .itemTypes > li:nth-of-type(1n) {
-          clear: none; }
-        .pricing .section.services .itemTypes > li:nth-of-type(3n+1) {
-          clear: both; }
-      .pricing .section.services .itemTypes > li {
-        display: inline-block;
-        margin-left: -5px;
-        vertical-align: bottom;
-        float: none;
-        padding-left: 1em;
-        padding-right: 1em; }
-        .pricing .section.services .itemTypes > li:first-child {
-          margin-left: 0; }
-        .pricing .section.services .itemTypes > li:last-child {
-          margin-right: 0; }
   .pricing .section.pricing {
     padding: 5em 0 8em; }
     .pricing .section.pricing h2 {

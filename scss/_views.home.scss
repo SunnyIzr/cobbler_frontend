@@ -7,9 +7,15 @@
     font-family: $headerFont;
 
     .subTitle {
-      font-size: 71%;
+      font-size: 205%;
       text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
+
+    h1 {
+      letter-spacing: 0.25em;
+    }
+
 
     .actionButtons {
       margin-top: 1em;
@@ -17,6 +23,7 @@
       .button {
         margin-bottom: 0;
         width: 100%;
+        font-size: 110%;
 
         background: transparent;
         border: 1px solid $pageColor;

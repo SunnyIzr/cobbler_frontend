@@ -6177,13 +6177,17 @@ label {
   height: 480px;
   font-family: "futura-pt"; }
   .homepage .section.intro .subTitle {
-    font-size: 71%;
-    text-transform: uppercase; }
+    font-size: 205%;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; }
+  .homepage .section.intro h1 {
+    letter-spacing: 0.25em; }
   .homepage .section.intro .actionButtons {
     margin-top: 1em; }
     .homepage .section.intro .actionButtons .button {
       margin-bottom: 0;
       width: 100%;
+      font-size: 110%;
       background: transparent;
       border: 1px solid #ffffff; }
 .homepage .section.howItWorks {

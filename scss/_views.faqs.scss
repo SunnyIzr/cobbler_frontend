@@ -26,98 +26,7 @@
   .section.questionsSection {
     padding: 3.5em 0 8em;
 
-    .questions {
 
-      li {
-        overflow: hidden;
-        margin-top: 1em;
-        padding-bottom: 1em;
-        border-bottom: 1px solid $panelColor;
-
-        &:first-child {
-          margin-top: 0;
-        }
-
-        .icon {
-          float: left;
-          //display: inline-block;
-          border-radius: 100%;
-          overflow: hidden;
-          font-family: $headerFont;
-          font-size: 114%;
-          font-weight: bold;
-          text-transform: uppercase;
-          background: $actionColor;
-          color: $pageColor;
-          width: 37px;
-          height: 37px;
-          text-align: center;
-          line-height: 37px;
-        }
-
-        .question .text, .answer .text {
-          margin-left: 60px;
-          margin-right: 40px;
-          text-align: left;
-          display: block;
-        }
-
-        .question {
-          overflow: hidden;
-          cursor: pointer;
-
-          .text {
-            font-family: $headerFont;
-            font-size: 129%;
-            font-weight: bold;
-            text-transform: uppercase;
-            line-height: 1.2;
-          }
-        }
-
-        .expandMark {
-          float: right;
-          font-size: 200%;
-          font-weight: 300;
-          line-height: 1;
-
-          .expanded {
-            display: none;
-          }
-        }
-
-        &.expanded .expandMark {
-          .collapsed {
-            display: none;
-          }
-
-          .expanded {
-            display: block;
-          }
-        }
-
-
-
-        .answer {
-          margin-top: 1em;
-          display: none;
-
-          .icon {
-            background: #3588ff;
-          }
-
-          .text {
-
-          }
-        }
-
-        &.expanded .answer {
-          display: block;
-        }
-
-
-      }
-    }
   }
 
   .section.tilesSection {
@@ -149,30 +58,7 @@
 
     .section.questionsSection {
 
-      .questions {
-        @include block-grid(3);
-        max-width: 1400px;
-        margin: 5em auto 0;
 
-        li {
-          border-bottom: none;
-          vertical-align: top;
-          margin-top: 0;
-          margin-bottom: 4em;
-
-          .question {
-            cursor: inherit;
-          }
-          
-          .answer {
-            display: block;
-          }
-
-          .expandMark {
-            display: none;
-          }
-        }
-      }
     }
   }
 }

@@ -2,7 +2,7 @@ $(document).on('ready', function () {
     resizeSlide();
 
 
-    $('.faqs .questions .question').on('click', function() {
+    $('.faqQuestions .question').on('click', function() {
         $(this).closest('.item').toggleClass('expanded');
         return false;
     });

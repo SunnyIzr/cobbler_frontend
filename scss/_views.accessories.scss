@@ -10,6 +10,16 @@
   .section.accessories {
     padding-bottom: 4em;
 
+    .itemsPages {
+      >li {
+        display: none;
+
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+
     .items {
       .button {
         margin-bottom: 0;
@@ -34,6 +44,37 @@
 
     .section.accessories {
       padding-bottom: 4em;
+
+      .itemsPages {
+
+        .slick-slide {
+          height: auto;
+          padding: 0 120px;
+        }
+
+        .slick-prev, .slick-next {
+          position: absolute;
+          height: 66px;
+          width: 46px;
+          top: 50%;
+          margin-top: -33px;
+          margin-bottom: 0;
+          color: transparent;
+          background: transparent no-repeat scroll center center;
+          outline: none;
+        }
+
+        .slick-prev {
+          background-image: url('../images/slider_arrow_left.png');
+          left: 50px;
+        }
+
+        .slick-next {
+          background-image: url('../images/slider_arrow_right.png');
+          right: 50px;
+        }
+      }
+
 
       .items {
         @include block-grid(2);

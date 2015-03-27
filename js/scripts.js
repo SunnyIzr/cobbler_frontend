@@ -1,5 +1,8 @@
+var sliderInitialized = false;
+
 $(document).on('ready', function () {
     resizeSlide();
+    stickyProcessControls();
 
 
     $('.faqQuestions .question').on('click', function() {
@@ -85,6 +88,10 @@ $(window).on('resize', function () {
     resizeSlide();
 });
 
+$(window).on('scroll', function () {
+    stickyProcessControls();
+});
+
 
 function resizeSlide () {
     var viewportWidth = $(window).width();
@@ -100,5 +107,44 @@ function resizeSlide () {
     } else {
         //$('.homepage .section.intro').height('');
         $('.homepage .section.intro').height(Math.min(imageHeight, viewportHeight * 0.9));
+    }
+
+    if (Foundation.utils.is_large_up()) {
+        if (!sliderInitialized) {
+            $('#content.accessories').find('.section.accessories .itemsPages').slick({
+                dots: false,
+                arrows: true
+            });
+            sliderInitialized = true;
+        }
+    } else {
+        if (sliderInitialized) {
+            $('#content.accessories').find('.section.accessories .itemsPages').slick('unslick');
+            sliderInitialized = false;
+        }
+    }
+
+
+
+
+
+}
+
+
+function stickyProcessControls() {
+    var footer = $("#content.accessories").find(".processControls");
+
+    var pos = footer.position();
+    var height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+
+
+    if (height > 0) {
+        footer.addClass('sticky');
+        footer.css({
+            'position': 'fixed',
+            'bottom' : '0'
+        });
     }
 }

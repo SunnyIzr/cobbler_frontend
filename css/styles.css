@@ -5802,7 +5802,7 @@ label {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   z-index: 100;
   background: rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -6727,7 +6727,7 @@ label {
           padding: 1.5em; }
         .getStarted .section.orderFormSection .hint .content .title {
           color: inherit; }
-      .getStarted .section.orderFormSection .hint:hover .content {
+      .getStarted .section.orderFormSection .hint:hover .content, .getStarted .section.orderFormSection .hint.active .content {
         display: block; }
   .getStarted .section.orderFormSection.mobile {
     padding-bottom: 5.3em;
@@ -6780,60 +6780,61 @@ label {
           background-image: url('../images/arrow_down.png'); }
   .getStarted .section.orderFormSection.desktop {
     background-size: cover;
-    padding: 12em 0 6em; }
+    padding: 12em 0 7em; }
     .getStarted .section.orderFormSection.desktop .orderForm {
-      width: 800px;
       height: 800px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
       line-height: 800px;
-      text-transform: uppercase; }
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      width: 800px; }
       .getStarted .section.orderFormSection.desktop .orderForm .item {
-        line-height: 1.2;
         display: inline-block;
-        width: 33%;
+        line-height: 1.2;
         margin-left: -4px;
-        vertical-align: middle; }
+        vertical-align: middle;
+        width: 33%; }
         .getStarted .section.orderFormSection.desktop .orderForm .item.womenQuantityContainer {
           text-align: left; }
         .getStarted .section.orderFormSection.desktop .orderForm .item.menQuantityContainer {
           text-align: right; }
-        .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton, .getStarted .section.orderFormSection.desktop .orderForm .item .valueContainer {
+        .getStarted .section.orderFormSection.desktop .orderForm .item .comboButton, .getStarted .section.orderFormSection.desktop .orderForm .item .valueContainer {
           display: inline-block;
-          vertical-align: bottom;
-          text-align: center; }
-        .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton {
-          padding: 0;
-          margin: 0;
-          background: none; }
-          .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a {
-            display: block;
-            width: 47px;
-            height: 46px;
-            border: 1px solid;
-            color: #ffffff;
+          text-align: center;
+          vertical-align: bottom; }
+        .getStarted .section.orderFormSection.desktop .orderForm .item .comboButton {
+          background: none;
+          padding: 0; }
+          .getStarted .section.orderFormSection.desktop .orderForm .item .comboButton > .upDownButton {
+            background-color: transparent;
             background-position: center center;
             background-repeat: no-repeat;
-            background-color: transparent; }
-            .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a.incButton {
+            border: 1px solid;
+            color: #ffffff;
+            display: block;
+            height: 46px;
+            width: 47px;
+            margin: 0;
+            padding: 0; }
+            .getStarted .section.orderFormSection.desktop .orderForm .item .comboButton > .upDownButton.increase {
               background-image: url('../images/arrow_up.png');
               border-radius: 4px 4px 0 0; }
-            .getStarted .section.orderFormSection.desktop .orderForm .item .upDownButton > a.decButton {
+            .getStarted .section.orderFormSection.desktop .orderForm .item .comboButton > .upDownButton.decrease {
               background-image: url('../images/arrow_down.png');
               border-radius: 0 0 4px 4px;
               margin-top: -1px; }
-        .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton, .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .valueContainer {
+        .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .comboButton, .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .valueContainer {
           display: block; }
-        .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton {
+        .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .comboButton {
           margin: 0.6em auto 0; }
-          .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > button {
+          .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .comboButton > button {
             display: inline-block; }
-            .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > button.incButton {
+            .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .comboButton > button.increase {
               border-radius: 4px 0 0 4px; }
-            .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .upDownButton > button.decButton {
+            .getStarted .section.orderFormSection.desktop .orderForm .item.handbagsQuantityContainer .comboButton > button.decrease {
               border-radius: 0 4px 4px 0;
-              margin-left: -1px; }
+              margin-left: -5px; }
         .getStarted .section.orderFormSection.desktop .orderForm .item .valueContainer {
           font-size: 94%; }
         .getStarted .section.orderFormSection.desktop .orderForm .item.womenQuantityContainer .valueContainer {
@@ -6850,7 +6851,7 @@ label {
           text-align: center;
           padding: 0.11em 0; }
         .getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value {
-          font-size: 853%;
+          font-size: 633%;
           border-bottom: none; }
           .getStarted .section.orderFormSection.desktop .orderForm .item.totalContainer .value span {
             vertical-align: sub; }
@@ -6864,8 +6865,9 @@ label {
         left: 0;
         width: 100%; }
     .getStarted .section.orderFormSection.desktop .orderFormWrapper {
-      position: relative;
-      display: inline-block; }
+      display: inline-block;
+      margin-top: -70px;
+      position: relative; }
       .getStarted .section.orderFormSection.desktop .orderFormWrapper .circleWrapper {
         position: absolute;
         width: 100%;

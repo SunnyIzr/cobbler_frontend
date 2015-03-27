@@ -38,7 +38,7 @@ include _layout.jade
                             input(type='hidden', name='handbagsQuantity', value="0")
                     tr.totalRow
                         th Total
-                        td
+                        td.totalContainer
                             span.value
                                 span.currencySymbol $
                                 span.digit 0
@@ -60,8 +60,8 @@ include _layout.jade
                     .circle
 
                 form.orderForm(method='post', action='api/calcOrder.php')
-                    .item.womenQuantityContainer
-                        .upDownButton.double
+                    .item.compositeField.womenQuantityContainer
+                        .comboButton
                             button.upDownButton.increase(href='javascript:void(0);')
                             button.upDownButton.decrease(href='javascript:void(0);')
                         .valueContainer
@@ -72,8 +72,8 @@ include _layout.jade
                     .item.totalContainer
                         span.value
                             span.currencySymbol $
-                            span 0
-                    .item.menQuantityContainer
+                            span.digit 0
+                    .item.compositeField.menQuantityContainer
                         .valueContainer
                             .fieldLabel Men's
                                 .hint
@@ -88,20 +88,20 @@ include _layout.jade
                             div
                                 span.value 0
                                 input(type='hidden', name='menShoesQuantity', value="0")
-                        .upDownButton.double
+                        .comboButton
                             button.upDownButton.increase(href='javascript:void(0);')
                             button.upDownButton.decrease(href='javascript:void(0);')
 
                     .bottomRow
-                        .item.handbagsQuantityContainer
+                        .item.compositeField.handbagsQuantityContainer
                             .valueContainer
                                 .fieldLabel Handbags
                                 div
                                     span.value 0
                                     input(type='hidden', name='handbagsQuantity', value="0")
-                            .upDownButton.double.horizontal
+                            .comboButton.horizontal
                                 button.upDownButton.increase(href='javascript:void(0);')
-                            button.upDownButton.decrease(href='javascript:void(0);')
+                                button.upDownButton.decrease(href='javascript:void(0);')
     .row.processControls.alteredText
         span Price looks good!
-        a.button.actionProceed(href='#') Next Step
+        a.button.actionProceed(href='get-started-comments.html') Next Step

@@ -21,6 +21,11 @@ $(document).on('ready', function () {
         return false;
     });
 
+    $('.getStarted .orderForm .hint .icon').click(function(event) {
+        event.preventDefault();
+
+        $(this).closest('.hint').toggleClass('active');
+    });
 
     $('.getStarted .orderForm .compositeField .upDownButton').click(function(event) {
         event.preventDefault();
@@ -62,13 +67,13 @@ $(document).on('ready', function () {
             data
         ).done(function(data) {
             var orderAmount = parseInt(data);
-            form.find('.totalRow .value .digit').text(orderAmount);
+            form.find('.totalContainer .value .digit').text(orderAmount);
 
             var processControls = $('#content').find('.processControls');
             if (orderAmount > 0) {
-                processControls.slideDown();
+                processControls.slideDown('slow');
             } else {
-                processControls.slideUp();
+                processControls.slideUp('slow');
             }
         }).fail(function () {
             alert('Whoops! It looks, that we have some issues on our side. Please, try again later or contact the support.');

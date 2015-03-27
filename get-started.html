@@ -92,7 +92,7 @@
                     </tr>
                     <tr class="totalRow">
                       <th>Total</th>
-                      <td><span class="value"><span class="currencySymbol">$</span><span class="digit">0</span></span></td>
+                      <td class="totalContainer"><span class="value"><span class="currencySymbol">$</span><span class="digit">0</span></span></td>
                     </tr>
                   </table>
                 </form>
@@ -118,8 +118,8 @@
                     <div class="circle"></div>
                   </div>
                   <form method="post" action="api/calcOrder.php" class="orderForm">
-                    <div class="item womenQuantityContainer">
-                      <div class="upDownButton double">
+                    <div class="item compositeField womenQuantityContainer">
+                      <div class="comboButton">
                         <button href="javascript:void(0);" class="upDownButton increase"></button>
                         <button href="javascript:void(0);" class="upDownButton decrease"></button>
                       </div>
@@ -129,8 +129,8 @@
                         <input type="hidden" name="womenShoesQuantity" value="0"/>
                       </div>
                     </div>
-                    <div class="item totalContainer"><span class="value"><span class="currencySymbol">$</span><span>0</span></span></div>
-                    <div class="item menQuantityContainer">
+                    <div class="item totalContainer"><span class="value"><span class="currencySymbol">$</span><span class="digit">0</span></span></div>
+                    <div class="item compositeField menQuantityContainer">
                       <div class="valueContainer">
                         <div class="fieldLabel">Men's
                           <div class="hint">
@@ -151,30 +151,30 @@
                           <input type="hidden" name="menShoesQuantity" value="0"/>
                         </div>
                       </div>
-                      <div class="upDownButton double">
+                      <div class="comboButton">
                         <button href="javascript:void(0);" class="upDownButton increase"></button>
                         <button href="javascript:void(0);" class="upDownButton decrease"></button>
                       </div>
                     </div>
                     <div class="bottomRow">
-                      <div class="item handbagsQuantityContainer">
+                      <div class="item compositeField handbagsQuantityContainer">
                         <div class="valueContainer">
                           <div class="fieldLabel">Handbags</div>
                           <div><span class="value">0</span>
                             <input type="hidden" name="handbagsQuantity" value="0"/>
                           </div>
                         </div>
-                        <div class="upDownButton double horizontal">
+                        <div class="comboButton horizontal">
                           <button href="javascript:void(0);" class="upDownButton increase"></button>
+                          <button href="javascript:void(0);" class="upDownButton decrease"></button>
                         </div>
-                        <button href="javascript:void(0);" class="upDownButton decrease"></button>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
-            <div class="row processControls alteredText"><span>Price looks good!</span><a href="#" class="button actionProceed">Next Step</a></div>
+            <div class="row processControls alteredText"><span>Price looks good!</span><a href="get-started-comments.html" class="button actionProceed">Next Step</a></div>
           </div>
         </div>
         <div id="footer" class="row collapse">
@@ -197,8 +197,9 @@
         </div>
       </div>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <!-- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')-->
       <!-- Include all compiled plugins (below), or include individual files as needed-->
+      <script type="text/javascript" src="/bower/jquery/dist/jquery.min.js"></script>
       <script type="text/javascript" src="/bower/foundation/js/foundation.min.js"></script>
       <script type="text/javascript" src="/js/scripts.js"></script>
     </div>

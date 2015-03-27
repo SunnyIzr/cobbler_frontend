@@ -1,7 +1,17 @@
 .getStarted {
+  position: relative;
 
   .section {
     text-align: center;
+  }
+
+  .processControls {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
   }
 
   .section.orderFormSection {
@@ -61,7 +71,7 @@
   }
 
   .section.orderFormSection.mobile {
-    //background-size: cover;
+    padding-bottom: 5.3em;
     padding-top: 10em;
 
     .orderForm {
@@ -111,6 +121,7 @@
 
       .totalRow .value {
         text-align: right;
+        width: auto;
       }
 
       .upDownButton {
@@ -209,7 +220,7 @@
           .upDownButton {
             margin: 0.6em auto 0;
 
-            >a {
+            >button {
               display: inline-block;
 
               &.incButton {

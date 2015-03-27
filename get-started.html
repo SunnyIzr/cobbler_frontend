@@ -50,13 +50,14 @@
             <div class="row section hide-for-large-up alteredText orderFormSection mobile">
               <div class="columns small-12">
                 <h1>How Many Shoes Or Handbags Are You Sending Us?</h1>
-                <form class="orderForm">
+                <form method="post" action="api/calcOrder.php" class="orderForm">
                   <table>
                     <tr>
                       <th>Women's</th>
-                      <td>
+                      <td class="compositeField">
                         <button class="upDownButton increase"></button><span class="value">0</span>
                         <button class="upDownButton decrease"></button>
+                        <input type="hidden" name="womenShoesQuantity" value="0"/>
                       </td>
                     </tr>
                     <tr>
@@ -75,21 +76,23 @@
                           </div>
                         </div>
                       </th>
-                      <td>
+                      <td class="compositeField">
                         <button class="upDownButton increase"></button><span class="value">0</span>
                         <button class="upDownButton decrease"></button>
+                        <input type="hidden" name="menShoesQuantity" value="0"/>
                       </td>
                     </tr>
                     <tr>
-                      <th>Women's</th>
-                      <td>
+                      <th>Handbags</th>
+                      <td class="compositeField">
                         <button class="upDownButton increase"></button><span class="value">0</span>
                         <button class="upDownButton decrease"></button>
+                        <input type="hidden" name="handbagsQuantity" value="0"/>
                       </td>
                     </tr>
                     <tr class="totalRow">
                       <th>Total</th>
-                      <td><span class="value"><span class="currencySymbol">$</span>0</span></td>
+                      <td><span class="value"><span class="currencySymbol">$</span><span class="digit">0</span></span></td>
                     </tr>
                   </table>
                 </form>
@@ -114,12 +117,16 @@
                   <div class="circleWrapper mainCircleWrapper">
                     <div class="circle"></div>
                   </div>
-                  <form class="orderForm">
+                  <form method="post" action="api/calcOrder.php" class="orderForm">
                     <div class="item womenQuantityContainer">
-                      <button class="upDownButton double"><a href="javascript:void(0);" class="incButton"></a><a href="javascript:void(0);" class="decButton"></a></button>
+                      <div class="upDownButton double">
+                        <button href="javascript:void(0);" class="upDownButton increase"></button>
+                        <button href="javascript:void(0);" class="upDownButton decrease"></button>
+                      </div>
                       <div class="valueContainer">
                         <div class="fieldLabel">Women's</div>
                         <div><span class="value">0</span></div>
+                        <input type="hidden" name="womenShoesQuantity" value="0"/>
                       </div>
                     </div>
                     <div class="item totalContainer"><span class="value"><span class="currencySymbol">$</span><span>0</span></span></div>
@@ -140,23 +147,34 @@
                             </div>
                           </div>
                         </div>
-                        <div><span class="value">0</span></div>
+                        <div><span class="value">0</span>
+                          <input type="hidden" name="menShoesQuantity" value="0"/>
+                        </div>
                       </div>
-                      <button class="upDownButton double"><a href="javascript:void(0);" class="incButton"></a><a href="javascript:void(0);" class="decButton"></a></button>
+                      <div class="upDownButton double">
+                        <button href="javascript:void(0);" class="upDownButton increase"></button>
+                        <button href="javascript:void(0);" class="upDownButton decrease"></button>
+                      </div>
                     </div>
                     <div class="bottomRow">
                       <div class="item handbagsQuantityContainer">
                         <div class="valueContainer">
                           <div class="fieldLabel">Handbags</div>
-                          <div><span class="value">0</span></div>
+                          <div><span class="value">0</span>
+                            <input type="hidden" name="handbagsQuantity" value="0"/>
+                          </div>
                         </div>
-                        <button class="upDownButton double horizontal"><a href="javascript:void(0);" class="incButton"></a><a href="javascript:void(0);" class="decButton"></a></button>
+                        <div class="upDownButton double horizontal">
+                          <button href="javascript:void(0);" class="upDownButton increase"></button>
+                        </div>
+                        <button href="javascript:void(0);" class="upDownButton decrease"></button>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
+            <div class="row processControls alteredText"><span>Price looks good!</span><a href="#" class="button actionProceed">Next Step</a></div>
           </div>
         </div>
         <div id="footer" class="row collapse">

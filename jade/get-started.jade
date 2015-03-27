@@ -4,14 +4,15 @@ include _layout.jade
         .columns.small-12
             h1 How Many Shoes Or Handbags Are You Sending Us?
 
-            form.orderForm
+            form.orderForm(method='post', action='api/calcOrder.php')
                 table
                     tr
                         th Women's
-                        td
+                        td.compositeField
                             button.upDownButton.increase
                             span.value 0
                             button.upDownButton.decrease
+                            input(type='hidden', name='womenShoesQuantity', value="0")
                     tr
                         th Men's
                             .hint
@@ -23,22 +24,24 @@ include _layout.jade
                                         div.
                                             Durabitur non sem et turpiss gra vida porta eget sit amet eros am lobortis.
                                             Aenean metus leo, bibendum quis sem non, placer at auctor lacus. Mauris varius, erat eu plac erat egestas.
-                        td
+                        td.compositeField
                             button.upDownButton.increase
                             span.value 0
                             button.upDownButton.decrease
+                            input(type='hidden', name='menShoesQuantity', value="0")
                     tr
-                        th Women's
-                        td
+                        th Handbags
+                        td.compositeField
                             button.upDownButton.increase
                             span.value 0
                             button.upDownButton.decrease
+                            input(type='hidden', name='handbagsQuantity', value="0")
                     tr.totalRow
                         th Total
                         td
                             span.value
                                 span.currencySymbol $
-                                | 0
+                                span.digit 0
 
     .row.section.hide-for-medium-down.alteredText.orderFormSection.desktop
         .columns.small-12
@@ -56,15 +59,16 @@ include _layout.jade
                 .circleWrapper.mainCircleWrapper
                     .circle
 
-                form.orderForm
+                form.orderForm(method='post', action='api/calcOrder.php')
                     .item.womenQuantityContainer
-                        button.upDownButton.double
-                            a.incButton(href='javascript:void(0);')
-                            a.decButton(href='javascript:void(0);')
+                        .upDownButton.double
+                            button.upDownButton.increase(href='javascript:void(0);')
+                            button.upDownButton.decrease(href='javascript:void(0);')
                         .valueContainer
                             .fieldLabel Women's
                             div
                                 span.value 0
+                            input(type='hidden', name='womenShoesQuantity', value="0")
                     .item.totalContainer
                         span.value
                             span.currencySymbol $
@@ -83,9 +87,10 @@ include _layout.jade
                                                 Aenean metus leo, bibendum quis sem non, placer at auctor lacus. Mauris varius, erat eu plac erat egestas.
                             div
                                 span.value 0
-                        button.upDownButton.double
-                            a.incButton(href='javascript:void(0);')
-                            a.decButton(href='javascript:void(0);')
+                                input(type='hidden', name='menShoesQuantity', value="0")
+                        .upDownButton.double
+                            button.upDownButton.increase(href='javascript:void(0);')
+                            button.upDownButton.decrease(href='javascript:void(0);')
 
                     .bottomRow
                         .item.handbagsQuantityContainer
@@ -93,6 +98,10 @@ include _layout.jade
                                 .fieldLabel Handbags
                                 div
                                     span.value 0
-                            button.upDownButton.double.horizontal
-                                a.incButton(href='javascript:void(0);')
-                                a.decButton(href='javascript:void(0);')
+                                    input(type='hidden', name='handbagsQuantity', value="0")
+                            .upDownButton.double.horizontal
+                                button.upDownButton.increase(href='javascript:void(0);')
+                            button.upDownButton.decrease(href='javascript:void(0);')
+    .row.processControls.alteredText
+        span Price looks good!
+        a.button.actionProceed(href='#') Next Step

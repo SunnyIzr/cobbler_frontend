@@ -1,7 +1,17 @@
 .getStarted {
+  position: relative;
 
   .section {
     text-align: center;
+  }
+
+  .processControls {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
   }
 
   .section.orderFormSection {
@@ -54,14 +64,14 @@
         }
       }
 
-      &:hover .content {
+      &:hover .content, &.active .content {
         display: block;
       }
     }
   }
 
   .section.orderFormSection.mobile {
-    //background-size: cover;
+    padding-bottom: 5.3em;
     padding-top: 10em;
 
     .orderForm {
@@ -111,6 +121,7 @@
 
       .totalRow .value {
         text-align: right;
+        width: auto;
       }
 
       .upDownButton {
@@ -140,24 +151,24 @@
 
   .section.orderFormSection.desktop {
     background-size: cover;
-    padding: 12em 0 6em;
+    padding: 12em 0 7em;
 
     .orderForm {
-      width: 800px;
       height: 800px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
       line-height: 800px;
-
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
       text-transform: uppercase;
 
+      width: 800px;
+
       .item {
-        line-height: 1.2;
         display: inline-block;
-        width: 33%;
+        line-height: 1.2;
         margin-left: -4px;
         vertical-align: middle;
+        width: 33%;
 
         &.womenQuantityContainer {
           text-align: left;
@@ -167,33 +178,34 @@
           text-align: right;
         }
 
-        .upDownButton, .valueContainer {
+        .comboButton, .valueContainer {
           display: inline-block;
-          vertical-align: bottom;
           text-align: center;
+          vertical-align: bottom;
         }
 
-        .upDownButton {
-          padding: 0;
-          margin: 0;
+        .comboButton {
           background: none;
+          padding: 0;
 
-          >a {
-            display: block;
-            width: 47px;
-            height: 46px;
-            border: 1px solid;
-            color: $pageColor;
+          >.upDownButton {
+            background-color: transparent;
             background-position: center center;
             background-repeat: no-repeat;
-            background-color: transparent;
+            border: 1px solid;
+            color: $pageColor;
+            display: block;
+            height: 46px;
+            width: 47px;
+            margin: 0;
+            padding: 0;
 
-            &.incButton {
+            &.increase {
               background-image: url('../images/arrow_up.png');
               border-radius: 4px 4px 0 0;
             }
 
-            &.decButton {
+            &.decrease {
               background-image: url('../images/arrow_down.png');
               border-radius: 0 0 4px 4px;
               margin-top: -1px;
@@ -202,23 +214,23 @@
         }
 
         &.handbagsQuantityContainer {
-          .upDownButton, .valueContainer {
+          .comboButton, .valueContainer {
             display: block;
           }
 
-          .upDownButton {
+          .comboButton {
             margin: 0.6em auto 0;
 
-            >a {
+            >button {
               display: inline-block;
 
-              &.incButton {
+              &.increase {
                 border-radius: 4px 0 0 4px;
               }
 
-              &.decButton {
+              &.decrease {
                 border-radius: 0 4px 4px 0;
-                margin-left: -1px;
+                margin-left: -5px;
               }
             }
           }
@@ -250,7 +262,7 @@
 
         &.totalContainer {
           .value {
-            font-size: 853%;
+            font-size: 633%;
             border-bottom: none;
 
             span {
@@ -275,8 +287,9 @@
     }
 
     .orderFormWrapper {
-      position: relative;
       display: inline-block;
+      margin-top: -70px;
+      position: relative;
 
       .circleWrapper {
         position: absolute;

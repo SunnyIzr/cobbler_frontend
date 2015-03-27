@@ -25,20 +25,6 @@
     }
   }
 
-  .processControls {
-    background: $accentColor;
-    font-size: 79%;
-    padding: 1.5em 1em;
-    text-align: right;
-    text-transform: uppercase;
-
-    .button {
-      font-size: 100%;
-      margin: 0 0 0 2em;
-    }
-  }
-
-
   @media #{$large-up} {
     .section {
       .headerWrapper {
@@ -76,10 +62,6 @@
           }
         }
       }
-    }
-
-    .processControls {
-      text-align: center;
     }
   }
 }

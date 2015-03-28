@@ -14,16 +14,6 @@
   .section.accessories {
     padding-bottom: 4em;
 
-    .itemsPages {
-      >li {
-        display: none;
-
-        &:first-child {
-          display: block;
-        }
-      }
-    }
-
     .items {
       .button {
         margin-bottom: 0;

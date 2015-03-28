@@ -7036,6 +7036,8 @@ label {
   #content.paymentReview .section.explanationText {
     padding-bottom: 8em; } }
 
+.accessories > div {
+  padding-bottom: 75px; }
 .accessories .section.intro {
   background: url('../images/views/accessories/header.jpg') no-repeat scroll 0% center;
   background-size: cover;
@@ -7052,6 +7054,15 @@ label {
     margin-top: 2em; }
     .accessories .section.accessories .items li:first-child {
       margin-top: 0; }
+.accessories .processControls {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .accessories .processControls.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 50; }
 @media only screen and (min-width:64.063em) {
   .accessories .section .headerWrapper {
     margin-top: 4em; }

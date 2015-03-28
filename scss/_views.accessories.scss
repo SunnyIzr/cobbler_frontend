@@ -1,5 +1,9 @@
 .accessories {
 
+  >div {
+    padding-bottom: 75px;
+  }
+
   .section.intro {
     background: url('../images/views/accessories/header.jpg') no-repeat scroll 0% center;
     background-size: cover;
@@ -32,6 +36,19 @@
           margin-top: 0;
         }
       }
+    }
+  }
+
+  .processControls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    &.sticky {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 50;
     }
   }
 

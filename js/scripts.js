@@ -10,6 +10,8 @@
             MyShoesPage();
         } else if ($('#content.getStarted').length > 0) {
             GetStartedPage();
+        } else if ($('#content.contactUs').length > 0) {
+            ContactUsPage();
         }
 
         $('.faqQuestions .question').on('click', function () {
@@ -210,5 +212,36 @@
                 }
             }
         }
+    }
+
+    function ContactUsPage() {
+        var map;
+        var geocoder;
+        var address = '379 w. broadway ny ny';
+
+        function initialize() {
+            geocoder = new google.maps.Geocoder();
+
+            var mapOptions = {
+                zoom: 18,
+                center: new google.maps.LatLng(40.723665,-74.002159)
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            codeAddress();
+        }
+
+        function codeAddress() {
+            geocoder.geocode({'address': address}, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+                }
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
     }
 })(jQuery);

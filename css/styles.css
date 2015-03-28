@@ -6364,9 +6364,9 @@ label {
     padding-bottom: 5em;
     text-align: center; }
   .contactUs .section.map {
-    height: 280px; }
-    .contactUs .section.map img {
-      width: 100%; }
+    height: 45%; }
+    .contactUs .section.map #map-canvas {
+      height: 100%; }
 .contactUs .contacts .contact {
   margin-top: 2em; }
   .contactUs .contacts .contact:first-child {
@@ -6378,10 +6378,6 @@ label {
 .contactUs .otherContacts {
   margin-top: 4em; }
 @media only screen and (min-width:64.063em) {
-  .contactUs .section.map {
-    height: 730px; }
-    .contactUs .section.map img {
-      height: 730px; }
   .contactUs .section.contactsSection {
     text-align: left;
     max-width: 900px;

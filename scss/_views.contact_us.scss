@@ -11,10 +11,10 @@
     }
 
     &.map {
-      height: 280px;
+      height: 45%;
 
-      img {
-        width: 100%;
+      #map-canvas {
+        height: 100%;
       }
     }
   }
@@ -43,14 +43,6 @@
 
 
   @media #{$large-up} {
-   .section.map {
-      height: 730px;
-
-      img {
-        height: 730px;
-      }
-    }
-
     .section.contactsSection {
       text-align: left;
       max-width: 900px;

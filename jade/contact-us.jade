@@ -1,9 +1,10 @@
 include _layout.jade
-+document('contactUs')
++document('contactUs', "//maps.googleapis.com/maps/api/js?v=3.exp")
     .row.section.map
         //.columns.small-12
         div
-            img(src='/images/views/contact_us/map.jpg')
+            #map-canvas
+
     .row.section.contactsSection
         .columns.small-12
             .row

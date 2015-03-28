@@ -1,5 +1,9 @@
 .accessories {
 
+  >div {
+    padding-bottom: 75px;
+  }
+
   .section.intro {
     background: url('../images/views/accessories/header.jpg') no-repeat scroll 0% center;
     background-size: cover;
@@ -25,6 +29,19 @@
     }
   }
 
+  .processControls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    &.sticky {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 50;
+    }
+  }
+
   @media #{$large-up} {
     .section {
       .headerWrapper {
@@ -34,6 +51,37 @@
 
     .section.accessories {
       padding-bottom: 4em;
+
+      .itemsPages {
+
+        .slick-slide {
+          height: auto;
+          padding: 0 120px;
+        }
+
+        .slick-prev, .slick-next {
+          position: absolute;
+          height: 66px;
+          width: 46px;
+          top: 50%;
+          margin-top: -33px;
+          margin-bottom: 0;
+          color: transparent;
+          background: transparent no-repeat scroll center center;
+          outline: none;
+        }
+
+        .slick-prev {
+          background-image: url('../images/slider_arrow_left.png');
+          left: 50px;
+        }
+
+        .slick-next {
+          background-image: url('../images/slider_arrow_right.png');
+          right: 50px;
+        }
+      }
+
 
       .items {
         @include block-grid(2);

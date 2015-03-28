@@ -9,6 +9,9 @@ mixin document(contentClass)
         script(type="text/javascript", src="//use.typekit.net/wil1hin.js")
         script(type="text/javascript").
             try{Typekit.load();}catch(e){}
+
+        link(href='//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css', rel='stylesheet')
+
         link(href='css/styles.css', rel='stylesheet')
         // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
         // WARNING: Respond.js doesn't work if you view the page via file://
@@ -99,5 +102,6 @@ mixin document(contentClass)
                 // Include all compiled plugins (below), or include individual files as needed
                 script(type="text/javascript", src="/bower/jquery/dist/jquery.min.js")
                 script(type="text/javascript", src="/bower/foundation/js/foundation.min.js")
+                script(type="text/javascript", src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js")
                 script(type="text/javascript", src="/js/scripts.js")
 

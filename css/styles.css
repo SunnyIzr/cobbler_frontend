@@ -6409,6 +6409,8 @@ label {
 
 .pricing .section {
   text-align: center; }
+  .pricing .section:nth-of-type(odd) {
+    background: #eff2f6; }
 .pricing .section.intro {
   background: url('../images/views/pricing/header.jpg') no-repeat scroll 26% center;
   background-size: cover;
@@ -6423,8 +6425,7 @@ label {
   .pricing .section:last-child > div {
     padding: 0; }
 .pricing .section.pricing {
-  padding: 3em 0 5em;
-  background: #eff2f6; }
+  padding: 3em 0 5em; }
   .pricing .section.pricing h2 {
     font-size: 214%; }
   .pricing .section.pricing .priceOptions {
@@ -6529,10 +6530,12 @@ label {
           font-size: 129%; }
         .pricing .section.howItWorks .items > li .content {
           margin-top: 2em; }
-  .pricing .section.quickFaq {
-    background: #eff2f6; }
-    .pricing .section.quickFaq h2 {
-      font-size: 188%; } }
+  .pricing .section.quickFaq h2 {
+    font-size: 188%; } }
+
+@media only screen and (max-width:64em) {
+  .pricing.new .section.quickFaq {
+    background: none; } }
 
 .marketplace .section {
   text-align: center; }

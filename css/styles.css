@@ -5807,9 +5807,16 @@ label {
   background: rgba(0, 0, 0, 0.9);
   text-align: center;
   padding: 4em 0 6em;
-  display: none; }
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s; }
   #menuOverlay.activated {
-    display: block; }
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   #menuOverlay a {
     color: inherit; }
   #menuOverlay .closeButton {
@@ -5819,6 +5826,19 @@ label {
     width: 27px;
     height: 27px;
     background: url('../images/icon_close_white.png') no-repeat scroll center center; }
+  #menuOverlay .contentWrapper {
+    opacity: 0.4;
+    -webkit-transform: translateY(-25%) rotateX(35deg);
+    transform: translateY(-25%) rotateX(35deg);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s; }
+  #menuOverlay.activated .contentWrapper {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg); }
+  #menuOverlay.closing .contentWrapper {
+    -webkit-transform: translateY(25%) rotateX(-35deg);
+    transform: translateY(25%) rotateX(-35deg); }
   #menuOverlay .logo {
     width: 124px;
     margin: 0 auto; }

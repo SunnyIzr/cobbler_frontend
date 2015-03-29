@@ -28,7 +28,7 @@ mixin document(contentClass, ...scripts)
                             a.closeButton(href='javascript:void(0);')
                         .columns.small-12
                             .row
-                                .columns.small-12
+                                .columns.small-12.contentWrapper
                                     .logo
                                         a(href='/')
                                             img(src='/images/logo.png')
@@ -97,17 +97,13 @@ mixin document(contentClass, ...scripts)
                                     li
                                         a(href='/privacy-and-terms.html') Privacy & Terms
 
-                // jQuery (necessary for Bootstrap's JavaScript plugins)
-                // script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
-                // Include all compiled plugins (below), or include individual files as needed
-                script(type="text/javascript", src="/bower/jquery/dist/jquery.min.js")
-                script(type="text/javascript", src="/bower/foundation/js/foundation.min.js")
+        // jQuery (necessary for Bootstrap's JavaScript plugins)
+        // script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+        // Include all compiled plugins (below), or include individual files as needed
+        script(type="text/javascript", src="/bower/jquery/dist/jquery.min.js")
+        script(type="text/javascript", src="/bower/foundation/js/foundation.min.js")
 
-                each item in scripts
-                    script(type="text/javascript", src=item)
+        each item in scripts
+            script(type="text/javascript", src=item)
 
-                script(type="text/javascript", src="/js/scripts.js")
-
-
-
-
+        script(type="text/javascript", src="/js/scripts.js")

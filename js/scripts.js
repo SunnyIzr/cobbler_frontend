@@ -14,22 +14,54 @@
             ContactUsPage();
         }
 
+        MainMenu();
+
         $('.faqQuestions .question').on('click', function () {
             $(this).closest('.item').toggleClass('expanded');
             return false;
         });
-
-        $('.menuToggleAction').on('click', function () {
-            $('#menuOverlay').addClass('activated');
-        });
-
-        $('#menuOverlay').find('.closeButton').on('click', function () {
-            $(this).closest('#menuOverlay').removeClass('activated');
-            return false;
-        });
-
     });
 
+    function MainMenu() {
+        var overlay = $('#menuOverlay');
+        var transEndEventNames = {
+                'WebkitTransition': 'webkitTransitionEnd',
+                'MozTransition': 'transitionend',
+                'OTransition': 'oTransitionEnd',
+                'msTransition': 'MSTransitionEnd',
+                'transition': 'transitionend'
+            },
+            transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+            support = { transitions : Modernizr.csstransitions };
+
+
+        function toggleOverlay() {
+            if( overlay.hasClass('activated') ) {
+                overlay.removeClass('activated' );
+                overlay.addClass('closing');
+
+                var onEndTransitionFn = function( ev ) {
+                    if( support.transitions ) {
+                        if( ev.propertyName !== 'visibility' ) { return; }
+                        this.removeEventListener( transEndEventName, onEndTransitionFn );
+                    }
+                    overlay.removeClass('closing' );
+                };
+
+                if( support.transitions ) {
+                    overlay.get(0).addEventListener( transEndEventName, onEndTransitionFn );
+                } else {
+                    onEndTransitionFn();
+                }
+            } else if( !overlay.hasClass('closing') ) {
+                overlay.addClass('activated');
+            }
+        }
+
+
+        $('.menuToggleAction').on('click', toggleOverlay);
+        overlay.find('.closeButton').on('click', toggleOverlay);
+    }
 
     function HomePage() {
         $(window).on('resize', _updateIntroSectionSize);

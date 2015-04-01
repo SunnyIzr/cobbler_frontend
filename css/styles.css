@@ -6961,22 +6961,53 @@ label {
     #content.getStartedComments .section.commentsForOrderItems .commentsForm li {
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       padding: 0.4em 0; }
-  #content.getStartedComments .processControls {
-    background: #6481ab;
-    font-size: 79%;
-    padding: 1.5em 1em;
-    text-align: right;
-    text-transform: uppercase; }
-    #content.getStartedComments .processControls .button {
-      font-size: 100%;
-      margin: 0 0 0 2em; }
   @media only screen and (min-width:64.063em) {
     #content.getStartedComments .section.commentsForOrderItems .commentsForm {
       max-width: 1000px;
       margin-left: auto;
-      margin-right: auto; }
-    #content.getStartedComments .processControls {
-      text-align: center; } }
+      margin-right: auto; } }
+
+#content.getStartedSize {
+  background: url('../images/views/get_started/bg.jpg') no-repeat scroll 11% 0;
+  background-size: cover; }
+  #content.getStartedSize .section {
+    text-align: center; }
+  #content.getStartedSize .section.intro {
+    height: 190px; }
+    #content.getStartedSize .section.intro .contentContainer .contentContainerCell {
+      vertical-align: bottom; }
+  #content.getStartedSize .section.itemsSizeForm {
+    margin-top: 5em;
+    padding-bottom: 3em; }
+    #content.getStartedSize .section.itemsSizeForm .sectionContentWrapper {
+      display: inline-block; }
+    #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm select {
+      width: 35%; }
+    #content.getStartedSize .section.itemsSizeForm .sizesHint {
+      margin-top: 3em; }
+      #content.getStartedSize .section.itemsSizeForm .sizesHint .itemsSizes li {
+        display: inline-block;
+        margin-left: 6%;
+        margin-right: -5px;
+        max-width: 44%; }
+        #content.getStartedSize .section.itemsSizeForm .sizesHint .itemsSizes li:first-child {
+          margin-left: 0; }
+        #content.getStartedSize .section.itemsSizeForm .sizesHint .itemsSizes li:last-child {
+          margin-right: 0; }
+        #content.getStartedSize .section.itemsSizeForm .sizesHint .itemsSizes li .title {
+          text-transform: uppercase;
+          font-family: "futura-pt";
+          margin-top: 1.2em;
+          letter-spacing: 0.2em;
+          font-size: 113%; }
+    #content.getStartedSize .section.itemsSizeForm .footnote {
+      margin-top: 2em;
+      font-size: 125%; }
+  @media only screen and (min-width:64.063em) {
+    #content.getStartedSize .section.itemsSizeForm {
+      padding-bottom: 8em; }
+      #content.getStartedSize .section.itemsSizeForm .footnote {
+        margin-top: 6.5em; } }
 
 #content.paymentReview .section {
   text-align: center; }

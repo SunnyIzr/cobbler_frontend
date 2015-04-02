@@ -14,16 +14,16 @@ meta.foundation-mq-medium {
   width: 40.063em; }
 
 meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
+  font-family: "/only screen and (min-width:40.063em) and (max-width:48em)/";
   width: 40.063em; }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em; }
+  font-family: "/only screen and (min-width:48.063em)/";
+  width: 48.063em; }
 
 meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
-  width: 64.063em; }
+  font-family: "/only screen and (min-width:48.063em) and (max-width:90em)/";
+  width: 48.063em; }
 
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.063em)/";
@@ -619,7 +619,7 @@ select {
     right: 91.66667%;
     left: auto; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .large-push-0 {
     position: relative;
     left: 0%;
@@ -1164,7 +1164,7 @@ select {
     .medium-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .large-block-grid-1 > li {
     width: 100%;
     list-style: none; }
@@ -2695,7 +2695,7 @@ label.error {
         width: auto;
         margin: auto;
         float: none; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:48.063em) {
     .icon-bar.large-vertical {
       height: 100%;
       width: auto; }
@@ -2744,7 +2744,7 @@ label.error {
 @media only screen and (min-width:40.063em) {
   .icon-bar.two-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .icon-bar.two-up.large-vertical .item {
     width: auto; } }
 .icon-bar.three-up .item {
@@ -2754,7 +2754,7 @@ label.error {
 @media only screen and (min-width:40.063em) {
   .icon-bar.three-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .icon-bar.three-up.large-vertical .item {
     width: auto; } }
 .icon-bar.four-up .item {
@@ -2764,7 +2764,7 @@ label.error {
 @media only screen and (min-width:40.063em) {
   .icon-bar.four-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .icon-bar.four-up.large-vertical .item {
     width: auto; } }
 .icon-bar.five-up .item {
@@ -2774,7 +2774,7 @@ label.error {
 @media only screen and (min-width:40.063em) {
   .icon-bar.five-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .icon-bar.five-up.large-vertical .item {
     width: auto; } }
 .icon-bar.six-up .item {
@@ -2784,7 +2784,7 @@ label.error {
 @media only screen and (min-width:40.063em) {
   .icon-bar.six-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .icon-bar.six-up.large-vertical .item {
     width: auto; } }
 .icon-bar.seven-up .item {
@@ -2794,7 +2794,7 @@ label.error {
 @media only screen and (min-width:40.063em) {
   .icon-bar.seven-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .icon-bar.seven-up.large-vertical .item {
     width: auto; } }
 .icon-bar.eight-up .item {
@@ -2804,7 +2804,7 @@ label.error {
 @media only screen and (min-width:40.063em) {
   .icon-bar.eight-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .icon-bar.eight-up.large-vertical .item {
     width: auto; } }
 
@@ -4607,7 +4607,7 @@ meta.foundation-mq-topbar {
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:40.063em) and (max-width:64em) {
+@media only screen and (min-width:40.063em) and (max-width:48em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -4627,7 +4627,7 @@ meta.foundation-mq-topbar {
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) and (max-width:90em) {
+@media only screen and (min-width:48.063em) and (max-width:90em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -4637,7 +4637,7 @@ meta.foundation-mq-topbar {
   .large-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .large-text-left {
     text-align: left !important; }
   .large-text-right {
@@ -5381,7 +5381,7 @@ ul.off-canvas-list {
     display: table-cell !important; } }
 
 /* large displays */
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
   .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
@@ -5859,7 +5859,7 @@ label {
     .socialShare > a:hover {
       opacity: 1; }
 
-@media only screen and (max-width:64em) {
+@media only screen and (max-width:48em) {
   #footer .logos {
     display: block;
     padding: 0;
@@ -5894,7 +5894,7 @@ label {
         width: 100%;
         text-align: center; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   html, body {
     font-size: 16px; }
   h1 {
@@ -6071,7 +6071,7 @@ label {
     font-size: 100%;
     margin: 0 0 0 2em; }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .section .contentContainer-large {
     display: table;
     width: 100%;
@@ -6080,7 +6080,8 @@ label {
       display: table-cell;
       vertical-align: middle; }
   .section.intro h1 {
-    font-size: 156%; }
+    font-size: 156%;
+    padding: 0 200px; }
   .section.pricing {
     padding-bottom: 4em; }
     .section.pricing .headerWrapper {
@@ -6288,7 +6289,7 @@ label {
   padding-bottom: 2em; }
   .homepage .section.getStarted .description .button {
     padding: 2em 5em; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .homepage .section.intro .subTitle {
     font-size: 350%;
     letter-spacing: 0.05em; }
@@ -6366,7 +6367,8 @@ label {
     position: relative; }
     .homepage .section.getStarted h1 {
       font-size: 425%;
-      margin-top: 0.2em; }
+      margin-top: 0.2em;
+      padding: 0; }
     .homepage .section.getStarted > .description {
       position: absolute;
       height: 100%;
@@ -6397,7 +6399,7 @@ label {
   margin-top: 2em; }
 .contactUs .otherContacts {
   margin-top: 4em; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .contactUs .section.contactsSection {
     text-align: left;
     max-width: 900px;
@@ -6450,7 +6452,7 @@ label {
     margin-top: 0.3em; }
   .pricing .section.quickFaq .faqQuestions {
     margin-top: 1em; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .pricing .section .headerWrapper {
     margin-top: 4em; }
   .pricing .getStartedAction {
@@ -6533,7 +6535,7 @@ label {
   .pricing .section.quickFaq h2 {
     font-size: 188%; } }
 
-@media only screen and (max-width:64em) {
+@media only screen and (max-width:48em) {
   .pricing.new .section.quickFaq {
     background: none; } }
 
@@ -6550,7 +6552,7 @@ label {
   margin: 0 auto; }
   .marketplace .section.comingSoon h1 {
     font-size: 157%; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .marketplace .section.comingSoon {
     padding-bottom: 12em;
     padding-top: 6em; }
@@ -6568,7 +6570,7 @@ label {
   padding-bottom: 4em;
   max-width: 1400px;
   margin: 0 auto; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .privacyAndTerms .section.privacyAndTerms {
     text-align: left;
     padding-bottom: 12em;
@@ -6631,7 +6633,7 @@ label {
 .aboutUs .section.tilesSection .tile3 {
   background-image: url('../images/views/about_us/tile_3.jpg');
   background-position: 73% center; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .aboutUs .section.teamSection {
     padding: 10em 0 6em; }
     .aboutUs .section.teamSection .team {
@@ -6961,7 +6963,7 @@ label {
     #content.getStartedComments .section.commentsForOrderItems .commentsForm li {
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       padding: 0.4em 0; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:48.063em) {
     #content.getStartedComments .section.commentsForOrderItems .commentsForm {
       max-width: 1000px;
       margin-left: auto;
@@ -7003,7 +7005,7 @@ label {
     #content.getStartedSize .section.itemsSizeForm .footnote {
       margin-top: 2em;
       font-size: 125%; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:48.063em) {
     #content.getStartedSize .section.itemsSizeForm {
       padding-bottom: 8em; }
       #content.getStartedSize .section.itemsSizeForm .footnote {
@@ -7070,7 +7072,7 @@ label {
   #content.paymentReview .section.explanationText p {
     max-width: 800px;
     margin: 0 auto; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   #content.paymentReview .section.paymentReview .orderCalculation {
     font-size: 113%; }
     #content.paymentReview .section.paymentReview .orderCalculation .totalsRow {
@@ -7109,7 +7111,7 @@ label {
     bottom: 0;
     width: 100%;
     z-index: 50; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .accessories .section .headerWrapper {
     margin-top: 4em; }
   .accessories .section.accessories {
@@ -7227,7 +7229,7 @@ label {
       white-space: normal; }
       .orderConfirmation .section.whatHappensNext .items li .content {
         margin-top: 2em; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .orderConfirmation .section .headerWrapper {
     margin-top: 4em; }
   .orderConfirmation .section.orderConfirmation {
@@ -7429,7 +7431,7 @@ label {
             margin-left: 1em; }
     .myShoes .section.orderContent .orderItems > li .statePhotos {
       text-align: right; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .myShoes .section .headerWrapper {
     margin-top: 4em; }
   .myShoes .section.orderProgress {
@@ -7582,7 +7584,7 @@ label {
       .myAccount .section.ordersList .orders > li .orderItemTypes > li .quantity {
         font-weight: bold;
         margin-right: 0.5em; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   .myAccount .section .headerWrapper {
     margin-top: 4em; }
   .myAccount .section.ordersList {
@@ -7660,7 +7662,7 @@ label {
     margin-top: 2em;
     text-align: center;
     text-decoration: underline; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   #content.createAccount .section.createAccount {
     text-align: left;
     padding: 4em 0 8em;
@@ -7724,7 +7726,7 @@ label {
     margin-top: 2em;
     text-align: center;
     text-decoration: underline; }
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:48.063em) {
   #content.login .section.login {
     text-align: left;
     padding: 4em 0 8em;

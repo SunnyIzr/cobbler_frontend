@@ -315,6 +315,16 @@
         var geocoder;
         var address = '379 w. broadway ny ny';
 
+
+        $(window).on('resize', _updateMapSectionSize);
+        _updateMapSectionSize();
+
+        function _updateMapSectionSize() {
+            var viewportHeight = $(window).height();
+
+            $('.contactUs .section.map').height(viewportHeight * 0.45);
+        }
+
         function initialize() {
             geocoder = new google.maps.Geocoder();
 

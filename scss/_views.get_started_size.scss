@@ -16,11 +16,15 @@
 
     form.itemsSizeForm {
       .itemTypesWrapper > div {
-        margin-top: 3em;
+        margin-top: 1.5em;
+        padding-top: 1.5em;
         padding-bottom: 2em;
+        border-top: 1px solid rgba(255,255,255, 0.2);
 
         &:first-child {
           margin-top: 0;
+          padding-top: 0;
+          border-top: none;
         }
       }
 
@@ -82,21 +86,18 @@
 
         >div {
           margin-top: 0;
+          padding-top: 0;
           display: inline-block;
+          vertical-align: top;
           margin-left: -5px;
           float: none;
+          border-top: none;
+          border-left: 1px solid rgba(255,255,255, 0.2);
 
           &:first-child {
             margin-left: 0;
+            border-left: none;
           }
-        }
-      }
-
-      form.itemsSizeForm.multiple .itemTypesWrapper > div {
-        border-left: 1px solid rgba(255,255,255, 0.2);
-
-        &:first-child {
-          border-left: none;
         }
       }
 

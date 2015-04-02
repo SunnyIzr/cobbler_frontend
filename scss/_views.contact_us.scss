@@ -10,8 +10,8 @@
       text-align: center;
     }
 
-    &.map {
-      height: 45%;
+    &.map > div {
+      height: 100%;
 
       #map-canvas {
         height: 100%;

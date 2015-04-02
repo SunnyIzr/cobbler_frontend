@@ -1,142 +1,120 @@
-<!DOCTYPE html(lang='en')>
-<head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Cobbler Concierge</title>
-  <script type="text/javascript" src="/bower/modernizr/modernizr.js"></script>
-  <script type="text/javascript" src="//use.typekit.net/wil1hin.js"></script>
-  <script type="text/javascript">
-    try{Typekit.load();}catch(e){}
-    
-  </script>
-  <link href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css" rel="stylesheet"/>
-  <link href="css/styles.css" rel="stylesheet"/>
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <div class="bodyWrapper">
-    <div class="bodyCell">
-      <div id="page" class="container">
-        <div id="menuOverlay" class="alteredText">
-          <div><a href="javascript:void(0);" class="closeButton"></a></div>
-          <div class="columns small-12">
-            <div class="row">
-              <div class="columns small-12 contentWrapper">
-                <div class="logo"><a href="/"><img src="/images/logo.png"/></a></div>
-                <ul class="semanticList menu">
-                  <li class="item"><a href="/get-started.html">Get Started</a></li>
-                  <li class="item"><a href="/login.html">Login</a></li>
-                  <li class="item"><a href="/pricing.html">Pricing</a></li>
-                  <li class="item"><a href="/marketplace.html">Marketplace</a></li>
-                  <li class="item"><a href="/about-us.html">About</a></li>
-                  <li class="item"><a href="/contact-us.html">Contact Us</a></li>
-                  <li class="item"><a href="/faqs.html">FAQs</a></li>
-                  <li class="item"><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
-                </ul>
-                <div class="row">
-                  <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"/></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"/></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"/></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="header" class="row">
-          <div class="logo"><a href="/"><img src="/images/logo.png"/></a></div>
-          <div class="menu"><a href="javascript:void(0);" class="menuToggleAction"></a></div>
-        </div>
-        <div id="content" class="row getStartedSize">
-          <div class="columns small-12">
-            <div class="row section alteredText itemsSizeForm">
-              <div class="columns small-12">
-                <div class="sectionContentWrapper">
-                  <form action="" class="itemsSizeForm">
-                    <div class="row itemTypesWrapper">
-                      <div class="columns small-12 large-6">
-                        <h1>How many pairs of tall shoes are you sending us?</h1>
-                        <div class="formWrapper">
-                          <select name="tallShoesQuantity">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="sizesHint">
-                          <ul class="semanticList itemsSizes">
-                            <li><img src="images/views/get_started_size/shoes_short.png"/>
-                              <div class="title">Short</div>
-                            </li>
-                            <li><img src="images/views/get_started_size/shoes_tall.png"/>
-                              <div class="title">Tall</div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="footnote">* there is no additional charge for tall items. We just want to make sure send the proper box size.</div>
-                      </div>
-                      <div style="display: none;" class="columns small-12 large-6">
-                        <h1>How many large handbags are you sending us?</h1>
-                        <div class="formWrapper">
-                          <select name="largeHandbagsQuantity">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="sizesHint">
-                          <ul class="semanticList itemsSizes">
-                            <li><img src="images/views/get_started_size/handbag_small.png"/>
-                              <div class="title">Small</div>
-                            </li>
-                            <li><img src="images/views/get_started_size/handbag_large.png"/>
-                              <div class="title">Large</div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="footnote">* there is no additional charge for large items. We just want to make sure send the proper box size.</div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="row processControls alteredText"><span>Size selected</span><a href="accessories.html" class="button actionProceed">Next Step</a></div>
-          </div>
-        </div>
-        <div id="footer" class="row collapse">
-          <div class="row">
-            <div class="columns small-12 large-4">
-              <div class="row logo"><img src="/images/logo_footer.png"/></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cobbler Concierge</title>
+    <script type="text/javascript" src="/bower/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/wil1hin.js"></script>
+    <script type="text/javascript">
+      try{Typekit.load();}catch(e){}
+      
+    </script>
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="bodyWrapper">
+      <div class="bodyCell">
+        <div id="page" class="container">
+          <div id="menuOverlay" class="alteredText">
+            <div><a href="javascript:void(0);" class="closeButton"></a></div>
+            <div class="columns small-12">
               <div class="row">
-                <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"/></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"/></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"/></a></div>
+                <div class="columns small-12 contentWrapper">
+                  <div class="logo"><a href="/"><img src="/images/logo.png"></a></div>
+                  <ul class="semanticList menu">
+                    <li class="item"><a href="/get-started.html">Get Started</a></li>
+                    <li class="item"><a href="/login.html">Login</a></li>
+                    <li class="item"><a href="/pricing.html">Pricing</a></li>
+                    <li class="item"><a href="/marketplace.html">Marketplace</a></li>
+                    <li class="item"><a href="/about-us.html">About</a></li>
+                    <li class="item"><a href="/contact-us.html">Contact Us</a></li>
+                    <li class="item"><a href="/faqs.html">FAQs</a></li>
+                    <li class="item"><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
+                  </ul>
+                  <div class="row">
+                    <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"></a></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="columns hide-for-medium-down large-8 bottomMenu">
-              <ul class="semanticList">
-                <li><a href="/about-us.html">About</a></li>
-                <li><a href="/contact-us.html">Contact</a></li>
-                <li><a href="/faqs.html">FAQS</a></li>
-                <li><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
-              </ul>
+          </div>
+          <div id="header" class="row">
+            <div class="logo"><a href="/"><img src="/images/logo.png"></a></div>
+            <div class="menu"><a href="javascript:void(0);" class="menuToggleAction"></a></div>
+          </div>
+          <div id="content" class="row getStartedSize">
+            <div class="columns small-12">
+              <div class="row section alteredText itemsSizeForm">
+                <div class="columns small-12">
+                  <div class="sectionContentWrapper">
+                    <form action="" class="itemsSizeForm">
+                      <div class="row itemTypesWrapper">
+                        <div class="columns small-12 large-6">
+                          <h1>How many pairs of tall shoes are you sending us?</h1>
+                          <div class="formWrapper">
+                            <select name="tallShoesQuantity">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="sizesHint">
+                            <ul class="semanticList itemsSizes">
+                              <li><img src="images/views/get_started_size/shoes_short.png">
+                                <div class="title">Short</div>
+                              </li>
+                              <li><img src="images/views/get_started_size/shoes_tall.png">
+                                <div class="title">Tall</div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="footnote">* there is no additional charge for tall items. We just want to make sure send the proper box size.</div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row processControls alteredText"><span>Size selected</span><a href="accessories.html" class="button actionProceed">Next Step</a></div>
+            </div>
+          </div>
+          <div id="footer" class="row collapse">
+            <div class="row">
+              <div class="columns small-12 large-4">
+                <div class="row logo"><img src="/images/logo_footer.png"></div>
+                <div class="row">
+                  <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"></a></div>
+                </div>
+              </div>
+              <div class="columns hide-for-medium-down large-8 bottomMenu">
+                <ul class="semanticList">
+                  <li><a href="/about-us.html">About</a></li>
+                  <li><a href="/contact-us.html">Contact</a></li>
+                  <li><a href="/faqs.html">FAQS</a></li>
+                  <li><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-  <!-- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')-->
-  <!-- Include all compiled plugins (below), or include individual files as needed-->
-  <script type="text/javascript" src="/bower/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="/bower/foundation/js/foundation.min.js"></script>
-  <script type="text/javascript" src="/js/scripts.js"></script>
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <!-- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')-->
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script type="text/javascript" src="/bower/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+  </body>
+</html>

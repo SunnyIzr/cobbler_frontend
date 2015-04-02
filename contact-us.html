@@ -1,126 +1,128 @@
-<!DOCTYPE html(lang='en')>
-<head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Cobbler Concierge</title>
-  <script type="text/javascript" src="/bower/modernizr/modernizr.js"></script>
-  <script type="text/javascript" src="//use.typekit.net/wil1hin.js"></script>
-  <script type="text/javascript">
-    try{Typekit.load();}catch(e){}
-    
-  </script>
-  <link href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css" rel="stylesheet"/>
-  <link href="css/styles.css" rel="stylesheet"/>
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <div class="bodyWrapper">
-    <div class="bodyCell">
-      <div id="page" class="container">
-        <div id="menuOverlay" class="alteredText">
-          <div><a href="javascript:void(0);" class="closeButton"></a></div>
-          <div class="columns small-12">
-            <div class="row">
-              <div class="columns small-12 contentWrapper">
-                <div class="logo"><a href="/"><img src="/images/logo.png"/></a></div>
-                <ul class="semanticList menu">
-                  <li class="item"><a href="/get-started.html">Get Started</a></li>
-                  <li class="item"><a href="/login.html">Login</a></li>
-                  <li class="item"><a href="/pricing.html">Pricing</a></li>
-                  <li class="item"><a href="/marketplace.html">Marketplace</a></li>
-                  <li class="item"><a href="/about-us.html">About</a></li>
-                  <li class="item"><a href="/contact-us.html">Contact Us</a></li>
-                  <li class="item"><a href="/faqs.html">FAQs</a></li>
-                  <li class="item"><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
-                </ul>
-                <div class="row">
-                  <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"/></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"/></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"/></a></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cobbler Concierge</title>
+    <script type="text/javascript" src="/bower/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/wil1hin.js"></script>
+    <script type="text/javascript">
+      try{Typekit.load();}catch(e){}
+      
+    </script>
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="bodyWrapper">
+      <div class="bodyCell">
+        <div id="page" class="container">
+          <div id="menuOverlay" class="alteredText">
+            <div><a href="javascript:void(0);" class="closeButton"></a></div>
+            <div class="columns small-12">
+              <div class="row">
+                <div class="columns small-12 contentWrapper">
+                  <div class="logo"><a href="/"><img src="/images/logo.png"></a></div>
+                  <ul class="semanticList menu">
+                    <li class="item"><a href="/get-started.html">Get Started</a></li>
+                    <li class="item"><a href="/login.html">Login</a></li>
+                    <li class="item"><a href="/pricing.html">Pricing</a></li>
+                    <li class="item"><a href="/marketplace.html">Marketplace</a></li>
+                    <li class="item"><a href="/about-us.html">About</a></li>
+                    <li class="item"><a href="/contact-us.html">Contact Us</a></li>
+                    <li class="item"><a href="/faqs.html">FAQs</a></li>
+                    <li class="item"><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
+                  </ul>
+                  <div class="row">
+                    <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"></a></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="header" class="row">
-          <div class="logo"><a href="/"><img src="/images/logo.png"/></a></div>
-          <div class="menu"><a href="javascript:void(0);" class="menuToggleAction"></a></div>
-        </div>
-        <div id="content" class="row contactUs">
-          <div class="columns small-12">
-            <div class="row section map">
-              <!--.columns.small-12-->
-              <div>
-                <div id="map-canvas"></div>
+          <div id="header" class="row">
+            <div class="logo"><a href="/"><img src="/images/logo.png"></a></div>
+            <div class="menu"><a href="javascript:void(0);" class="menuToggleAction"></a></div>
+          </div>
+          <div id="content" class="row contactUs">
+            <div class="columns small-12">
+              <div class="row section map">
+                <!--.columns.small-12-->
+                <div>
+                  <div id="map-canvas"></div>
+                </div>
               </div>
-            </div>
-            <div class="row section contactsSection">
-              <div class="columns small-12">
-                <div class="row">
-                  <div class="columns small-12 large-7">
-                    <p>
-                      Donec tincidunt lorem elementum, pulvinar magna a, sagittis enim. Donec sed neque sed elit sagittis cursus sed ut orci. Sed accumsan ipsum massa, in efficitur ligula aliquam nec. Morbi sed mi sit ameturna congue consequat. Donec tincidunt lorem elementum, pulvinar magna a, sagittis enim.
-                      
-                    </p>
-                    <div class="contacts mainContact">
-                      <div class="contact">
-                        <h2 class="contactTitle">Office</h2>
-                        <p>123 Broadway Ave<br/>New York, NY 11211</p>
-                        <p>212.212.3322<br/>212.432.5566</p>
+              <div class="row section contactsSection">
+                <div class="columns small-12">
+                  <div class="row">
+                    <div class="columns small-12 large-7">
+                      <p>
+                        Donec tincidunt lorem elementum, pulvinar magna a, sagittis enim. Donec sed neque sed elit sagittis cursus sed ut orci. Sed accumsan ipsum massa, in efficitur ligula aliquam nec. Morbi sed mi sit ameturna congue consequat. Donec tincidunt lorem elementum, pulvinar magna a, sagittis enim.
+                        
+                      </p>
+                      <div class="contacts mainContact">
+                        <div class="contact">
+                          <h2 class="contactTitle">Office</h2>
+                          <p>123 Broadway Ave<br>New York, NY 11211</p>
+                          <p>212.212.3322<br>212.432.5566</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="columns large-1"></div>
-                  <div class="columns small-12 large-4">
-                    <ul class="semanticList contacts otherContacts">
-                      <li class="contact">
-                        <h3 class="contactTitle">Support</h3><a href="mailto:support@emailaddress.com">support@emailaddress.com</a>
-                      </li>
-                      <li class="contact">
-                        <h3 class="contactTitle">Careers</h3><a href="mailto:careers@emailaddress.com">careers@emailaddress.com</a>
-                      </li>
-                      <li class="contact">
-                        <h3 class="contactTitle">Info</h3><a href="mailto:info@emailaddress.com">info@emailaddress.com</a>
-                      </li>
-                      <li class="contact">
-                        <h3 class="contactTitle">Public Relations</h3><a href="mailto:pr@emailaddress.com">pr@emailaddress.com</a>
-                      </li>
-                    </ul>
+                    <div class="columns large-1"></div>
+                    <div class="columns small-12 large-4">
+                      <ul class="semanticList contacts otherContacts">
+                        <li class="contact">
+                          <h3 class="contactTitle">Support</h3><a href="mailto:support@emailaddress.com">support@emailaddress.com</a>
+                        </li>
+                        <li class="contact">
+                          <h3 class="contactTitle">Careers</h3><a href="mailto:careers@emailaddress.com">careers@emailaddress.com</a>
+                        </li>
+                        <li class="contact">
+                          <h3 class="contactTitle">Info</h3><a href="mailto:info@emailaddress.com">info@emailaddress.com</a>
+                        </li>
+                        <li class="contact">
+                          <h3 class="contactTitle">Public Relations</h3><a href="mailto:pr@emailaddress.com">pr@emailaddress.com</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="footer" class="row collapse">
-          <div class="row">
-            <div class="columns small-12 large-4">
-              <div class="row logo"><img src="/images/logo_footer.png"/></div>
-              <div class="row">
-                <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"/></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"/></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"/></a></div>
+          <div id="footer" class="row collapse">
+            <div class="row">
+              <div class="columns small-12 large-4">
+                <div class="row logo"><img src="/images/logo_footer.png"></div>
+                <div class="row">
+                  <div class="socialShare"><a href="//facebook.com" target="_blank" class="facebook"><img src="/images/facebook.png"></a><a href="//twitter.com" target="_blank" class="twitter"><img src="/images/twitter.png"></a><a href="//instagram.com" target="_blank" class="instagram"><img src="/images/instagram.png"></a></div>
+                </div>
               </div>
-            </div>
-            <div class="columns hide-for-medium-down large-8 bottomMenu">
-              <ul class="semanticList">
-                <li><a href="/about-us.html">About</a></li>
-                <li><a href="/contact-us.html">Contact</a></li>
-                <li><a href="/faqs.html">FAQS</a></li>
-                <li><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
-              </ul>
+              <div class="columns hide-for-medium-down large-8 bottomMenu">
+                <ul class="semanticList">
+                  <li><a href="/about-us.html">About</a></li>
+                  <li><a href="/contact-us.html">Contact</a></li>
+                  <li><a href="/faqs.html">FAQS</a></li>
+                  <li><a href="/privacy-and-terms.html">Privacy & Terms</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-  <!-- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')-->
-  <!-- Include all compiled plugins (below), or include individual files as needed-->
-  <script type="text/javascript" src="/bower/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="/bower/foundation/js/foundation.min.js"></script>
-  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
-  <script type="text/javascript" src="/js/scripts.js"></script>
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <!-- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')-->
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script type="text/javascript" src="/bower/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+  </body>
+</html>

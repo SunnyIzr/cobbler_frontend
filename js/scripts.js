@@ -205,7 +205,20 @@
         $('.orderFormController .hint .icon').click(function (event) {
             event.preventDefault();
 
-            $(this).closest('.hint').toggleClass('active');
+            var hintContainer = $(this).closest('.hint');
+
+            hintContainer.toggleClass('active');
+
+            if (hintContainer.hasClass('active')) {
+                var handler = function(event) {
+                    if(!$(event.target).closest('.hint').length) {
+                        hintContainer.removeClass('active');
+                        $(document).off('click', handler);
+                    }
+                };
+
+                $(document).on('click', handler);
+            }
         });
 
     }

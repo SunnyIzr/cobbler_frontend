@@ -1,33 +1,52 @@
 include _layout.jade
 +document('getStartedSize')
-    .row.section.intro.alteredText
-        .columns.small-12
-            .contentContainer
-                .contentContainerCell
-                    h1 How many pairs of tall shoes are you sending us?
-
     .row.section.alteredText.itemsSizeForm
         .columns.small-12
             .sectionContentWrapper
                 form.itemsSizeForm(action='')
-                    select(name='tallShoesQuantity')
-                        option 0
-                        option 1
-                        option 2
-                        option 3
-                        option 4
-                        option 5
-                .sizesHint
-                    ul.semanticList.itemsSizes
-                        li
-                            img(src='images/views/get_started_size/shoes_short.png')
-                            .title Short
-                        li
-                            img(src='images/views/get_started_size/shoes_tall.png')
-                            .title Tall
-                .footnote
-                    | * there is no additional charge for tall items. We just want to make sure send the proper box size.
+                    .row.itemTypesWrapper
+                        .columns.small-12.large-6
+                            h1 How many pairs of tall shoes are you sending us?
+                            .formWrapper
+                                select(name='tallShoesQuantity')
+                                    option 0
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                            .sizesHint
+                                ul.semanticList.itemsSizes
+                                    li
+                                        img(src='images/views/get_started_size/shoes_short.png')
+                                        .title Short
+                                    li
+                                        img(src='images/views/get_started_size/shoes_tall.png')
+                                        .title Tall
+                            .footnote
+                                | * there is no additional charge for tall items. We just want to make sure send the proper box size.
+
+                        .columns.small-12.large-6(style='display: none;')
+                            h1 How many large handbags are you sending us?
+                            .formWrapper
+                                select(name='largeHandbagsQuantity')
+                                    option 0
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                            .sizesHint
+                                ul.semanticList.itemsSizes
+                                    li
+                                        img(src='images/views/get_started_size/handbag_small.png')
+                                        .title Small
+                                    li
+                                        img(src='images/views/get_started_size/handbag_large.png')
+                                        .title Large
+                            .footnote
+                                | * there is no additional charge for large items. We just want to make sure send the proper box size.
 
     .row.processControls.alteredText
         span Size selected
-        a.button.actionProceed(href='get-started-size-handbags.html') Next Step
+        a.button.actionProceed(href='accessories.html') Next Step

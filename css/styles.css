@@ -6992,15 +6992,18 @@ label {
   background-size: cover; }
   #content.getStartedSize .section {
     text-align: center; }
-  #content.getStartedSize .section.intro {
-    height: 190px; }
-    #content.getStartedSize .section.intro .contentContainer .contentContainerCell {
-      vertical-align: bottom; }
   #content.getStartedSize .section.itemsSizeForm {
-    margin-top: 5em;
+    margin-top: 110px;
     padding-bottom: 3em; }
     #content.getStartedSize .section.itemsSizeForm .sectionContentWrapper {
       display: inline-block; }
+    #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm .itemTypesWrapper > div {
+      margin-top: 3em;
+      padding-bottom: 2em; }
+      #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm .itemTypesWrapper > div:first-child {
+        margin-top: 0; }
+    #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm .formWrapper {
+      margin-top: 4em; }
     #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm select {
       width: 35%; }
     #content.getStartedSize .section.itemsSizeForm .sizesHint {
@@ -7025,7 +7028,18 @@ label {
       font-size: 125%; }
   @media only screen and (min-width:48.063em) {
     #content.getStartedSize .section.itemsSizeForm {
+      margin-top: 200px;
       padding-bottom: 8em; }
+      #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm .itemTypesWrapper {
+        max-width: 1100px;
+        margin: 0 auto; }
+        #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm .itemTypesWrapper > div {
+          margin-top: 0;
+          display: inline-block;
+          margin-left: -5px;
+          float: none; }
+          #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm .itemTypesWrapper > div:first-child {
+            margin-left: 0; }
       #content.getStartedSize .section.itemsSizeForm .footnote {
         margin-top: 6.5em; } }
 

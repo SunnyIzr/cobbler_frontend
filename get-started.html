@@ -51,17 +51,24 @@
         </div>
         <div id="content" class="row getStarted">
           <div class="columns small-12">
+            <div class="row hide-for-small-up">
+              <form id="orderForm" method="post" action="api/calcOrder.php">
+                <input type="hidden" name="womenShoesQuantity" value="0"/>
+                <input type="hidden" name="menShoesQuantity" value="0"/>
+                <input type="hidden" name="handbagsQuantity" value="0"/>
+              </form>
+            </div>
             <div class="row section hide-for-large-up alteredText orderFormSection mobile">
               <div class="columns small-12">
                 <h1>How Many Shoes Or Handbags Are You Sending Us?</h1>
-                <form method="post" action="api/calcOrder.php" class="orderForm">
+                <div class="orderFormController">
+                  <div class="quantityWarning">There is a maximum of five items per order</div>
                   <table>
                     <tr>
                       <th>Women's</th>
-                      <td class="compositeField">
+                      <td data-field-name="womenShoesQuantity" class="compositeField">
                         <button class="upDownButton increase"></button><span class="value">0</span>
                         <button class="upDownButton decrease"></button>
-                        <input type="hidden" name="womenShoesQuantity" value="0"/>
                       </td>
                     </tr>
                     <tr>
@@ -80,18 +87,16 @@
                           </div>
                         </div>
                       </th>
-                      <td class="compositeField">
+                      <td data-field-name="menShoesQuantity" class="compositeField">
                         <button class="upDownButton increase"></button><span class="value">0</span>
                         <button class="upDownButton decrease"></button>
-                        <input type="hidden" name="menShoesQuantity" value="0"/>
                       </td>
                     </tr>
                     <tr>
                       <th>Handbags</th>
-                      <td class="compositeField">
+                      <td data-field-name="handbagsQuantity" class="compositeField">
                         <button class="upDownButton increase"></button><span class="value">0</span>
                         <button class="upDownButton decrease"></button>
-                        <input type="hidden" name="handbagsQuantity" value="0"/>
                       </td>
                     </tr>
                     <tr class="totalRow">
@@ -99,7 +104,7 @@
                       <td class="totalContainer"><span class="value"><span class="currencySymbol">$</span><span class="digit">0</span></span></td>
                     </tr>
                   </table>
-                </form>
+                </div>
               </div>
             </div>
             <div class="row section hide-for-medium-down alteredText orderFormSection desktop">
@@ -121,8 +126,9 @@
                   <div class="circleWrapper mainCircleWrapper">
                     <div class="circle"></div>
                   </div>
-                  <form method="post" action="api/calcOrder.php" class="orderForm">
-                    <div class="item compositeField womenQuantityContainer">
+                  <div class="orderFormController">
+                    <div class="quantityWarning">There is a maximum of five items per order</div>
+                    <div data-field-name="womenShoesQuantity" class="item compositeField womenQuantityContainer">
                       <div class="comboButton">
                         <button href="javascript:void(0);" class="upDownButton increase"></button>
                         <button href="javascript:void(0);" class="upDownButton decrease"></button>
@@ -130,11 +136,10 @@
                       <div class="valueContainer">
                         <div class="fieldLabel">Women's</div>
                         <div><span class="value">0</span></div>
-                        <input type="hidden" name="womenShoesQuantity" value="0"/>
                       </div>
                     </div>
                     <div class="item totalContainer"><span class="value"><span class="currencySymbol">$</span><span class="digit">0</span></span></div>
-                    <div class="item compositeField menQuantityContainer">
+                    <div data-field-name="menShoesQuantity" class="item compositeField menQuantityContainer">
                       <div class="valueContainer">
                         <div class="fieldLabel">Men's
                           <div class="hint">
@@ -151,9 +156,7 @@
                             </div>
                           </div>
                         </div>
-                        <div><span class="value">0</span>
-                          <input type="hidden" name="menShoesQuantity" value="0"/>
-                        </div>
+                        <div><span class="value">0</span></div>
                       </div>
                       <div class="comboButton">
                         <button href="javascript:void(0);" class="upDownButton increase"></button>
@@ -161,12 +164,10 @@
                       </div>
                     </div>
                     <div class="bottomRow">
-                      <div class="item compositeField handbagsQuantityContainer">
+                      <div data-field-name="handbagsQuantity" class="item compositeField handbagsQuantityContainer">
                         <div class="valueContainer">
                           <div class="fieldLabel">Handbags</div>
-                          <div><span class="value">0</span>
-                            <input type="hidden" name="handbagsQuantity" value="0"/>
-                          </div>
+                          <div><span class="value">0</span></div>
                         </div>
                         <div class="comboButton horizontal">
                           <button href="javascript:void(0);" class="upDownButton increase"></button>
@@ -174,7 +175,7 @@
                         </div>
                       </div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>

@@ -74,8 +74,17 @@
     padding-bottom: 5.3em;
     padding-top: 10em;
 
-    .orderForm {
+    .orderFormController {
       text-transform: uppercase;
+
+      .quantityWarning {
+        color: red;
+        text-align: center;
+        width: 100%;
+        line-height: 1.2;
+        text-transform: none;
+        visibility: hidden;
+      }
 
       table {
         width: 100%;
@@ -153,7 +162,7 @@
     background-size: cover;
     padding: 12em 0 7em;
 
-    .orderForm {
+    .orderFormController {
       height: 800px;
       line-height: 800px;
       margin: 0 auto;
@@ -162,6 +171,20 @@
       text-transform: uppercase;
 
       width: 800px;
+
+      .quantityWarning {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+
+        color: red;
+        text-align: center;
+        width: 100%;
+        line-height: 1.2;
+        text-transform: none;
+        visibility: hidden;
+      }
 
       .item {
         display: inline-block;
@@ -288,7 +311,7 @@
 
     .orderFormWrapper {
       display: inline-block;
-      margin-top: -70px;
+      margin-top: -50px;
       position: relative;
 
       .circleWrapper {

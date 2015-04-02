@@ -1,18 +1,27 @@
 include _layout.jade
 +document('getStarted')
+    .row.hide-for-small-up
+        form#orderForm(method='post', action='api/calcOrder.php')
+            input(type='hidden', name='womenShoesQuantity', value="0")
+            input(type='hidden', name='menShoesQuantity', value="0")
+            input(type='hidden', name='handbagsQuantity', value="0")
+
     .row.section.hide-for-large-up.alteredText.orderFormSection.mobile
         .columns.small-12
             h1 How Many Shoes Or Handbags Are You Sending Us?
 
-            form.orderForm(method='post', action='api/calcOrder.php')
+            .orderFormController
+                .quantityWarning
+                    | There is a maximum of five items per order
+
                 table
                     tr
                         th Women's
-                        td.compositeField
+                        td.compositeField(data-field-name='womenShoesQuantity')
                             button.upDownButton.increase
                             span.value 0
                             button.upDownButton.decrease
-                            input(type='hidden', name='womenShoesQuantity', value="0")
+
                     tr
                         th Men's
                             .hint
@@ -24,18 +33,18 @@ include _layout.jade
                                         div.
                                             Durabitur non sem et turpiss gra vida porta eget sit amet eros am lobortis.
                                             Aenean metus leo, bibendum quis sem non, placer at auctor lacus. Mauris varius, erat eu plac erat egestas.
-                        td.compositeField
+                        td.compositeField(data-field-name='menShoesQuantity')
                             button.upDownButton.increase
                             span.value 0
                             button.upDownButton.decrease
-                            input(type='hidden', name='menShoesQuantity', value="0")
+
                     tr
                         th Handbags
-                        td.compositeField
+                        td.compositeField(data-field-name='handbagsQuantity')
                             button.upDownButton.increase
                             span.value 0
                             button.upDownButton.decrease
-                            input(type='hidden', name='handbagsQuantity', value="0")
+
                     tr.totalRow
                         th Total
                         td.totalContainer
@@ -59,8 +68,11 @@ include _layout.jade
                 .circleWrapper.mainCircleWrapper
                     .circle
 
-                form.orderForm(method='post', action='api/calcOrder.php')
-                    .item.compositeField.womenQuantityContainer
+                .orderFormController
+                    .quantityWarning
+                        | There is a maximum of five items per order
+
+                    .item.compositeField.womenQuantityContainer(data-field-name='womenShoesQuantity')
                         .comboButton
                             button.upDownButton.increase(href='javascript:void(0);')
                             button.upDownButton.decrease(href='javascript:void(0);')
@@ -68,12 +80,11 @@ include _layout.jade
                             .fieldLabel Women's
                             div
                                 span.value 0
-                            input(type='hidden', name='womenShoesQuantity', value="0")
                     .item.totalContainer
                         span.value
                             span.currencySymbol $
                             span.digit 0
-                    .item.compositeField.menQuantityContainer
+                    .item.compositeField.menQuantityContainer(data-field-name='menShoesQuantity')
                         .valueContainer
                             .fieldLabel Men's
                                 .hint
@@ -87,18 +98,16 @@ include _layout.jade
                                                 Aenean metus leo, bibendum quis sem non, placer at auctor lacus. Mauris varius, erat eu plac erat egestas.
                             div
                                 span.value 0
-                                input(type='hidden', name='menShoesQuantity', value="0")
                         .comboButton
                             button.upDownButton.increase(href='javascript:void(0);')
                             button.upDownButton.decrease(href='javascript:void(0);')
 
                     .bottomRow
-                        .item.compositeField.handbagsQuantityContainer
+                        .item.compositeField.handbagsQuantityContainer(data-field-name='handbagsQuantity')
                             .valueContainer
                                 .fieldLabel Handbags
                                 div
                                     span.value 0
-                                    input(type='hidden', name='handbagsQuantity', value="0")
                             .comboButton.horizontal
                                 button.upDownButton.increase(href='javascript:void(0);')
                                 button.upDownButton.decrease(href='javascript:void(0);')

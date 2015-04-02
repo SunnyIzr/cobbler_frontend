@@ -86,64 +86,128 @@
     }
 
     function GetStartedPage() {
-        $('.orderForm .hint .icon').click(function (event) {
-            event.preventDefault();
+        var orderQuantityLimit = 5;
 
-            $(this).closest('.hint').toggleClass('active');
-        });
+        var orderForm = $('#orderForm');
 
-        $('.orderForm .compositeField .upDownButton').click(function (event) {
-            event.preventDefault();
+        orderForm._controllers = [];
 
-            var $this = $(this);
-            var control = $this.closest('.compositeField');
+        orderForm.shiftFieldValue = function (fieldName, increment) {
+            var field = this.find('[name=' + fieldName + ']');
+            var currentValue = parseInt(field.val());
 
-            var valueLabel = control.find('.value');
-            var input = control.find('input');
-
-            var currentValue = parseInt(input.val());
-
-            if ($this.hasClass('increase')) {
-                currentValue += 1;
-            } else {
-                if (currentValue == 0) {
-                    return false;
-                }
-
-                currentValue -= 1;
+            currentValue += increment;
+            if (currentValue < 0) {
+                currentValue = 0;
             }
 
-            input.val(currentValue);
-            valueLabel.text(currentValue);
+            field.val(currentValue);
 
-            var form = control.closest('form');
+            for(var i=0; i<this._controllers.length; i++) {
+                this._controllers[i].setFieldValue(fieldName, currentValue);
+            }
 
-            form.submit();
-        });
+            this.submit();
 
-        $('.orderForm').submit(function (event) {
+            this.checkLimits();
+        };
+
+        orderForm.checkLimits = function() {
+            var quantity = 0;
+            orderForm.find('input[type="hidden"]').each(function() {
+                quantity += parseInt($(this).val());
+            });
+
+            for(var i=0; i<this._controllers.length; i++) {
+                if (quantity > orderQuantityLimit) {
+                    this._controllers[i].showQuantityWarning();
+                } else {
+                    this._controllers[i].hideQuantityWarning();
+                }
+            }
+        };
+
+        orderForm.increaseField = function (fieldName) {
+            this.shiftFieldValue(fieldName, +1);
+        };
+
+        orderForm.decreaseField = function (fieldName) {
+            this.shiftFieldValue(fieldName, -1);
+        };
+
+        orderForm.addController = function (controller) {
+            this._controllers.push(controller);
+        };
+
+        orderForm.submit(function (event) {
             event.preventDefault();
 
-            var form = $(this);
+            var form = orderForm;
             var data = form.serialize();
 
             $.post(
                 form[0].action,
                 data
             ).done(function (data) {
-                    var orderAmount = parseInt(data);
-                    form.find('.totalContainer .value .digit').text(orderAmount);
+                var orderAmount = parseInt(data);
 
-                    var processControls = $('#content').find('.processControls');
-                    if (orderAmount > 0) {
-                        processControls.slideDown('slow');
-                    } else {
-                        processControls.slideUp('slow');
-                    }
-                }).fail(function () {
-                    alert('Whoops! It looks, that we have some issues on our side. Please, try again later or contact the support.');
-                });
+                for(var i=0; i<form._controllers.length; i++) {
+                    form._controllers[i].setTotal(orderAmount);
+                }
+
+                var processControls = $('#content').find('.processControls');
+                if (orderAmount > 0) {
+                    processControls.slideDown('slow');
+                } else {
+                    processControls.slideUp('slow');
+                }
+            }).fail(function () {
+                alert('Whoops! It looks, that we have some issues on our side. Please, try again later or contact the support.');
+            });
         });
+
+
+        $('.orderFormController').each(function() {
+            var controller = $(this);
+            orderForm.addController(controller);
+            controller._form = orderForm;
+
+            controller.setFieldValue = function (fieldName, value) {
+              this.find('[data-field-name=' + fieldName + '] .value').text(value);
+            };
+
+            controller.setTotal = function (value) {
+                this.find('.totalContainer .value .digit').text(value);
+            };
+
+            controller.find('.compositeField .upDownButton').click(function (event) {
+                event.preventDefault();
+
+                var $this = $(this);
+                var control = $this.closest('.compositeField');
+
+                if ($this.hasClass('increase')) {
+                    controller._form.increaseField(control.data('fieldName'));
+                } else {
+                    controller._form.decreaseField(control.data('fieldName'));
+                }
+            });
+
+            controller.showQuantityWarning = function () {
+                controller.find('.quantityWarning').css('visibility', 'visible');
+            };
+
+            controller.hideQuantityWarning = function () {
+                controller.find('.quantityWarning').css('visibility', 'hidden');
+            };
+        });
+
+        $('.orderFormController .hint .icon').click(function (event) {
+            event.preventDefault();
+
+            $(this).closest('.hint').toggleClass('active');
+        });
+
     }
 
 

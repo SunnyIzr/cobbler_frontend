@@ -7040,6 +7040,10 @@ label {
           float: none; }
           #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm .itemTypesWrapper > div:first-child {
             margin-left: 0; }
+      #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm.multiple .itemTypesWrapper > div {
+        border-left: 1px solid rgba(255, 255, 255, 0.2); }
+        #content.getStartedSize .section.itemsSizeForm form.itemsSizeForm.multiple .itemTypesWrapper > div:first-child {
+          border-left: none; }
       #content.getStartedSize .section.itemsSizeForm .footnote {
         margin-top: 6.5em; } }
 
